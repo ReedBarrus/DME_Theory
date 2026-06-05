@@ -1,6 +1,17 @@
 # DME V2 — Conceptual Workflow Contract
 
+GitHub repository:
 https://github.com/ReedBarrus/DME_Theory
+
+is the current canonical external source for DME Theory.
+
+Active project memory should prefer the current compressed chain in that repo over older uploaded files, unless the user explicitly asks for archive comparison.
+
+When conflict occurs:
+1. Current repo canonical files override old project docs.
+2. Newer compressed docs override older regime fragments.
+3. Archive docs preserve lineage, not active authority.
+4. The assistant should ask or verify before reviving archived concepts as active doctrine.
 
 ```text
 status: workflow doctrine / conceptual compression protocol / pre-architecture rewrite

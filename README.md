@@ -370,24 +370,6 @@ Implementation preserves the crossings.
 
 ---
 
-## Future Repositories
-
-Future implementation work should likely live outside this repository.
-
-Possible future repos:
-
-```text
-DME_Runtime
-DME_Agent_Gate
-DME_Local_Runtime_Companion
-DME_Projection_Packet_Spec
-DME_Dashboard
-```
-
-This keeps the theory library stable while implementation remains free to mutate, test, fail, and evolve.
-
----
-
 ## Final Compression
 
 ```text
