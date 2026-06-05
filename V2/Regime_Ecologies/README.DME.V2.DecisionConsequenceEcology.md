@@ -1,5 +1,7 @@
 # DME V2 — Decision / Consequence Ecology
 
+https://github.com/ReedBarrus/DME_Theory
+
 ```text
 status: primary runtime coordinate regime / branch topology / consequence-feedback doctrine
 depends_on:

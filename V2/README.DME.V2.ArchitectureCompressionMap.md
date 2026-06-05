@@ -1,6 +1,6 @@
 # DME V2 — Architecture Compression Map
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: restructuring plan / conceptual skeleton / pre-schema compression map

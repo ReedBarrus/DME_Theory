@@ -1,6 +1,6 @@
 # DME V2 — Operator Grammar
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: operator grammar / movement law / regime-boundary doctrine

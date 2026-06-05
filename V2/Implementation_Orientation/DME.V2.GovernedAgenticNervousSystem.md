@@ -1,6 +1,6 @@
 # DME V2 — Governed Agentic Nervous System
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: implementation orientation / packaging ladder / post-compression spear tip

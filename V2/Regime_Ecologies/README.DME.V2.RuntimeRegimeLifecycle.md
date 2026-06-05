@@ -1,6 +1,6 @@
 # DME V2 — Runtime Regime Lifecycle
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: regime lifecycle doctrine / hierarchical regime ecology / feedback ecology overview

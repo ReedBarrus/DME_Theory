@@ -1,6 +1,6 @@
 # DME V2 — Distinction Ecology
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: root regime doctrine / distinction topology / configuration-attention operational surface

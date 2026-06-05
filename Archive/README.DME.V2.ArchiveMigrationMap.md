@@ -1,5 +1,7 @@
 # DME V2 — Archive Migration Map
 
+https://github.com/ReedBarrus/DME_Theory
+
 ```text
 status: provenance / archive transition / canonical compression map
 purpose: map old active project documents into the compressed DME V2 canonical chain

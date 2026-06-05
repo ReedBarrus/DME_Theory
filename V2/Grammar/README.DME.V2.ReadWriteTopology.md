@@ -1,6 +1,6 @@
 # DME V2 — Read / Write Topology
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: topology grammar / architecture bridge / pre-operator grammar

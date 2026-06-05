@@ -1,5 +1,7 @@
 # DME V2 — Agency Ecology
 
+https://github.com/ReedBarrus/DME_Theory
+
 ```text
 status: primary runtime coordinate regime / agentic locus doctrine / accountability geometry
 depends_on:

@@ -1,6 +1,6 @@
 # DME V2 — Conceptual Workflow Contract
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: workflow doctrine / conceptual compression protocol / pre-architecture rewrite

@@ -1,6 +1,6 @@
 # DME V2 — Theory Foundation
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: theory foundation / RIFT-DME integration / pre-architecture skeleton

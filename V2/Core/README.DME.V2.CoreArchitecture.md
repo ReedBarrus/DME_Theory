@@ -1,6 +1,6 @@
 # DME V2 — Core Architecture
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: core architecture / four-substrate skeleton / post-theory foundation
