@@ -1768,6 +1768,170 @@ visibility ≠ permission
 
 ---
 
+## Uncertainty / Distortion / Noise
+
+```text
+Uncertainty / Distortion / Noise =
+cross-regime condition profile describing what is unknown, unstable, lossy,
+ambiguous, deformed, hidden, biased, noisy, or unresolved in any DME lifecycle object.
+```
+This is not a separate substrate.
+
+This is not a separate root regime.
+
+It is a required profile across envelopes, records, projections, feedback paths, proof routes, retention states, and authority claims.
+
+Uncertainty
+Uncertainty =
+declared incompleteness, instability, ambiguity, or unresolved variance in support,
+interpretation, projection, feedback, decision, reconstruction, proof, or authority.
+
+Uncertainty is what is not yet resolved.
+
+It may apply to:
+
+source support
+distinction boundary
+projection fidelity
+observer interpretation
+decision consequence
+stake mapping
+feedback meaning
+reconstruction path
+proof result
+authority ceiling
+reference validity
+Distortion
+Distortion =
+structured deformation introduced by lens, projection, bias, compression,
+translation, attention, source conditions, or transformation path.
+
+Distortion is not automatically deception.
+
+Distortion is shaped difference from source or target topology.
+
+It may arise from:
+
+observer frame
+projection lens
+semantic compression
+dashboard simplification
+translation
+embedding neighborhood
+retention echo
+belief influence
+source noise
+operator transformation
+Noise
+Noise =
+variance or signal contamination that affects distinction support, feedback fidelity,
+projection clarity, or reconstruction quality without necessarily forming stable structure.
+
+Noise interferes with stable distinction formation.
+
+Noise may be:
+
+measurement noise
+sensor noise
+semantic noise
+context noise
+feedback noise
+attention noise
+source contamination
+projection clutter
+retrieval noise
+UncertaintyProfile
+UncertaintyProfile =
+declared uncertainty, distortion, noise, loss, ambiguity, confidence limits,
+and unresolved variance attached to a DME object or transition.
+
+UncertaintyProfile may be carried by:
+
+DistinctionEnvelope
+ProvenanceEnvelope
+AttentionEnvelope
+CommitmentEnvelope
+DecisionEnvelope
+ConstraintEnvelope
+IntegrationEnvelope
+RetentionEnvelope
+ProjectionEnvelope
+ProofEnvelope
+AuthorityEnvelope
+ReferenceEnvelope
+LedgerRecord
+FeedbackRecord
+
+It should preserve:
+
+what is unknown
+what is noisy
+what is distorted
+what is omitted
+what is inferred
+what is unstable
+what confidence limits apply
+what could reduce uncertainty
+what should not proceed until clarified
+what may proceed despite uncertainty
+Shadow
+Shadow =
+informal name for unresolved topology around a claim, distinction, projection,
+decision, memory, feedback signal, proof route, authority state, or reference object.
+
+Shadow is not bad.
+
+Shadow is the honest remainder around any bounded representation.
+
+DME should not eliminate shadow by pretending it is not there.
+
+DME should declare it, route it, test it, reduce it when useful, preserve it when honest, and prevent it from silently becoming certainty.
+
+Non-Collapse Laws
+uncertainty ≠ falsehood
+uncertainty ≠ invalidity
+noise ≠ meaningless
+distortion ≠ deception_by_default
+ambiguity ≠ rejection
+unknown ≠ unsafe_by_default
+confidence ≠ proof
+clarity ≠ truth
+uncertainty_reduction ≠ authority
+low_uncertainty ≠ permission
+high_uncertainty ≠ rejection_by_default
+shadow ≠ error
+shadow ≠ hidden_truth_by_default
+
+Core law:
+
+Every bounded representation has shadow.
+DME preserves intelligence by declaring shadow instead of collapsing it into certainty.
+
+On the implementation question: yes, we are basically ready for **Implementation Orientation**, but I could not verify the `ModularMechanizationLadder` file yet. I checked the repo metadata and tried the expected paths plus search, but the file did not resolve for me under `Implementation_Orientation/ModularMechanizationLadder.md` or the likely README-style variants. It may not be indexed yet, may have a slightly different filename, or may not have pushed fully.
+
+Conceptually, though, the ladder is exactly the right next bridge. It should turn the ecology into mechanized classes:
+
+```text
+R0 internal reasoning
+R1 projection/read-only
+R2 reversible internal state
+R3 local reversible action
+R4 visible communication
+R5 durable external write
+R6 high-stake social/economic/legal/operational
+R7 physical/safety-critical/irreversible/governance-critical
+```
+The key is that each rung should declare:
+
+allowed behavior
+blocked behavior
+authority ceiling
+proof burden
+consent burden
+receipt burden
+feedback requirement
+repair/revocation path
+
 ## 12. Operator Terms
 
 ### Operator

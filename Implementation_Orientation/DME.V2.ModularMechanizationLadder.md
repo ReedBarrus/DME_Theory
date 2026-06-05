@@ -12,11 +12,18 @@ depends_on:
   - README.DME.V2.RuntimeSubstrate.md
   - README.DME.V2.LedgerSubstrate.md
   - README.DME.V2.ProjectionIndexRasterization.md
-  - README.DME.V2.RuntimeRegimeLifecycle.md
+  - README.DME.V2.RuntimeRegimeLifecycle.Hierarchical.md
   - README.DME.V2.DistinctionEcology.md
   - README.DME.V2.AgencyEcology.md
   - README.DME.V2.DecisionConsequenceEcology.md
   - DME.V2.GovernedAgenticNervousSystem.md
+    README.DME.V2.BudgetAdmissibilityEcology.md
+    README.DME.V2.FeedbackIntegrationEcology.md
+    README.DME.V2.RetentionEcology.md
+    README.DME.V2.LedgerProvenanceEcology.md
+    README.DME.V2.ProjectionEcology.md
+    README.DME.V2.ProofEcology.md
+    README.DME.V2.AuthorityReferenceEcology.md
 schema posture: deferred
 ```
 
