@@ -273,6 +273,142 @@ decision_pressure ≠ authority
 
 ---
 
+## 6.X CommitmentEnvelope in Decision Formation
+
+Decision / Consequence Ecology inherits GoalProjection and CommitmentEnvelope from Agency Ecology.
+
+Commitments are not required for every decision.
+
+They become relevant when decision topology is being shaped by retained, accountable, revocable intention toward a desired consequence-configuration.
+
+### GoalProjection
+
+```text
+GoalProjection =
+a projected desired consequence-configuration curvature.
+```
+
+GoalProjection defines the desired configuration or outcome that decision topology may be organized around.
+
+It may influence:
+
+```text
+decision relevance
+branch selection pressure
+simulation criteria
+feedback interpretation
+repair priority
+retention posture
+reference candidacy
+```
+
+### CommitmentEnvelope
+
+```text
+CommitmentEnvelope =
+a bounded agentic-decision field that preserves intention toward a GoalProjection
+across time, decisions, feedback, repair, and revocation.
+```
+
+CommitmentEnvelope may contain or reference:
+
+```text
+AgenticLocus
+GoalProjection
+desired configuration
+scope
+priority
+attention budget
+resource budget
+time horizon
+constraints
+admissibility limits
+authority ceiling
+stake mapping
+consent requirements
+decision relevance rules
+progress signals
+feedback conditions
+repair path
+revocation path
+retention posture
+proof burden
+provenance envelope
+```
+
+### Decision Formation
+
+DecisionPressure may emerge from a CommitmentEnvelope when a retained goal re-enters runtime and pressures branch topology.
+
+```text
+CommitmentEnvelope
++ DecisionRelevance
++ AttentionEnvelope
++ Budget / Admissibility
++ Authority / Consent constraints
+→ DecisionPressure
+```
+
+DecisionEnvelope formation may then proceed:
+
+```text
+CommitmentEnvelope
++ DecisionPressure
++ Branch Support
++ Simulation / Projection
++ Stake / Consent / Authority Check
+→ DecisionEnvelope
+```
+
+### Commitment and Consequence
+
+A commitment is updated by consequence feedback.
+
+```text
+ExecutionReceipt
+→ ConsequenceSignature
+→ FeedbackRecord
+→ IntegratedConsequenceRecord
+→ Commitment update / repair / release / revocation
+```
+
+Feedback may cause the commitment to:
+
+```text
+strengthen
+weaken
+revise
+split
+route to proof
+route to repair
+route to governance
+decay
+release
+revoke
+```
+
+### Non-Collapse Laws
+
+```text
+commitment ≠ decision
+commitment ≠ permission
+commitment ≠ execution
+commitment ≠ authority
+goal ≠ consequence
+desired consequence ≠ realized consequence
+commitment pressure ≠ branch authorization
+progress feedback ≠ proof
+commitment persistence ≠ legitimacy
+```
+
+Core law:
+
+```text
+Commitments organize decision pressure across time.
+They do not authorize consequence by themselves.
+```
+
+
 ## 7. DecisionEnvelope
 
 ```text

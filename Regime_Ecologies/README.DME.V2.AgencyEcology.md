@@ -712,6 +712,140 @@ intention ≠ consequence
 ```
 
 ---
+## 6.8.X CommitmentEnvelope and GoalProjection
+
+Goals and commitments are derived agentic-decision lifecycle objects.
+
+They are not required for every decision.
+
+They become useful when an agentic locus needs to preserve intention across time, sessions, decisions, feedback cycles, and consequence updates.
+
+### GoalProjection
+
+```text
+GoalProjection =
+a projected desired consequence-configuration curvature.
+```
+
+A goal is not merely a wish.
+
+A goal defines a desired configuration or outcome that can shape attention, decision relevance, feedback interpretation, repair, and future routing.
+
+GoalProjection answers:
+
+```text
+What configuration is desired?
+What consequence state is being aimed toward?
+What would count as progress?
+What would count as rupture?
+What constraints must be preserved?
+```
+
+### CommitmentEnvelope
+
+```text
+CommitmentEnvelope =
+the bounded agentic-decision field around a GoalProjection, preserving agentic locus,
+intention pressure, scope, budget, constraints, decision relevance, feedback conditions,
+repair paths, revocation conditions, and provenance.
+```
+
+CommitmentEnvelope answers:
+
+```text
+Who or what is committed?
+Toward what goal?
+Under what scope?
+With what budget?
+With what constraints?
+What decisions does this pressure?
+What consequences are acceptable?
+What feedback updates progress?
+What repair path exists?
+When should the commitment decay, revise, or revoke?
+```
+
+### Goal / Intention / Commitment Distinction
+
+```text
+Goal = projected desired consequence-configuration curvature.
+
+Intention = budgeted write-side attention from an agentic locus into decision topology.
+
+Commitment = retained, accountable, revocable binding of intention toward a goal across time.
+```
+
+A goal can exist without commitment.
+
+An intention can be momentary.
+
+A commitment persists and re-enters runtime.
+
+### Lifecycle Position
+
+```text
+AttentionEnvelope
+→ Expectation / Belief Support
+→ Request / Intention Pressure
+→ GoalProjection
+→ CommitmentEnvelope
+→ Consent / Stake Boundary
+→ ActionParticipation
+→ ConsequenceReception
+→ AccountabilityRecord
+```
+
+CommitmentEnvelope may also route directly into decision topology when decision relevance is present.
+
+```text
+CommitmentEnvelope
++ DecisionRelevance
++ Budget / Admissibility
++ Authority / Consent constraints
+→ DecisionPressure
+```
+
+### Why CommitmentEnvelope Exists
+
+Without CommitmentEnvelope, long-term goals collapse into loose intention pressure.
+
+CommitmentEnvelope preserves:
+
+```text
+this goal persists across time
+this intention is bounded
+this scope applies
+this budget applies
+this feedback updates the commitment
+this repair path exists
+this commitment can decay, revise, or revoke
+```
+
+CommitmentEnvelope lets agency support active decision making without allowing desire to become permission.
+
+### Non-Collapse Laws
+
+```text
+goal ≠ commitment
+goal ≠ authority
+goal ≠ permission
+intention ≠ commitment
+commitment ≠ authority
+commitment ≠ permission
+commitment ≠ execution
+commitment ≠ identity
+commitment ≠ permanence
+priority ≠ legitimacy
+persistence ≠ correctness
+goal progress ≠ coherence by itself
+```
+
+Core law:
+
+```text
+Commitment may pressure decisions.
+Commitment may not authorize consequences by itself.
+```
 
 ## 6.9 Consent / Stake Boundary
 
