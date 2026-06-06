@@ -498,6 +498,45 @@ AuthorityEnvelope ≠ universal permission
 
 ---
 
+## 11.X Ownership
+
+Definition:
+
+Ownership =
+scoped, provenance-backed authority posture over control, use, modification,
+exclusion, transfer, benefit, attribution, and stewardship of an object,
+contribution, process, memory, or value-flow.
+
+Ownership is a specialized authority state.
+
+Ownership is not identical to authorship, access, custody, stewardship,
+benefit, or contribution. These may support an ownership claim but do not
+collapse into ownership by default.
+
+Ownership requires:
+- provenance support
+- contribution or transfer basis
+- scope
+- consequence class
+- valid use
+- invalid use
+- authority ceiling
+- benefit relation
+- stewardship obligation, if any
+- revocation or dispute path
+- governance posture
+
+OwnershipClaim =
+claim that a locus has scoped consequence-right over an object,
+contribution, system component, memory structure, or value-flow.
+
+
+OwnershipEnvelope =
+AuthorityEnvelope specialized for ownership claims, preserving
+authorship, contribution basis, control rights, use rights, modification rights,
+exclusion rights, transfer rights, benefit rights, stewardship duties,
+valid/invalid use, consequence class, dispute path, and revocation conditions.
+
 ## 12. ReferenceCandidate
 
 ### Definition

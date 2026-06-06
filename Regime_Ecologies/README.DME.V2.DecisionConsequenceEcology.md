@@ -823,6 +823,41 @@ impact ≠ authority
 
 ---
 
+Consequence Classes:
+
+C0 — no external consequence
+Internal reasoning, simulation, private scratch state.
+
+C1 — perceptual consequence
+Changes what is seen, highlighted, ranked, summarized, or foregrounded.
+
+C2 — interpretive consequence
+Changes meaning, framing, classification, confidence, or semantic relation.
+
+C3 — memory consequence
+Changes what is retained, indexed, recalled, attenuated, forgotten, or re-entered.
+
+C4 — access consequence
+Changes who/what can read, write, use, invoke, or route through something.
+
+C5 — agency consequence
+Changes what an agent/locus can request, execute, delegate, revoke, or decide.
+
+C6 — governance consequence
+Changes policy, authority, role, rule, precedent, dispute state, or valid/invalid use.
+
+C7 — economic consequence
+Changes value flow, ownership claim, compensation, surplus, liability, or cost.
+
+C8 — social consequence
+Changes reputation, trust evidence, standing, role, visibility, or relational position.
+
+C9 — durable external consequence
+Changes an external artifact, deployment, public record, contract, message, publication, or system state.
+
+C10 — high-stake / irreversible consequence
+Legal, safety, health, physical, identity-critical, or large-scale governance consequence.
+
 ## 16. FeedbackRecord
 
 ```text
