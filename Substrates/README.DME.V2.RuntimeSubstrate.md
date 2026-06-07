@@ -1,6 +1,6 @@
 # DME V2 — Runtime Substrate
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: substrate doctrine / active configuration-attention continuum / runtime pressure field

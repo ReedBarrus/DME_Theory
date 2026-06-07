@@ -905,12 +905,14 @@ README.DME.V2.ProjectionIndexRasterization.md
 README.DME.V2.OperatorGrammar.md
 README.DME.V2.RuntimeRegimeLifecycle.md
 README.DME.V2.DecisionConsequenceEcology.md
-README.DME.V2.BudgetConstraintAuthorityReferenceLifecycle.md
-README.DME.V2.AdmissibilityEcology.md
+README.DME.V2.BudgetAdmissibilityEcology.md
+README.DME.V2.AuthorityReferenceEcology.md
 README.DME.V2.AgencyEcology.md
 README.DME.V2.RetentionEcology.md
 README.DME.V2.ProofEcology.md
-README.DME.V2.GlossaryAndNonCollapseLaws.md
+README.DME.V2.FeedbackIntegrationEcology.md
+README.DME.V2.LedgerProvenanceEcology.md
+README.DME.V2.Glossary.md
 README.DME.V2.LocalRuntimeGeometry.md
 ```
 

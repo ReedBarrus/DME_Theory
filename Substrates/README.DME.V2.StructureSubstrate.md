@@ -1,6 +1,6 @@
 # DME V2 — Structure Substrate
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: substrate doctrine / structural admission / source-to-distinction bridge

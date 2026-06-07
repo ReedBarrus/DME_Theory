@@ -1731,11 +1731,11 @@ This lifecycle hierarchy should be elaborated by:
 README.DME.V2.DistinctionEcology.md
 README.DME.V2.AgencyEcology.md
 README.DME.V2.DecisionConsequenceEcology.md
-README.DME.V2.AdmissibilityEcology.md
+README.DME.V2.BudgetAdmissibilityEcology.md
 README.DME.V2.RetentionEcology.md
 README.DME.V2.ProofEcology.md
-README.DME.V2.BudgetConstraintAuthorityReferenceLifecycle.md
-README.DME.V2.ProvenanceConservation.md
+README.DME.V2.AuthorityReferenceEcology.md
+README.DME.V2.LedgerProvenanceEcology.md
 ```
 
 Each ecology should inherit the following laws:

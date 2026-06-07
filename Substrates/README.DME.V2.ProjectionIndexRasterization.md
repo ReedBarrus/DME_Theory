@@ -1,6 +1,6 @@
 # DME V2 — Projection / Index / Rasterization
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: substrate doctrine / address layer / projection-index-rasterization bridge

@@ -115,7 +115,7 @@ README.DME.V2.StructureSubstrate.md
 README.DME.V2.RuntimeSubstrate.md
 README.DME.V2.LedgerSubstrate.md
 README.DME.V2.ProjectionIndexRasterization.md
-README.DME.V2.RuntimeRegimeLifecycle.Hierarchical.md
+README.DME.V2.RuntimeRegimeLifecycle.md
 README.DME.V2.DistinctionEcology.md
 README.DME.V2.AgencyEcology.md
 README.DME.V2.DecisionConsequenceEcology.md
@@ -378,7 +378,7 @@ README.DME.V2.StructureSubstrate.md
 README.DME.V2.RuntimeSubstrate.md
 README.DME.V2.LedgerSubstrate.md
 README.DME.V2.ProjectionIndexRasterization.md
-README.DME.V2.RuntimeRegimeLifecycle.Hierarchical.md
+README.DME.V2.RuntimeRegimeLifecycle.md
 README.DME.V2.DistinctionEcology.md
 README.DME.V2.AgencyEcology.md
 README.DME.V2.DecisionConsequenceEcology.md
@@ -410,7 +410,7 @@ AuthorityReferenceEcology
 ProjectionEcology
 LedgerProvenanceEcology
 FeedbackIntegrationEcology
-ProvenanceConservation
+LedgerProvenanceEcology
 SchemaIndex
 ImplementationRoadmap
 ```

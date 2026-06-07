@@ -7,7 +7,7 @@ related:
   - README.DME.V2.Glossary.md
   - README.DME.V2.ConceptualWorkflowContract.md
   - README.DME.V2.OperatorGrammar.md
-  - README.DME.V2.RuntimeRegimeLifecycle.Hierarchical.md
+  - README.DME.V2.RuntimeRegimeLifecycle.md
 schema posture: deferred
 ```
 

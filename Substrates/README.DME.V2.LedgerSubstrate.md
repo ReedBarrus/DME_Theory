@@ -1,6 +1,6 @@
 # DME V2 — Ledger Substrate
 
-https://github.com/ReedBarrus/DynamicalMemoryEngine_V2
+https://github.com/ReedBarrus/DME_Theory
 
 ```text
 status: substrate doctrine / bounded provenance hypergraph / causal memory substrate

@@ -14,6 +14,16 @@ It exists to stabilize the conceptual foundations, substrate architecture, regim
 
 ---
 
+## Start Here
+
+- Human overview: [README.md](README.md)
+- Agent / LLM navigation: [MEMORY_INDEX.md](MEMORY_INDEX.md)
+- Canonical doctrine chain: [Agentic_Reasoning/README.DME.V2.ActiveMemoryRepoPolicy.md](Agentic_Reasoning/README.DME.V2.ActiveMemoryRepoPolicy.md)
+- Definitions: [Core/README.DME.V2.Glossary.md](Core/README.DME.V2.Glossary.md)
+- Implementation orientation: [Implementation_Orientation/DME.V2.GovernedAgenticNervousSystem.md](Implementation_Orientation/DME.V2.GovernedAgenticNervousSystem.md)
+
+---
+
 ## Core Thesis
 
 DME creates a governed nervous system for agentic intelligence.
@@ -119,8 +129,6 @@ DME can interface with those systems, but it is not reducible to them.
 
 DME is the continuity and governance layer that asks what remembered, projected, or executed structures are allowed to do next.
 
----
-
 ## Repository Status
 
 ```text
@@ -138,68 +146,60 @@ Formal schemas, APIs, runtime packages, dashboards, and agent tooling should be 
 
 ## Repository Map
 
+### Root guidance
+
+- [MEMORY_INDEX.md](MEMORY_INDEX.md): agent-facing repository entry point and navigation contract
+- [Agentic_Reasoning/README.DME.V2.ActiveMemoryRepoPolicy.md](Agentic_Reasoning/README.DME.V2.ActiveMemoryRepoPolicy.md): canonical source policy and conflict order
+- [Agentic_Reasoning/README.DME.V2.ConceptualWorkflowContract.md](Agentic_Reasoning/README.DME.V2.ConceptualWorkflowContract.md): mutation discipline and compression workflow
+- [Core/README.DME.V2.Glossary.md](Core/README.DME.V2.Glossary.md): canonical definitions and non-collapse vocabulary
+
 ### Core
 
 Foundational theory and architecture documents.
 
-Expected contents include:
-
-```text
-Theory Foundation
-Core Architecture
-Read / Write Topology
-Runtime Regime Lifecycle
-Conceptual Workflow Contract
-Glossary and Non-Collapse Laws
-```
-
-### Substrates
-
-Primary architectural substrate doctrines.
-
-```text
-Structure Substrate
-Runtime Substrate
-Ledger Substrate
-Projection / Index / Rasterization
-```
+- [Core/README.DME.V2.TheoryFoundation.md](Core/README.DME.V2.TheoryFoundation.md)
+- [Core/README.DME.V2.CoreArchitecture.md](Core/README.DME.V2.CoreArchitecture.md)
 
 ### Grammar
 
 Movement and operator doctrine.
 
-```text
-Operator Grammar
-Phase / transition grammar
-Boundary movement laws
-Receipt and conservation expectations
-```
+- [Grammar/README.DME.V2.ReadWriteTopology.md](Grammar/README.DME.V2.ReadWriteTopology.md)
+- [Grammar/README.DME.V2.OperatorGrammar.md](Grammar/README.DME.V2.OperatorGrammar.md)
+
+### Substrates
+
+Primary architectural substrate doctrines.
+
+- [Substrates/README.DME.V2.StructureSubstrate.md](Substrates/README.DME.V2.StructureSubstrate.md)
+- [Substrates/README.DME.V2.RuntimeSubstrate.md](Substrates/README.DME.V2.RuntimeSubstrate.md)
+- [Substrates/README.DME.V2.LedgerSubstrate.md](Substrates/README.DME.V2.LedgerSubstrate.md)
+- [Substrates/README.DME.V2.ProjectionIndexRasterization.md](Substrates/README.DME.V2.ProjectionIndexRasterization.md)
 
 ### Regime Ecologies
 
 Lifecycle regime documents.
 
-```text
-Distinction Ecology
-Agency Ecology
-Decision / Consequence Ecology
-Admissibility Ecology
-Retention Ecology
-Proof Ecology
-Budget / Authority / Reference Lifecycle
-```
+- [Regime_Ecologies/README.DME.V2.RuntimeRegimeLifecycle.md](Regime_Ecologies/README.DME.V2.RuntimeRegimeLifecycle.md)
+- [Regime_Ecologies/README.DME.V2.DistinctionEcology.md](Regime_Ecologies/README.DME.V2.DistinctionEcology.md)
+- [Regime_Ecologies/README.DME.V2.AgencyEcology.md](Regime_Ecologies/README.DME.V2.AgencyEcology.md)
+- [Regime_Ecologies/README.DME.V2.DecisionConsequenceEcology.md](Regime_Ecologies/README.DME.V2.DecisionConsequenceEcology.md)
+- [Regime_Ecologies/README.DME.V2.BudgetAdmissibilityEcology.md](Regime_Ecologies/README.DME.V2.BudgetAdmissibilityEcology.md)
+- [Regime_Ecologies/README.DME.V2.RetentionEcology.md](Regime_Ecologies/README.DME.V2.RetentionEcology.md)
+- [Regime_Ecologies/README.DME.V2.ProofEcology.md](Regime_Ecologies/README.DME.V2.ProofEcology.md)
+- [Regime_Ecologies/README.DME.V2.AuthorityReferenceEcology.md](Regime_Ecologies/README.DME.V2.AuthorityReferenceEcology.md)
+- [Regime_Ecologies/README.DME.V2.ProjectionEcology.md](Regime_Ecologies/README.DME.V2.ProjectionEcology.md)
+- [Regime_Ecologies/README.DME.V2.LedgerProvenanceEcology.md](Regime_Ecologies/README.DME.V2.LedgerProvenanceEcology.md)
+- [Regime_Ecologies/README.DME.V2.FeedbackIntegrationEcology.md](Regime_Ecologies/README.DME.V2.FeedbackIntegrationEcology.md)
 
 ### Implementation Orientation
 
 Bridge documents for future build strategy.
 
-```text
-Governed Agentic Nervous System
-Agent Gate concepts
-Local Runtime Companion concepts
-Projection packet / receipt orientation
-Business runtime and dashboard wedges
-```
+- [Implementation_Orientation/DME.V2.GovernedAgenticNervousSystem.md](Implementation_Orientation/DME.V2.GovernedAgenticNervousSystem.md)
+- [Implementation_Orientation/DME.V2.ModularMechanizationLadder.md](Implementation_Orientation/DME.V2.ModularMechanizationLadder.md)
+- [Implementation_Orientation/Dynamics/README.DME.V2.StructuralAdmissionCoordinateMechanics.md](Implementation_Orientation/Dynamics/README.DME.V2.StructuralAdmissionCoordinateMechanics.md)
+- [Implementation_Orientation/Prototypes/README.DME.V2.LinguisticConfigurationHarness.md](Implementation_Orientation/Prototypes/README.DME.V2.LinguisticConfigurationHarness.md)
 
 ### Archive
 
@@ -208,6 +208,8 @@ Lineage, superseded material, old versions, migration maps, and supporting sourc
 Archive does not mean deletion.
 
 Archive means the material is no longer the primary navigation surface, but may still preserve provenance and conceptual lineage.
+
+Start with [Archive/README.DME.V2.ArchiveMigrationMap.md](Archive/README.DME.V2.ArchiveMigrationMap.md) when archive comparison is necessary.
 
 ---
 
