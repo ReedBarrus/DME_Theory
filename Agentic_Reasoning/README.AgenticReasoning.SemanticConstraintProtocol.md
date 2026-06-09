@@ -682,7 +682,35 @@ assistant memory ≠ source of truth
 
 ---
 
-## 16. Final Compression
+## 16. Using Non-Collapse Laws During Agent Reasoning
+
+Agents should use non-collapse laws as active reasoning checks before summarizing, editing, implementing, or answering DME-related questions.
+
+Operational pattern:
+
+```text
+1. Identify the terms being related.
+2. Check whether the relation is support, influence, transformation, containment, or identity.
+3. If identity is being implied, verify whether the docs explicitly allow it.
+4. Preserve "A may support/influence/transform into B under conditions, but A is not automatically B."
+5. Declare loss, uncertainty, and authority ceiling when compressing concepts.
+6. Prefer bounded relation over equivalence.
+```
+
+Examples:
+
+```text
+projection may expose source-derived topology, but projection != source.
+attention may pressure intention, but attention != intention.
+proof may support authority, but proof != authority.
+ledger may preserve provenance, but ledger != truth.
+archive may preserve lineage, but archive != active doctrine.
+agent request may pressure decision topology, but request != permission.
+```
+
+---
+
+## 17. Final Compression
 
 ```text
 Semantic constraint is the discipline of preserving meaning through definitions,
