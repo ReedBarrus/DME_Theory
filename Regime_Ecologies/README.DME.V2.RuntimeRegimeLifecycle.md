@@ -5,6 +5,7 @@ https://github.com/ReedBarrus/DME_Theory
 ```text
 status: regime lifecycle doctrine / hierarchical regime ecology / feedback ecology overview
 depends_on:
+  - README.DME.V2.ConservationThroughTransformation.md
   - README.DME.V2.TheoryFoundation.md
   - README.DME.V2.CoreArchitecture.md
   - README.DME.V2.ReadWriteTopology.md
@@ -48,17 +49,33 @@ They describe how distinctions become active, agentic, decision-bearing, consequ
 DME regime ecology is organized into layered coordinate spaces over the configuration-attention continuum.
 ```
 
+The master invariant grammar above the regime hierarchy is:
+
+```text
+README.DME.V2.ConservationThroughTransformation.md
+= governed preservation of coherent structure across transformation
+```
+
 The root operational regime is:
 
 ```text
 Distinction Space
 ```
 
-The primary runtime coordinate regimes are:
+The conservation coordinate regimes are:
 
 ```text
+Constraint Space
+Identity Space
+```
+
+The runtime coordinate regimes are:
+
+```text
+Attention
 Agentic Space
 Decision Space
+Consequence Space
 ```
 
 The cross-cutting support / conservation / governance regimes are:
@@ -79,14 +96,18 @@ Core compression:
 
 ```text
 Distinction = what can matter.
+Constraint = what can remain structurally admissible.
+Identity = what can remain conserved across transformation.
+Attention = what receives bounded runtime allocation.
 Agentic = what can attend, interpret, request, act, or be affected.
-Decision = what can branch, execute, change, repair, or revoke.
+Decision = what can branch into consequence.
+Consequence = what transformation became real.
 
 Projection = what can be addressed.
 Ledger / Provenance = what can be reconstructed.
 Retention = what can persist or re-enter.
 Proof = what can survive load.
-Budget / Admissibility = what can proceed under constraint.
+Budget / Admissibility = what can proceed under capacity, scope, and permission.
 Authority / Reference = what can affect consequence or guide future configuration.
 Feedback / Integration = what returns from consequence into future topology.
 ```
@@ -262,16 +283,111 @@ distinction_space ≠ projection_space
 
 DME regimes are not all peer-level.
 
-The regime ecology has four layers:
+The regime ecology has five principal layers:
 
 ```text
-Layer A — Root Operational Regime
-Layer B — Primary Runtime Coordinate Regimes
-Layer C — Cross-Cutting Support / Conservation / Governance Regimes
-Layer D — Derived Lifecycle Dynamics
+Layer 0 - Master Foundation
+Layer A - Root Operational Regime
+Layer B - Conservation Coordinate Regimes
+Layer C - Runtime Coordinate Regimes
+Layer D - Cross-Cutting Support / Conservation / Governance Regimes
 ```
 
 This hierarchy prevents the system from inflating every useful dynamic into a competing root architecture.
+
+Active hierarchy anchor:
+
+```text
+Layer 0 - Master Foundation
+Conservation Through Transformation
+= governed preservation of coherent structure across transformation
+
+Layer A - Root Operational Regime
+Distinction Space
+= differentiability
+= what differences can become active enough to matter
+
+Layer B - Conservation Coordinate Regimes
+Constraint Space
+= admissibility geometry
+= what transformations remain structurally admissible
+
+Identity Space
+= invariance geometry
+= what organization remains conserved across transformation
+
+Layer C - Runtime Coordinate Regimes
+Attention
+= bounded runtime allocation over active topology
+
+Agency Space
+= navigability / accountable causal locus
+= what can attend, interpret, request, act, be affected, and remain accountable
+
+Decision Space
+= branching
+= what transitions may become consequential
+
+Consequence Space
+= realization
+= what transformation became real
+
+Layer D - Cross-Cutting Support / Conservation / Governance Regimes
+Projection Space
+= addressability
+
+Ledger / Provenance Space
+= reconstruction
+
+Retention Space
+= persistence / re-entry
+
+Proof Space
+= survival under load
+
+Budget / Admissibility Space
+= capacity and permission over admissible transformation
+
+Authority / Reference Space
+= governed consequence capacity and future guidance
+
+Feedback / Integration Space
+= returned transformation pressure and topology update
+```
+
+Core non-collapse laws for this hierarchy:
+
+```text
+constraint != budget
+identity != agency
+attention != identity
+admissible geometry != operational permission
+conserved organization != agentic navigation
+consequence != decision
+```
+
+Doctrine anchor:
+
+```text
+Distinctions differentiate.
+Constraints stabilize.
+Identities conserve.
+Attention selects.
+Agencies navigate.
+Decisions branch.
+Consequences realize.
+Projections address.
+Ledgers reconstruct.
+Retentions re-enter.
+Proofs test survival.
+Budgets allocate capacity.
+Authorities govern consequence.
+Feedback transforms future topology.
+```
+
+Dedicated Constraint / Identity ecology docs are not created here.
+
+They are justified only if this hierarchy remains load-bearing after integration.
 
 ---
 
@@ -280,7 +396,7 @@ This hierarchy prevents the system from inflating every useful dynamic into a co
 ### Distinction Space
 
 ```text
-Distinction Space = the operational surface of the configuration-attention continuum.
+Distinction Space = differentiability.
 ```
 
 Distinction Space answers:
@@ -369,22 +485,67 @@ All DME regimes operate over distinction dynamics.
 
 ---
 
-## 4.2 Layer B — Primary Runtime Coordinate Regimes
+## 4.2 Layer B — Conservation and Runtime Coordinate Regimes
 
-Layer B contains the two major runtime coordinate regimes derived from Distinction Space:
+Layer B begins with the conservation coordinates that sit between distinction and runtime consequence:
 
 ```text
-Agentic Space
-Decision Space
+Constraint Space
+= admissibility geometry
+= what transformations remain structurally admissible
+
+Identity Space
+= invariance geometry
+= what organization remains conserved across transformation
 ```
 
-Distinction Space underlies both.
+Constraint Space does not replace Budget / Admissibility Space.
 
-Agentic Space and Decision Space describe the main ways distinction becomes consequential.
+Constraint Space names admissible geometry.
 
-A distinction can be attended by a locus.
+Budget / Admissibility later governs operational capacity and permission over that geometry.
 
-A distinction can branch into consequence.
+Identity Space does not replace Agency Space.
+
+Identity names conserved organization.
+
+Agency later names accountable navigation through that conserved organization.
+
+The runtime coordinates operating over those conservation coordinates are:
+
+```text
+Attention
+= bounded runtime allocation over active topology
+
+Agency Space
+= navigability / accountable causal locus
+
+Decision Space
+= branching
+
+Consequence Space
+= realization
+```
+
+---
+
+### Attention
+
+```text
+Attention = bounded runtime allocation over active topology.
+```
+
+Attention answers:
+
+```text
+What active topology receives bounded runtime allocation?
+```
+
+Attention is not identity.
+
+Attention selects over conserved structure.
+
+It does not create conserved structure by itself.
 
 ---
 
@@ -442,6 +603,10 @@ Agentic identity is not merely name, memory, or model continuity.
 Agentic identity = stable locus of observation, attention, projection,
 intention, execution, retention, and feedback across time.
 ```
+
+Agency is not identical to identity.
+
+Agency is navigable, accountable participation through conserved organization.
 
 Non-collapse laws:
 
@@ -517,9 +682,39 @@ consequence ≠ legitimacy
 
 ---
 
-## 4.3 Layer C — Cross-Cutting Support / Conservation / Governance Regimes
+### Consequence Space
 
-Layer C contains regimes that operate across Distinction Space, Agentic Space, and Decision Space.
+```text
+Consequence Space = the coordinate space of realized transformation.
+```
+
+Consequence Space answers:
+
+```text
+What transformation became real?
+```
+
+Consequence Space coordinates:
+
+```text
+realized branch
+affected loci
+causal residue
+world delta
+returned pressure
+repair burden
+revocation burden
+```
+
+Consequence does not collapse back into decision.
+
+It is the realized side of branching.
+
+---
+
+## 4.3 Layer D — Cross-Cutting Support / Conservation / Governance Regimes
+
+Layer D contains regimes that operate across Distinction Space, Constraint Space, Identity Space, Attention, Agency Space, Decision Space, and Consequence Space.
 
 These regimes are essential, but they are not the same kind of coordinate as Agentic or Decision.
 
@@ -806,6 +1001,12 @@ Budget / Admissibility Space answers:
 ```text
 What can proceed under constraint?
 ```
+
+This does not answer the same question as Constraint Space.
+
+Constraint Space describes admissible geometry.
+
+Budget / Admissibility Space governs capacity and permission over that geometry.
 
 Budget coordinates:
 
@@ -1762,25 +1963,31 @@ Distinction Space is the root operational regime.
 It is the functional surface of the configuration-attention continuum.
 
 Layer B:
-Agentic Space and Decision Space are the primary runtime coordinate regimes.
-Agentic Space describes who/what attends, interprets, requests, acts, receives consequence, and remains accountable.
-Decision Space describes what branches, executes, changes, repairs, or revokes.
+Constraint Space and Identity Space are the conservation coordinate regimes.
+Constraint Space describes what transformations remain structurally admissible.
+Identity Space describes what organization remains conserved across transformation.
 
 Layer C:
+Attention, Agency Space, Decision Space, and Consequence Space are the runtime coordinate regimes.
+Attention selects over active topology.
+Agency Space describes who/what attends, interprets, requests, acts, is affected, and remains accountable.
+Decision Space describes what transitions may branch toward consequence.
+Consequence Space describes what transformation became real.
+
+Layer D:
 Projection, Ledger/Provenance, Retention, Proof, Budget/Admissibility,
 Authority/Reference, and Feedback/Integration are cross-cutting support regimes.
 They make the ecology addressable, reconstructable, persistent, testable,
-permitted, consequential, referential, and reality-coupled.
+capacity-bounded, referential, and reality-coupled.
 
-Layer D:
-Expectation, Belief, Intention, Consent, Execution, Consequence, Trust, Access,
-Repair, Contest, Revocation, and Canon are derived lifecycle dynamics within and between the regime layers.
+Derived lifecycle dynamics such as Expectation, Belief, Intention, Consent, Execution,
+Trust, Access, Repair, Contest, Revocation, and Canon emerge within and between those layers.
 
 The four substrates provide the surfaces:
-Structure exposes.
-Runtime activates.
-Projection addresses.
-Ledger conserves.
+Structure exposes configuration.
+Runtime activates distinction.
+Ledger records causal continuity.
+Projection rasterizes topology into addressable handles.
 
 The regimes describe the lifecycle:
 how distinctions become agentic, decision-bearing, consequential,
