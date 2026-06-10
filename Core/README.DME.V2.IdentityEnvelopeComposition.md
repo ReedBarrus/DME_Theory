@@ -159,7 +159,149 @@ at declared scales.
 
 ---
 
-## 6. Inter-Scale Translation Paths
+## 6. Coordinate Regime Geometry
+
+ScaleEnvelope and MultiScaleIdentityEnvelope are not merely scale metadata.
+
+They are bounded admissible regions over coordinate regime geometry.
+
+A regime is a coordinate space over the configuration-attention continuum.
+
+An envelope is a bounded admissible region within or across those coordinate spaces.
+
+```text
+coordinate regime = axis of interpretation
+envelope = bounded admissible region over those axes
+```
+
+This distinction matters because identity claims are not validated by scale alone.
+
+They are validated by surviving the intersection of constraints across all relevant regime axes at a declared scale.
+
+### Coordinate Axes
+
+A ScaleEnvelope may be evaluated across the following regime coordinate axes:
+
+```text
+Distinction axis
+= what difference is conserved?
+= what differential structure remains selectable under this transformation?
+
+Constraint axis
+= what transformations remain admissible?
+= what transition boundaries must be preserved?
+
+Identity axis
+= what organization remains invariant?
+= what conserved structure may be treated as continuous?
+
+Projection axis
+= what view, handle, or loss profile is permitted?
+= what can be addressed without collapsing source into projection?
+
+Ledger / Provenance axis
+= what reconstruction path is required?
+= what causal history must survive for the claim to be warranted?
+
+Feedback / Integration axis
+= what return signal updates or tests the claim?
+= what consequence return must be integrable without rupture?
+
+Consequence axis
+= what realized transformation affects the claim?
+= what change in target regime is acceptable under this envelope?
+
+Proof axis
+= what load must the claim survive?
+= what perturbation must it withstand before being treated as invariant?
+
+Authority axis
+= what consequence capacity may validate or act on the claim?
+= who or what has governance standing at this scale?
+
+Budget axis
+= what capacity is available for preservation, testing, or repair?
+= what attention and computation may be spent maintaining this claim?
+```
+
+### Why Multi-Axis Evaluation Is Required
+
+A claim that survives the Distinction axis but fails the Ledger axis is distinguishable but not reconstructable.
+
+It cannot be warranted as a genuine identity claim.
+
+A claim that survives the Projection axis but fails the Constraint axis is addressable but inadmissible.
+
+It may be navigable, but the transformation that produced it violated the envelope.
+
+A claim that survives all axes at token scale but fails the Consequence axis at document scale is locally coherent but cross-scale inadmissible.
+
+Core law:
+
+```text
+Identity is not conserved by partial axis survival.
+
+Identity is conserved only when the composed envelope intersection
+is satisfied across all relevant axes at the declared scale.
+```
+
+### Language Example
+
+For a markdown non-collapse law at token scale:
+
+```text
+Distinction axis:   exact contrast (!=) must be preserved
+Constraint axis:    rephrasing is not admissible without loss declaration
+Identity axis:      the claim relation must survive verbatim
+Projection axis:    quoted handle must point to source span
+Ledger axis:        source line and version must be traceable
+Feedback axis:      no reader-returned contradiction may be silently absorbed
+Consequence axis:   doctrine downstream of this law must remain coherent
+Proof axis:         must survive paraphrase challenge without meaning shift
+Authority axis:     only canon-posture changes may alter this claim
+Budget axis:        cost of preservation is low; cost of rupture is high
+```
+
+For a paragraph-level argument at document scale:
+
+```text
+Distinction axis:   argument role must remain distinguishable
+Constraint axis:    reordering is admissible; inversion is not
+Identity axis:      logical dependency chain must survive
+Projection axis:    summary may compress; must declare loss
+Ledger axis:        prior version diff must be traceable
+Feedback axis:      review contradiction triggers repair route
+Consequence axis:   downstream doctrine sections must remain coherent
+Proof axis:         must survive section-level restructuring test
+Authority axis:     active doctrine status required for mutation
+Budget axis:        higher; refactor cost must be justified by coherence gain
+```
+
+### Coordinate Geometry Core Law
+
+```text
+Identity is not conserved by scale alone.
+
+Identity is conserved across bounded coordinate-regime geometry
+at a declared scale.
+```
+
+### Non-Collapse Laws
+
+```text
+coordinate regime != envelope
+scale band != coordinate regime
+envelope != substrate
+identity envelope != identity proof
+axis survival != envelope satisfaction
+partial axis survival != identity conservation
+addressable != admissible
+distinguishable != reconstructable
+```
+
+---
+
+## 7. Inter-Scale Translation Paths
 
 ```text
 InterScaleTranslationPath =
@@ -203,7 +345,7 @@ No cross-scale identity claim without an inter-scale translation path.
 
 ---
 
-## 7. Invariant Status Classes
+## 8. Invariant Status Classes
 
 ```text
 discovered invariant =
@@ -238,7 +380,7 @@ canon inheritance != feedback survival
 
 ---
 
-## 8. Cross-Scale Interference
+## 9. Cross-Scale Interference
 
 ```text
 CrossScaleInterference =
@@ -273,7 +415,7 @@ if it violates a human sovereignty envelope.
 
 ---
 
-## 9. Relation to Substrates
+## 10. Relation to Substrates
 
 ```text
 Structure =
@@ -296,7 +438,7 @@ This document preserves the four-substrate architecture unchanged.
 
 ---
 
-## 10. Relation to Operators
+## 11. Relation to Operators
 
 Operators perform transformations.
 
@@ -324,7 +466,7 @@ Do not add DetectRupture / DeclareRupture here yet.
 
 ---
 
-## 11. Language / Markdown Example
+## 12. Language / Markdown Example
 
 Markdown is the canonical first example.
 
@@ -374,7 +516,7 @@ high-stake scale violated by lower-scale optimization
 
 ---
 
-## 12. Non-Collapse Laws
+## 13. Non-Collapse Laws
 
 ```text
 identity != sameness
@@ -388,11 +530,19 @@ local coherence != cross-scale coherence
 inter-scale translation != lossless preservation
 manufactured invariant != discovered invariant
 inherited invariant != ledger-supported invariant
+coordinate regime != envelope
+scale band != coordinate regime
+envelope != substrate
+identity envelope != identity proof
+axis survival != envelope satisfaction
+partial axis survival != identity conservation
+addressable != admissible
+distinguishable != reconstructable
 ```
 
 ---
 
-## 13. Deferred Work
+## 14. Deferred Work
 
 This document does not yet define RuptureSignature, RuptureReceipt,
 DetectRupture, or DeclareRupture.

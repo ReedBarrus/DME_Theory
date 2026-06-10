@@ -509,6 +509,9 @@ Identity Space does not replace Agency Space.
 
 Identity names conserved organization.
 
+Multi-scale composition of Identity Space across regime coordinate axes
+is governed by Core/README.DME.V2.IdentityEnvelopeComposition.md.
+
 Agency later names accountable navigation through that conserved organization.
 
 The runtime coordinates operating over those conservation coordinates are:
