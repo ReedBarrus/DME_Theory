@@ -8,6 +8,7 @@ depends_on:
   - README.DME.V2.CoreArchitecture.md
   - README.DME.V2.ReadWriteTopology.md
   - README.DME.V2.OperatorGrammar.md
+  - README.DME.V2.IdentityEnvelopeComposition.md
   - README.DME.V2.StructureSubstrate.md
   - README.DME.V2.RuntimeSubstrate.md
   - README.DME.V2.LedgerSubstrate.md
@@ -374,7 +375,9 @@ projection ≠ consequence
 
 ```text
 CoherenceDelta =
-difference between expected consequence and returned consequence under declared scope.
+measured difference between expected and actual transformation
+across one or more coordinate axes, scale bands, feedback conditions,
+or consequence return paths.
 ```
 
 CoherenceDelta may be:
@@ -390,9 +393,47 @@ unexpected improvement
 unexpected harm
 ambiguous return
 missing return
+minor_delta
+expected_delta
+tolerated_delta
+beneficial_delta
+ambiguous_delta
+proof_loaded_delta
+rupture_candidate
+rupture_local_only
+rupture_cross_scale
+rupture_absolute
 ```
 
 CoherenceDelta is central because it determines how feedback should modulate future topology.
+
+Core law:
+
+```text
+CoherenceDelta is measurement.
+RuptureSignature is classification.
+```
+
+Threshold law:
+
+```text
+A CoherenceDelta becomes rupture-class only when:
+
+1. the transformation fails to satisfy
+   the composed envelope intersection
+   across one or more coordinate regime axes
+   at the declared scale,
+
+AND
+
+2. the affected axis carries consequence burden
+   above the declared tolerance for that scale band.
+```
+
+Low-consequence axis failures may route through normal integration
+when loss is declared and remains within the ScaleEnvelope tolerance.
+
+Rupture machinery should not fire for every delta.
 
 ### Non-Claims
 
@@ -401,6 +442,225 @@ positive_delta ≠ legitimacy
 negative_delta ≠ invalidation
 coherence_delta ≠ proof
 coherence_delta ≠ authority
+```
+
+---
+
+## 10A. RuptureRelativity
+
+```text
+RuptureRelativity =
+the principle that a condition constituting rupture at one scale
+may be admissible transformation at another scale,
+and that rupture classification requires composed envelope comparison
+before repair, release, revoke, or reconcile routing.
+```
+
+Core laws:
+
+```text
+Rupture is not a binary state.
+
+Rupture is a scale-relative classification
+requiring envelope comparison before routing.
+
+A local axis failure is not automatically rupture.
+
+A rupture becomes governance-bearing when consequence burden exceeds
+the tolerance declared by the affected ScaleEnvelope or ceiling envelope.
+```
+
+Rupture relativity classes:
+
+```text
+local_only =
+axis failure at detected scale,
+without violating parent envelope.
+
+cross_scale =
+axis failure propagates into an adjacent scale envelope.
+
+absolute =
+axis failure violates the ceiling governance envelope
+at the arbitration_ceiling scale.
+```
+
+The ceiling governance envelope is the MultiScaleIdentityEnvelope
+at the arbitration_ceiling scale, evaluated especially through
+the Authority axis and consequence burden.
+
+Non-claims:
+
+```text
+rupture != failure
+rupture_at_scale_N != rupture_at_scale_N+1
+axis failure != rupture
+higher_scale != higher_authority_by_default
+lower_scale_rupture != automatically_repairable_locally
+```
+
+---
+
+## 10B. RuptureThreshold
+
+```text
+RuptureThreshold =
+the envelope-defined condition under which a CoherenceDelta
+must be classified as rupture-relevant.
+```
+
+Core threshold:
+
+```text
+A CoherenceDelta is rupture-class when:
+
+1. the transformation fails to satisfy
+   the composed envelope intersection
+   across one or more coordinate regime axes
+   at the declared scale,
+
+AND
+
+2. the affected axis carries consequence burden
+   above the declared tolerance for that scale band.
+```
+
+Non-claims:
+
+```text
+coherence_delta != rupture_signature
+delta != violation
+axis failure != rupture
+tolerated_loss != rupture
+projection_loss != rupture_by_default
+```
+
+---
+
+## 10C. RuptureSignature
+
+```text
+RuptureSignature =
+classified record that a CoherenceDelta crossed rupture threshold
+against a ScaleEnvelope or MultiScaleIdentityEnvelope.
+```
+
+```text
+RuptureSignature is produced when CoherenceDelta class is rupture_local_only,
+rupture_cross_scale, or rupture_absolute.
+
+RuptureSignature declares which coordinate regime axes failed,
+at what scale, against which envelope, with what consequence burden,
+arbitration ceiling, and repair admissibility status.
+```
+
+RuptureSignature may declare:
+
+```text
+coherence_delta_ref
+failed_axes
+detected_at_scale
+violated_envelope
+involved_regimes
+invariant_status
+consequence_burden
+tolerance_exceeded
+rupture_relativity
+arbitration_ceiling
+higher_scale_conflict
+repair_admissibility
+ledger_obligation
+affected_objects
+affected_agentic_loci
+provenance_envelope
+```
+
+`failed_axes` should reference the coordinate regime axes from
+`Core/README.DME.V2.IdentityEnvelopeComposition.md`.
+
+Core law:
+
+```text
+RuptureSignature is not a repair record.
+RuptureSignature is the classification prerequisite for rupture-aware repair routing.
+```
+
+Repair admissibility law:
+
+```text
+No repair across a scale boundary
+without RuptureSignature and arbitration routing.
+```
+
+Routing:
+
+```text
+rupture_relativity = local_only
+-> Repair path may proceed under local scope
+
+rupture_relativity = cross_scale
+-> hold local repair
+-> escalate to arbitration at arbitration_ceiling scale
+-> await governance routing before Repair proceeds
+
+rupture_relativity = absolute
+-> halt
+-> route to governance
+-> Repair may not proceed without ceiling-scale authorization
+```
+
+Non-claims:
+
+```text
+RuptureSignature != proof_of_cause
+RuptureSignature != invalidation
+RuptureSignature != repair_record
+rupture_classified != rupture_resolved
+repair_admissible != repair_correct
+```
+
+---
+
+## 10D. RuptureReceipt
+
+```text
+RuptureReceipt =
+ledger anchor emitted when a RuptureSignature is declared,
+required before Repair, Release, Revoke, or Reconcile proceeds
+across a scale boundary.
+```
+
+RuptureReceipt must preserve:
+
+```text
+RuptureSignature ref
+CoherenceDelta ref
+detection_operator_span
+scale_comparison_basis
+failed_axes
+arbitration_routing_decision
+repair_admissibility_at_time_of_receipt
+affected_objects
+affected_agentic_loci
+timestamp / window
+provenance_envelope
+```
+
+Core law:
+
+```text
+RuptureReceipt is not a log entry.
+
+RuptureReceipt is an accountability anchor
+that makes cross-scale repair, release, revoke, or reconcile auditable.
+```
+
+Non-claims:
+
+```text
+RuptureReceipt != proof_of_cause
+RuptureReceipt != authorization_for_repair
+RuptureReceipt != governance_decision
 ```
 
 ---
@@ -432,6 +692,13 @@ What should not update?
 What requires repair?
 What should release?
 What should route to proof?
+What is the CoherenceDelta class?
+Has rupture threshold been crossed?
+What failed axes are declared?
+What is the RuptureSignature status?
+Is repair admissible at this scale?
+What is the arbitration ceiling?
+What ledger obligation must be satisfied before routing?
 What budget changes?
 What retention changes?
 What authority/reference implications exist?
@@ -452,6 +719,16 @@ RetentionEcho
 ProofTrace
 AuthorityClaim
 ReferenceCandidate
+CoherenceDelta
+RuptureSignature
+RuptureReceipt
+```
+
+Law:
+
+```text
+When CoherenceDelta is rupture-class,
+RuptureSignature and RuptureReceipt must precede cross-scale repair routing.
 ```
 
 ### Non-Claims
@@ -1340,6 +1617,21 @@ reference_usefulness ≠ canon
 single_success ≠ reference
 progress_feedback ≠ proof
 integration_debt ≠ failure
+```
+
+```text
+coherence_delta != rupture_signature
+delta != violation
+axis failure != rupture
+rupture != failure
+rupture_at_scale_N != rupture_at_scale_N+1
+repair != admissible_before_RuptureClassification
+local_coherence_restoration != cross_scale_coherence_restoration
+higher_scale != higher_authority_by_default
+consequence_burden_unknown != default_to_local_repair
+RuptureSignature != proof_of_cause
+RuptureReceipt != governance_decision
+repair_admissible != repair_correct
 ```
 
 ---

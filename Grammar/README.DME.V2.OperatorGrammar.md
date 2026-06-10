@@ -9,6 +9,8 @@ depends_on:
   - README.DME.V2.CoreArchitecture.md
   - README.DME.V2.ReadWriteTopology.md
   - README.DME.V2.ConceptualWorkflowContract.md
+  - README.DME.V2.FeedbackIntegrationEcology.md
+  - README.DME.V2.IdentityEnvelopeComposition.md
 schema posture: deferred
 ```
 
@@ -1117,12 +1119,87 @@ Compare failure
 → Record repair trace
 ```
 
+Repair is admissible under normal CoherenceDelta routing.
+
+Repair across a scale boundary requires:
+
+```text
+- RuptureSignature declaring rupture_relativity
+- RuptureReceipt ledgered before Repair proceeds
+- arbitration_ceiling scale consulted if cross_scale
+- governance authorization if absolute
+```
+
+```text
+Repair restores or revises coherence only under declared scope.
+Repair may not silently overwrite cross-scale rupture conditions.
+```
+
 ### Non-Claims
 
 ```text
 repair ≠ proof
 repair_success ≠ global validity
 repair_path ≠ future authority unless tested
+```
+
+---
+
+## 6.10A DetectRupture / DeclareRupture
+
+```text
+DetectRupture =
+identify a CoherenceDelta that meets rupture threshold
+against a ScaleEnvelope or MultiScaleIdentityEnvelope.
+```
+
+Operator path:
+
+```text
+Compare CoherenceDelta against expected consequence / envelope
+-> Differentiate failed axis or exceeded tolerance
+-> Bound scale of detection
+-> Compare against ScaleEnvelope / MultiScaleIdentityEnvelope
+-> route to DeclareRupture
+```
+
+```text
+DeclareRupture =
+emit RuptureSignature with classified relativity status,
+arbitration routing, repair admissibility decision,
+and RuptureReceipt.
+```
+
+Operator path:
+
+```text
+Classify rupture_relativity: local_only / cross_scale / absolute
+-> Determine arbitration_ceiling
+-> Determine repair_admissibility
+-> Record RuptureReceipt
+-> Route:
+   local_only  -> Repair may proceed under local scope
+   cross_scale -> hold + escalate
+   absolute    -> halt + governance route
+```
+
+```text
+DetectRupture / DeclareRupture are compound operator spans.
+
+They are not primitive Class I operators.
+
+They are rupture-aware routing spans built from Compare, Differentiate,
+Bound, Record, and governance routing.
+```
+
+Non-claims:
+
+```text
+DetectRupture != proof_of_system_failure
+DeclareRupture != authorization_for_repair
+RuptureSignature != invalidation
+repair_permitted != repair_correct
+escalation != refusal
 ```
 
 ---
@@ -1597,6 +1674,16 @@ translation ≠ equivalence
 compression ≠ neutral representation
 receipt ≠ every trace
 provenance ≠ infinite logging
+```
+
+```text
+coherence_delta != rupture_signature
+rupture != failure
+axis failure != rupture
+DetectRupture != proof_of_cause
+DeclareRupture != repair_authorization
+Repair != rupture_resolution_by_default
+local_repair != cross_scale_repair
 ```
 
 ---
