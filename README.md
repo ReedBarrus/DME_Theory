@@ -157,6 +157,8 @@ Formal schemas, APIs, runtime packages, dashboards, and agent tooling should be 
 
 Foundational theory and architecture documents.
 
+- [Core/README.DME.V2ConservationThroughTransformation.md](Core/README.DME.V2ConservationThroughTransformation.md)
+- [Core/README.DME.V2.IdentityEnvelopeComposition.md](Core/README.DME.V2.IdentityEnvelopeComposition.md)
 - [Core/README.DME.V2.TheoryFoundation.md](Core/README.DME.V2.TheoryFoundation.md)
 - [Core/README.DME.V2.CoreArchitecture.md](Core/README.DME.V2.CoreArchitecture.md)
 

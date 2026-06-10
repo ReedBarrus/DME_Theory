@@ -2,17 +2,17 @@
 
 ```text
 status: theory foundation / master invariant grammar
-folder: TheoryFoundation
+folder: Core
 related:
   - README.DME.V2.TheoryFoundation.md
+  - README.DME.V2.IdentityEnvelopeComposition.md
+  - README.DME.V2.RuntimeRegimeLifecycle.md
   - README.DME.V2.DistinctionEcology.md
-  - README.DME.V2.ConstraintEcology.md
-  - README.DME.V2.IdentityEcology.md
   - README.DME.V2.OperatorGrammar.md
   - README.DME.V2.ProjectionEcology.md
-  - README.DME.V2.LedgerEcology.md
+  - README.DME.V2.LedgerProvenanceEcology.md
   - README.DME.V2.ProofEcology.md
-  - README.DME.V2.AuthorityEcology.md
+  - README.DME.V2.AuthorityReferenceEcology.md
 schema posture: deferred
 ```
 
@@ -235,6 +235,82 @@ Identity answers:
 What remained sufficiently coherent
 to be treated as continuous?
 ```
+
+## Multi-Scale Identity Composition
+
+Identity is not conserved inside one regime or one scale.
+
+Identity is a governed reconstruction claim over composed envelopes.
+
+A MultiScaleIdentityEnvelope names the composition principle by which
+scale-banded invariants, admissible transformations, reconstruction paths,
+loss tolerances, projection fidelity, feedback burden, consequence tier,
+cross-scale interference rules, and rupture conditions are held together
+as one accountable identity claim.
+
+Core law:
+
+```text
+Identity claims require declared reconstruction paths.
+
+Undeclared reconstruction paths are manufactured invariants
+until ledger-supported or feedback-tested.
+```
+
+Cross-scale interference law:
+
+```text
+Scale invariants may conflict.
+
+Higher consequence burden determines arbitration priority,
+not higher abstraction by default.
+
+When consequence burden is unknown,
+arbitration defaults to the highest-stake plausible envelope,
+not the most locally legible one.
+```
+
+Invariant status classes:
+
+```text
+discovered invariant =
+exposed from source-supported structure without agent construction.
+
+projected invariant =
+generated through projection from source material under a declared lens.
+
+manufactured invariant =
+stabilized through repeated projection without sufficient source support.
+
+inherited invariant =
+received from a prior scale, agent, institution, archive, canon, or context
+as already-stabilized without local reconstruction.
+
+ledger-supported invariant =
+supported by a recorded reconstruction path.
+
+feedback-tested invariant =
+survived declared perturbation, feedback, or consequence test under scope.
+```
+
+Non-collapse laws:
+
+```text
+inherited invariant != discovered invariant
+manufactured invariant != projected invariant
+ledger-supported invariant != feedback-tested invariant
+projected invariant != feedback-tested invariant
+identity claim != identity proof
+reconstruction path != complete reconstruction
+higher scale != higher authority by default
+```
+
+The concrete composition object is defined in
+`README.DME.V2.IdentityEnvelopeComposition.md`.
+
+Rupture handling should be defined later in Feedback / Integration and Operator Grammar.
+
+Rupture is downstream of composed identity-envelope comparison.
 
 ---
 
