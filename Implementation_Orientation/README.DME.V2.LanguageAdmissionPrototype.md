@@ -10,7 +10,7 @@ related:
   - Substrates/README.DME.V2.StructureSubstrate.md
   - Substrates/README.DME.V2.LedgerSubstrate.md
 schema posture: deferred
-source_snapshot: pending tag theory-v2.0-pre-grounding
+source_snapshot: theory-v2.0-pre-grounding
 ```
 
 ---
@@ -433,16 +433,24 @@ candidate ladder mechanics
 reprojection to language
 CoherenceDelta evaluation
 structural signature taxonomy after RecurrencePass
-
-v0.2 patch queue (from audit_report_v0, feedback-derived):
-  1. core-law fences captured as single BL entries, not per-line
-  2. BL-modal sentence-shape filter
-  3. negation-context guard (record context_prefix; annotate,
-     don't drop)
-  4. use_mention_flag for instrument docs and example sections
-  5. DEF-label body attachment
-  6. DEP relation typing (related_to vs depends_on)
-
-audit finding: BL classes blocked for doctrine-compression use
-until v0.2; NC/DEF/OP/DEP audited clean.
 ```
+
+---
+
+## 12. v0.2 Feedback Patch
+
+v0.2 implements deterministic fixes discovered by `Grounding/v0/audit_report_v0.md`.
+
+```text
+v0.2 fixes:
+  core-law fenced blocks captured as single BL entries
+  BL-modal sentence-shape filter
+  negation-context guard with context_prefix
+  use_mention_flag
+  DEF-label body attachment
+  DEP relation typing
+```
+
+v0.2 remains Structure + Ledger only.
+
+It does not introduce runtime activation, semantic inference, hypergraph ledgering, or reprojection.

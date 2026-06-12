@@ -1,0 +1,71 @@
+{
+  "source_snapshot": "theory-v2.0-pre-grounding",
+  "extractor_version": "v0.2",
+  "corpus_scope": {
+    "included_dirs": [
+      "Core",
+      "Grammar",
+      "Substrates",
+      "Regime_Ecologies",
+      "Agentic_Reasoning",
+      "Implementation_Orientation"
+    ],
+    "included_root_files": [
+      "README.md",
+      "MEMORY_INDEX.md"
+    ],
+    "excluded_dirs": [
+      "Archive",
+      "Meta_Web_Gov_Hub"
+    ],
+    "n_files": 37
+  },
+  "counts_by_type": {
+    "BL": 199,
+    "DEF": 802,
+    "DEP": 309,
+    "NC": 2952,
+    "OP": 25
+  },
+  "total_entries": 4287,
+  "status_ceiling": "partially_admitted unless context/use_mention lowers support",
+  "v0_2_fixes": [
+    "core-law block capture",
+    "BL-modal sentence-shape filter",
+    "negation-context guard",
+    "use_mention_flag",
+    "DEF-label body attachment",
+    "DEP relation typing"
+  ],
+  "rejection_counts": {
+    "bl_modal_rejected_shape": 103,
+    "def_label_rejected_no_body": 0
+  },
+  "context_sensitive_entries": 1,
+  "use_mention_counts": {
+    "asserted": 4232,
+    "example": 4,
+    "instrument_self_assertion": 21,
+    "unknown": 30
+  },
+  "dep_relation_counts": {
+    "depends_on": 280,
+    "downstream_of": 2,
+    "related_to": 27
+  },
+  "op_chains_rejected_nonvocab": 258,
+  "sample_seed": 7,
+  "id_stability": {
+    "prior_inventory": "Grounding/v0/claim_inventory.jsonl",
+    "crosswalk": "Grounding/v0_2/id_crosswalk.json",
+    "fcl_reference_validation": "passed",
+    "dangling_fcl_refs": []
+  },
+  "id_counts": {
+    "preserved": 3667,
+    "merged_into": 114,
+    "superseded_no_successor": 97,
+    "new_in_v0_2": 620
+  },
+  "bl_validation_sample_size": 15
+}
