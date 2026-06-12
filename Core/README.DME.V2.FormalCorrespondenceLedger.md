@@ -277,54 +277,166 @@ do not use gluing as proof of identity
 ### FCL-002 - Admission Boundary / Galois Connection, Abstract Interpretation
 
 ```text
-claim_cluster:
-  Inference / Admission Boundary
-  candidate ladder
-  promotion gates
-  blocked uses
-  opacity gradient
+status: UNPACKED 2026-06
+admission_basis:
+  clause-by-clause definition unpacking, not theorem transfer
+admission_status:
+  abstract-interpretation soundness discipline: partially_admitted
+  Galois connection (adjunction proper): analogical
+theorem_transfer_status:
+  closed - adjunction not admitted; soundness discipline
+  partially admitted on posture and operation, not on formal structure
 
-candidate_formalism:
-  Galois connection
-  abstract interpretation
+claim_cluster_refs (claim_inventory.jsonl @ theory-v2.0-pre-grounding, v0.2):
+  CLAIM-BL-0088   Hypothetical topology may guide exploration.
+                  Only admitted topology may support identity claims.
+  CLAIM-DEF-0134  Deterministic navigation = navigation over admitted topology
+  CLAIM-DEF-0135  Probabilistic inference = navigation over hypothetical topology
+  CLAIM-DEF-0138  candidate = structural context suggests, admission incomplete
+  CLAIM-NC-0528   probabilistic support != deterministic admission
+  CLAIM-NC-0529   high confidence != provenance
+  CLAIM-NC-0530   candidate != invariant
+  CLAIM-NC-0532   hypothetical topology != admitted topology
+  CLAIM-NC-0533   opacity declared != opacity resolved
+  CLAIM-NC-0522   unverified != satisfied
+  CLAIM-NC-0523   omitted_axis != preserved_axis
+  CLAIM-NC-2764   Opacity is not a flaw.
+  CLAIM-NC-2765   Admission is not automatic.
 
-correspondence claim:
-  Hypothetical topology and admitted topology may relate
-  by sound abstraction / concretization,
-  where promotion and demotion satisfy adjunction-like laws
-  and the abstract layer cannot mint admitted authority.
+definition_sources (fetched, not from model memory):
+  Galois connection: Wikipedia "Galois connection"; nLab "Galois
+    connection" - posets (A,<=),(B,<=); monotone f: A->B, g: B->A;
+    f(a) <= b iff a <= g(b); derived unit a <= g(f(a)), counit
+    f(g(b)) <= b; composites idempotent.
+  Abstract interpretation: Cousot & Cousot 1977/1979 (origin);
+    Cousot & Cousot, JLP 1992 - twin soundness conditions
+    alpha(c) <= a and c <= gamma(a), equivalent exactly when a
+    Galois connection holds; gloss: "the loss of information in
+    the abstraction process is sound."
+  Salcianu, "Notes on Abstract Interpretation" - monotonicity,
+    alpha/gamma idempotence (alpha o gamma o alpha = alpha).
 ```
 
-Mapping targets:
+### Galois Clause Mapping
+
+clause 1 - two posets
+
+abstract side: candidates with declared opacity. The support
+ladder and opacity gradient are DECLARED total orders on
+STATUSES (CLAIM-DEF-0138 cluster). The order on hypothetical
+descriptions themselves is UNDECLARED.
+concrete side: admitted topology (CLAIM-DEF-0134). Order
+UNDECLARED - see GAP-4 / CE-3.
+status: PARTIAL.
+
+clause 2 - abstraction map alpha
+
+DME counterpart: projection of admitted structure into
+candidate/summary/hypothesis space. Exists informally; not
+declared as total or monotone. status: PARTIAL.
+
+clause 3 - concretization map gamma
+
+DME counterpart: promotion-gate evaluation - "what admitted
+evidence would make this candidate true." Operationally
+present in admission gates; not declared as a map.
+status: PARTIAL.
+
+clause 4 - monotonicity of both maps
+
+status: UNDECLARED.
+
+clause 5 - adjunction: alpha(c) <= a iff c <= gamma(a)
+
+DME counterpart: NONE. What doctrine declares is the
+CONSEQUENCE pair (Cousot's twin soundness conditions) as
+posture: the abstract layer may lose declared precision but
+may not mint admitted authority (CLAIM-BL-0088; status
+ceiling; v0.2 demotion behavior). The generating adjunction
+is absent. status: ABSENT - soundness corollary present.
+
+derived laws (unit / counit / idempotence)
+
+unit (c <= gamma(alpha(c))): undeclared; testable on prototype.
+counit (alpha(gamma(a)) <= a): undeclared; "promotion
+  round-trips are deflationary." One-sided empirical instance:
+  v0.2 context-sensitive demotion (status lowered when
+  Distinction-axis evaluation degraded to conditional).
+idempotence: undeclared; testable - re-evaluation with no new
+  evidence must not change status.
+
+### Counterexample Attempts
+
+CE-3 (monotonicity under naive order, CONSTRUCTIBLE):
+  Candidate A: high probabilistic support, zero deterministic
+  axes. Candidate B: one deterministically evaluated axis.
+  Ladder ranks B above A. If the concrete order were evidence
+  quantity, monotonicity fails. CONCLUSION: the concrete order,
+  when declared, must be axis-evaluation dominance, not
+  evidence mass. Feeds ODQ-4.
+
+CE-4 (two-lattice conflation, EMPIRICALLY INSTANTIATED):
+  v0.2 contains entries with high epistemic support and blocked
+  uses (21 instrument_self_assertion entries; context_sensitive
+  demotion). Support and use-authorization demonstrably diverge.
+  CONCLUSION: DME carries TWO orders - epistemic support and
+  use-authorization (deontic). Any Galois structure applies to
+  the epistemic order only. Collapsing blocked_uses into support
+  status would break monotonicity. Feeds ODQ-6.
+
+### Open Doctrine Questions Raised (NOT auto-patched)
+
+ODQ-4: Domain orders.
+  Declare the order on admitted topology and on hypothetical
+  descriptions. Candidate: axis-evaluation dominance plus
+  provenance inclusion. (Gates clauses 1 and 4.)
+
+ODQ-5: Round-trip laws.
+  Declare alpha and gamma as total monotone maps with:
+  concretization round-trips may not lose admitted structure
+  (unit); promotion round-trips may not inflate status (counit);
+  re-evaluation without new evidence is a fixed point
+  (idempotence). (Gates adjunction admission.)
+
+ODQ-6: Epistemic / deontic separation.
+  Epistemic-support order and use-authorization order are
+  distinct lattices. Support status lives on the first;
+  blocked_uses on the second. Doctrine must forbid collapsing
+  them. (Required regardless of Galois ambition; CE-4 shows the
+  divergence is already real in the inventory.)
+Do not model blocked_uses as a lower support_status.
+Blocked uses are authorization constraints over otherwise-supported entries.
+
+### Refinement Gifts From the Formalism
+
+1. Closure operator gamma o alpha = "best sound description of
+   current evidence" - a formal home for what promotion gates
+   climb toward. Idempotence (Salcianu) yields a testable law:
+   admission is stable under re-processing absent new evidence.
+2. Widening operators (Cousot): budget-bounded promotion when
+   evidence ascent does not terminate - candidate interplay with
+   the Budget axis. Recorded as queued thought only.
+
+### blocked_uses
 
 ```text
-concrete domain     <-> admitted topology?
-abstract domain     <-> hypothetical topology?
-abstraction map     <-> projection into candidate space?
-concretization map  <-> what admitted evidence supports this?
-soundness           <-> hypothetical may guide exploration;
-                       only admitted supports identity claims?
+do not claim the candidate ladder is a Galois connection
+do not transfer Galois or abstract-interpretation theorems
+do not cite soundness as formally verified (posture and
+  operation only)
+do not collapse support status and blocked_uses into one order
 ```
 
-Status:
+### next_test
 
 ```text
-admission_status: conjectural
-```
-
-Blocked uses:
-
-```text
-do not claim soundness is proven
-do not transfer abstract-interpretation machinery
-do not treat the candidate ladder as a verified lattice
-```
-
-Next test:
-
-```text
-definition unpacking against fetched Galois connection definition;
-check promotion/demotion round-trips for adjunction properties
+1. ODQ-4 / ODQ-5 / ODQ-6 doctrine decisions
+2. Round-trip tests on the markdown prototype (unit, counit)
+3. Idempotence test: same-version re-extraction must be a
+   status fixed point (doubles as extractor determinism check)
+4. Cross-reference: ODQ-6's two-lattice separation should be
+   checked against AuthorityReferenceEcology's existing
+   authority/permission distinctions before any doctrine patch
 ```
 
 ---
