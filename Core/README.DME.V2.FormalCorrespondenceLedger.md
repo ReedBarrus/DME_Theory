@@ -484,7 +484,198 @@ do not collapse support status and blocked_uses into one order
    the natural testbed)
 2. Re-run unit/non-inflation/idempotence after first
    ledger_supported or feedback_tested divergence
-3. FCL-003 opening (priority already raised)
+3. FCL-003 follow-through after ODQ-8/9 posture is
+   clarified
+```
+
+---
+
+### FCL-003 - Compression Admissibility / Rate-Distortion Theory,
+### Data Processing Inequality
+
+```text
+status: UNPACKED 2026-06
+admission_basis: clause-by-clause definition unpacking,
+  not theorem transfer
+admission_status:
+  distortion / fidelity-criterion structure: partially_admitted
+  rate-distortion function proper: analogical
+  DPI correspondence: partially_admitted (qualitative shape);
+    quantitative admission blocked pending ODQ-8
+theorem_transfer_status: closed
+
+claim_cluster_refs (v2.1; cluster of 90, anchors):
+  CLAIM-BL-0007  Compression without declared loss becomes
+                 distortion.
+  CLAIM-BL-0397  Loss never decreases under composition.
+  CLAIM-BL-0065  Projection must declare what it exposes, hides,
+                 omits, transforms, or compresses.
+  CLAIM-BL-0261  Archive is not deletion. Compression is not
+                 erasure. Migration is provenance.
+  CLAIM-DEF-0009 Definition = compressed meaning handle under scope.
+  CLAIM-DEF-0177 Projection = compressed provenance handle.
+  CLAIM-BL-0043  Definitions are compression handles. Non-collapse
+                 laws preserve dimensionality.
+
+definition_sources (fetched):
+  Rate-distortion origin and formulation: Wikipedia
+    "Rate-distortion theory"
+    (https://en.wikipedia.org/wiki/Rate%E2%80%93distortion_theory),
+    which records Shannon as origin and gives the standard
+    minimization form over conditionals under an expected-
+    distortion bound.
+  General-set / measure formulation: arXiv:1804.08980
+    "Rate-Distortion Theory for General Sets and Measures"
+    (https://arxiv.org/abs/1804.08980).
+  DPI statement: Wikipedia "Data processing inequality"
+    (https://en.wikipedia.org/wiki/Data_processing_inequality),
+    citing Cover & Thomas for the Markov-chain statement
+    X->Y->Z implies I(X;Z) <= I(X;Y).
+```
+
+### Rate-Distortion Clause Mapping
+
+clause 1 - source with distribution p(x)
+
+source alphabet: claim contents at declared scale - MAPS.
+distribution: UNDECLARED. The recurrence map's frequency
+structure is a candidate empirical measure - see ODQ-9.
+status: PARTIAL.
+
+clause 2 - reproduction alphabet
+
+compressed corpus: canonical statements + ledger references.
+status: MAPS.
+
+clause 3 - distortion measure d
+
+the envelope as structured fidelity criterion: per-axis,
+per-invariant; {0, +inf}-valued on hard non-collapse
+constraints, graded within declared tolerance bands
+(projection_loss_tolerance).
+
+CONSTRAINT: DME distortion is a VECTOR over axes;
+scalarization is blocked by DME's own no-scalar-aggregation
+law (ODQ-4 resolution). Admission is to multi-constraint /
+maximum-fidelity variants, not scalar-expectation form.
+status: MAPS (vector fidelity-criterion form).
+
+clause 4 - expected-distortion constraint E[d] <= D
+
+DME uses hard per-invariant (maximum) constraints, not
+expectation. Maps to per-letter / maximum-distortion
+variants only. status: PARTIAL.
+
+clause 5 - rate as minimized mutual information
+
+NO DME counterpart: no rate quantity, no information measure.
+status: ABSENT - the entire rate side awaits ODQ-8/9.
+
+### DPI Clause Mapping
+
+Markov chain precondition
+
+DME counterpart: LEDGER-BLIND composite translation paths -
+compositions that do not consult reconstruction paths.
+The qualification is the finding (below). status: MAPS,
+conditionally.
+
+the inequality (processing cannot increase information)
+
+DME counterpart: composite loss law (CLAIM-BL-0397),
+canonized via ODQ-1 with this correspondence pre-recorded
+as expectation. Same shape over declared qualitative loss.
+Quantitative admission requires a declared loss measure.
+status: PARTIAL - qualitative shape admitted.
+
+equality condition
+
+DME counterpart: identity/lossless paths. ALIGNS.
+
+### Counterexample Attempts
+
+CE-7 (recovery under ledger-blind composition): sought a
+  composite path recovering structure its first component
+  destroyed, without ledger access. NOT FOUND - every recovery
+  case in DME routes through a reconstruction path, which is
+  side-channel access, not post-processing. The law holds in
+  shape; the hunt produced the central finding instead.
+
+CE-8 (envelope validity as distortion measure): checked
+  non-negativity, totality, and extended-cost handling.
+  Valid in a vector fidelity-criterion reading.
+  Scalarized forms FAIL DME's own canon - not the formalism's.
+
+### Central Finding - the Ledger as Markov-Breaking Side Channel
+
+The DPI governs ledger-blind transformation.
+The Ledger substrate exists to break the Markov
+precondition by adding side-channel access.
+
+In any ledger-blind pipeline, loss is monotone under
+composition and recovery is impossible. Conservation through
+transformation therefore REQUIRES a retained side-information
+channel. The Ledger is the information-theoretic precondition
+of the theory's purpose, not an accounting convenience.
+Reconstruction != inverse processing: it is side-channel
+access, which the DPI does not constrain.
+
+Recorded as structural finding and architectural explanation.
+NOT a theorem transfer.
+
+### Open Doctrine Questions Raised
+
+ODQ-8: Quantitative loss measure.
+  Should DME declare a quantitative loss measure over
+  translation paths and compressions? If declared, it must be
+  vector-valued per axis (no scalar aggregation), monotone
+  under ledger-blind composition (DPI-compatible), and zero
+  exactly on identity paths. Gates quantitative DPI admission
+  and any rate-side computation.
+
+ODQ-9: Source measure (exploratory).
+  Does the recurrence map's frequency structure constitute a
+  declarable empirical source distribution over claim contents?
+  Gates the rate side of any future R(D) treatment.
+
+### Live Test Surface (declared, not executed)
+
+The doctrine compression: 2,988 NC instances -> 1,647 unique
+contents at the v2.1 snapshot; 45% statement reduction
+achievable at ZERO content distortion, with instance
+provenance preserved via ledger references (the side channel,
+exercised). This is one measured operating point on the
+corpus's rate-distortion surface: R at D = 0 on the content
+axis, loss declared on the location/section axes.
+
+Execution requires its own governed operation: declared
+envelope, new snapshot anchor, chain migration (third
+anchor event). Not performed here.
+
+### blocked_uses
+
+```text
+no rate-distortion theorem transfer
+no claiming the envelope is a Shannon distortion measure
+  (vector fidelity-criterion shape only)
+no using the DPI as proof
+no scalarizing loss profiles
+no performing doctrine compression without its own governed
+  operation and envelope declaration
+```
+
+### next_test
+
+```text
+1. ODQ-8 decision (gates quantitative admission)
+2. Execute the doctrine compression as a governed operation:
+   envelope declaration -> compression -> new tag ->
+   chain migration -> strict suite -> measure the realized
+   operating point against the declared one
+3. ODQ-9 exploration: recurrence-frequency as source measure
+4. Post-compression: re-run FCL-001 composition checks on the
+   compressed corpus (real composite paths with real declared
+   loss finally exist)
 ```
 
 ---
@@ -494,10 +685,6 @@ do not collapse support status and blocked_uses into one order
 Queued entries carry no status and may not be cited.
 
 ```text
-FCL-003 compression admissibility <-> rate-distortion theory
-  note: ODQ-1's composite loss monotonicity law creates a direct
-  test surface for this correspondence (data processing inequality).
-  Queue priority raised.
 FCL-004 identity invariance <-> invariants of monoid/group action
 FCL-005 ledger reconstruction <-> observability / event sourcing
 FCL-006 multi-scale persistence <-> persistent homology
