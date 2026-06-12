@@ -1,0 +1,3543 @@
+{
+  "source_snapshot": "theory-v2.1-grounded-canon",
+  "promotion_layer_version": "full-admission-gate-v0.2",
+  "base_inventory_path": "Grounding/v2_1/claim_inventory.jsonl",
+  "base_inventory_sha256": "b0d3d674b734296e3d4ed71c5ba6ac000291ba06ea5a2b906b0634c7e5c1f030",
+  "generated_at": "2026-06-12T02:32:24-07:00",
+  "update_count": 551,
+  "fcl_live_claim_count": 14,
+  "updates": {
+    "CLAIM-BL-0071": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-BL-0073": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-BL-0088": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-BL-0093": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-DEF-0131": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001",
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-DEF-0132": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-DEF-0133": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-DEF-0138": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-DEF-0141": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-DEF-0244": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEF-0245": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEF-0251": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEF-0252": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEF-0522": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEF-0636": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEF-0637": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0022": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0023": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0027": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0028": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0029": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0122": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0123": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0124": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0125": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0126": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-0002": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0005": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0007": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0009": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0025": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0027": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0029": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0030": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0032": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0033": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0035": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0080": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0085": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0086": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0089": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0091": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0094": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0095": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0099": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0116": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0117": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0118": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0123": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0126": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0128": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0129": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0130": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0132": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0137": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0139": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0145": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0147": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0151": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0154": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0155": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0156": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0189": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0192": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0195": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0196": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0197": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0199": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0201": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0202": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0204": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0205": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0207": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0208": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0219": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0225": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0231": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0236": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0238": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0318": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0522": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-NC-0523": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-NC-0528": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001",
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-NC-0577": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0580": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0582": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0583": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0584": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0585": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0588": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0590": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0592": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0593": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0597": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0598": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0599": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0744": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0751": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0752": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0754": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0757": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0758": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0759": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0760": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0761": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0763": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0766": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0776": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0798": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0802": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0803": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0806": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0808": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0814": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0816": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0819": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0865": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-0866": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1005": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1006": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1029": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1129": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1151": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1160": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1173": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1174": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1178": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1182": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1188": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1194": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1286": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1298": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1299": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1302": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1305": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1315": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1317": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1362": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1363": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1364": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1366": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1385": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1390": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1391": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1408": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1465": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1474": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1475": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1476": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1493": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1495": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1500": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1503": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1505": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1507": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1512": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1516": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1590": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1591": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1599": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1600": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1607": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1608": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1612": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1614": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1621": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1631": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1634": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1702": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1703": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1708": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1709": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1710": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1715": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1716": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1718": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1725": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1726": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1746": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1752": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1760": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1800": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1805": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1816": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1818": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1935": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1936": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1938": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1949": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-1950": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2052": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2053": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2055": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2056": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2077": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2078": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2089": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2109": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2145": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2150": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2189": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2246": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2251": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2317": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2335": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2336": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2361": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2372": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2383": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2429": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2431": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2434": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2435": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2448": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2449": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2450": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2453": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2455": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2457": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2462": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2463": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2467": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2468": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2471": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2473": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2474": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2475": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2476": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2480": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2483": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2485": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2494": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2495": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2496": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2501": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2515": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2556": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2557": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2567": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2596": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2599": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2617": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2618": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2619": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2620": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2735": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-2741": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-2742": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-2764": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-NC-2765": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-NC-2780": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2969": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2973": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2975": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2977": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2979": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2980": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2981": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2983": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2984": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2985": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2986": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2990": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2992": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2993": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-2994": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3008": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3011": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3012": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3013": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3029": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3031": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3032": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3033": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3036": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3037": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3038": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3039": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3042": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3043": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3044": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3045": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3046": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3047": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3048": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3049": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3050": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3051": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3052": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3060": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3062": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3064": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3067": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3069": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3072": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3073": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3085": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3086": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3087": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3088": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3089": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3092": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3093": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3101": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3103": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3105": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3106": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3107": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3108": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3117": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3118": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3119": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3127": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3135": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3140": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3144": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3145": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3147": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3148": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3151": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3152": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3153": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3155": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3156": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3157": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3160": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3162": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3163": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3165": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3167": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3180": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3182": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3185": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3192": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3193": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3199": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3203": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3210": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3214": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3217": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3219": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3228": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3229": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3232": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3234": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3236": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3240": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3241": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3243": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3244": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3247": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3253": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3254": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3277": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3281": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3285": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3286": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3289": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3294": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3295": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3297": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3298": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3300": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3301": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3303": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3304": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3305": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3306": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3308": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3311": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3312": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3313": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3316": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3319": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3326": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3330": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3331": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3332": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3359": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3360": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3361": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3401": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3403": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3404": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3405": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3407": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3413": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3415": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3423": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3424": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3425": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3431": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3435": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3437": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3441": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3444": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3454": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3482": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3483": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3486": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3487": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3488": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3489": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3504": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3507": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3512": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3513": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3517": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3522": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3549": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3590": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3596": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3624": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3625": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3679": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3680": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3689": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3690": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3692": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3693": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3694": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3695": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3698": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3699": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3701": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3702": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3704": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3705": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3714": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3715": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3716": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3719": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3720": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3721": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3725": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3726": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3729": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3731": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3732": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3737": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3741": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3757": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3760": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3783": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3789": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3790": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3800": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3806": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3808": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3810": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3813": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3815": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3818": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3822": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3823": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3826": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3829": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3837": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3839": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3860": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3861": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3862": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3863": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3868": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3883": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3887": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3888": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3889": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3910": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3911": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3916": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3926": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3932": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3941": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3952": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3953": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3961": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3964": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3965": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3971": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3976": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3979": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3980": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3981": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3982": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3984": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-3991": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4003": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4004": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4005": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4009": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4010": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4015": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4046": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4047": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4053": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4068": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4069": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4080": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4082": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4091": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4096": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4100": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4104": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4121": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4138": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4140": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4141": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4144": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4145": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4170": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4178": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4179": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4188": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4189": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4199": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4227": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4239": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4273": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4284": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4296": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4297": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4309": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4313": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4323": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4324": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4327": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4334": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4335": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4337": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4339": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4340": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4343": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4357": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4361": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4363": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4364": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4366": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4367": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4368": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4372": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4373": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4377": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4379": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4381": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4383": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4384": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4386": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4387": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4401": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    },
+    "CLAIM-NC-4435": {
+      "overlay_reasons": [
+        "Full Admission Gate evaluation"
+      ],
+      "support_status": "fully_admitted"
+    }
+  }
+}

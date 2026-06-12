@@ -426,8 +426,26 @@ ODQ-6: RESOLVED 2026-06 - Support and Authorization separation
   the violation state (AuthorityDebt). Resolution generalizes;
   it does not introduce.
 
+ODQ-7: RAISED 2026-06 by instrument
+  Grounding/v2_1_promotions/promotion_report.md
+  (4,294 gate_undeclared blocks at
+  partially_admitted -> fully_admitted);
+  RESOLVED 2026-06 - Full Admission Gate added to
+  IdentityEnvelopeComposition. Multi-basis convergence,
+  recurrence stability, contradiction exclusion, and
+  deterministic completeness are now declared conditions for
+  deterministic admission completion. Full admission remains
+  epistemic only and does not alter authorization posture.
+
 Consequence for the Galois candidate: any future adjunction
 admission applies to the epistemic order only, by canon.
+
+Stage 8 rerun consequence:
+  multi-rung divergence is now measurable on the v2.1 overlay;
+  unit-soundness and non-inflation remained at 0 violations,
+  idempotence remained exact, and FCL-affected informative
+  within-class comparable pairs appeared. FCL-002 verification
+  advanced; adjunction remains unverified.
 
 homogeneity caveat:
   the current inventory is low-variance in support, opacity,
@@ -461,11 +479,11 @@ do not collapse support status and blocked_uses into one order
 ### next_test
 
 ```text
-1. Re-run unit/non-inflation/idempotence after first
-   status divergence (promotions or feedback events)
-2. Adjunction spot-check within the largest recurrence
+1. Adjunction spot-check within the largest recurrence
    classes (23-instance projection != source class is
    the natural testbed)
+2. Re-run unit/non-inflation/idempotence after first
+   ledger_supported or feedback_tested divergence
 3. FCL-003 opening (priority already raised)
 ```
 

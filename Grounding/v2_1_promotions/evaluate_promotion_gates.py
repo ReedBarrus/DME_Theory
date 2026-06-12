@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""First promotion-gate evaluation layer over the v2.1 inventory.
+"""Promotion-gate evaluation layer over the v2.1 inventory.
 
 This is an instrument-layer operation only.
 It records epistemic divergence in an overlay without mutating
@@ -20,7 +20,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 OUT_DIR = Path(__file__).resolve().parent
 SOURCE_SNAPSHOT = "theory-v2.1-grounded-canon"
-PROMOTION_LAYER_VERSION = "first-promotion-gate-v0.1"
+PROMOTION_LAYER_VERSION = "full-admission-gate-v0.2"
 
 CLAIM_INVENTORY = REPO / "Grounding" / "v2_1" / "claim_inventory.jsonl"
 RECURRENCE_MAP = REPO / "Grounding" / "v2_1" / "recurrence_map.json"
@@ -33,12 +33,13 @@ DOCTRINE = REPO / "Core" / "README.DME.V2.IdentityEnvelopeComposition.md"
 FCL = REPO / "Core" / "README.DME.V2.FormalCorrespondenceLedger.md"
 DERIVE_MODULE_PATH = REPO / "Grounding" / "v2_1" / "derive_v2_1.py"
 GALOIS_MODULE_PATH = REPO / "Grounding" / "v2_1_measurements" / "run_provisional_galois_measurements.py"
+SIZING_REPORT = REPO / "Grounding" / "v2_1_promotions" / "full_admission_gate_sizing_report.json"
 
-PROMOTION_LEDGER = OUT_DIR / "promotion_ledger.jsonl"
-STATUS_OVERLAY = OUT_DIR / "status_overlay.json"
-PROMOTION_REPORT = OUT_DIR / "promotion_report.md"
-GALOIS_RERUN_JSON = OUT_DIR / "galois_rerun_report.json"
-GALOIS_RERUN_MD = OUT_DIR / "galois_rerun_report.md"
+PROMOTION_LEDGER = OUT_DIR / "promotion_ledger_v2.jsonl"
+STATUS_OVERLAY = OUT_DIR / "status_overlay_v2.json"
+PROMOTION_REPORT = OUT_DIR / "promotion_report_v2.md"
+GALOIS_RERUN_JSON = OUT_DIR / "galois_rerun_report_v2.json"
+GALOIS_RERUN_MD = OUT_DIR / "galois_rerun_report_v2.md"
 
 STRUCT_TO_PARTIAL_HEADING = (
     "Promotion from structurally supported candidate to partially admitted distinction requires:"
@@ -57,6 +58,15 @@ FULLY_TO_LEDGER_REQUIREMENTS = [
     "source-to-current representation trace",
     "ledgered provenance envelope",
     "declared loss / preservation status",
+]
+PARTIAL_TO_FULL_HEADING = (
+    "Full Admission Gate (partially_admitted -> fully_admitted)"
+)
+PARTIAL_TO_FULL_REQUIREMENTS = [
+    "multi-basis convergence across at least two distinct deterministic chart bases",
+    "recurrence stability across at least two independent source locations",
+    "no cross-basis contradiction inside the recurrence class",
+    "deterministic completeness over axes evaluable for the claim type",
 ]
 ODQ_7_TEXT = (
     "What are the declared conditions for promotion from partially_admitted "
@@ -163,6 +173,61 @@ def can_promote_fully_to_ledger(entry: dict) -> tuple[bool, dict[str, bool]]:
     return all(checks.values()), checks
 
 
+def build_def_subject_index(entries: list[dict]) -> dict[str, list[str]]:
+    subjects = defaultdict(list)
+    for entry in entries:
+        if entry["claim_type"] != "DEF":
+            continue
+        terms = entry.get("normalized_terms", [])
+        if terms:
+            subjects[terms[0]].append(entry["claim_id"])
+    return subjects
+
+
+def build_nc_recurrence_classes(entries: list[dict]) -> dict[str, list[dict]]:
+    classes = defaultdict(list)
+    for entry in entries:
+        if entry["claim_type"] == "NC":
+            classes[canonical_text(entry.get("verbatim_span", ""))].append(entry)
+    return classes
+
+
+def deterministic_full_gate_coverage(entry: dict) -> bool:
+    return {"Distinction", "Ledger"}.issubset(set(entry.get("evaluated_axes", [])))
+
+
+def can_promote_partial_to_full(
+    entry: dict,
+    def_subjects: dict[str, list[str]],
+    recurrence_classes: dict[str, list[dict]],
+) -> tuple[bool, dict[str, bool], dict]:
+    terms = entry.get("normalized_terms", [])
+    class_entries = recurrence_classes.get(canonical_text(entry.get("verbatim_span", "")), [entry])
+    basis_convergence = (
+        len(terms) >= 2
+        and terms[0] in def_subjects
+        and terms[1] in def_subjects
+    )
+    recurrence_stability = len({item["source_file"] for item in class_entries}) >= 2
+    contradiction_free = not any(bool(item.get("context_sensitive", False)) for item in class_entries)
+    deterministic_complete = deterministic_full_gate_coverage(entry)
+
+    checks = {
+        "multi-basis convergence": basis_convergence,
+        "recurrence stability": recurrence_stability,
+        "no cross-basis contradiction": contradiction_free,
+        "deterministic completeness": deterministic_complete,
+    }
+    detail = {
+        "basis_type_pair": ["pattern_basis", "definitional_basis"],
+        "recurrence_source_locations": sorted({item["source_file"] for item in class_entries}),
+        "recurrence_class_size": len(class_entries),
+        "context_sensitive_in_class": any(bool(item.get("context_sensitive", False)) for item in class_entries),
+        "claim_type_coverage": "implementable" if entry["claim_type"] == "NC" else "check_not_implementable",
+    }
+    return all(checks.values()), checks, detail
+
+
 def axis_profile_distribution(entries: list[dict]) -> dict[str, int]:
     counts = Counter(tuple(entry.get("evaluated_axes", [])) for entry in entries)
     return {
@@ -189,9 +254,13 @@ def build_overlay_updates(
     overlay_updates: dict[str, dict] = {}
     events: list[dict] = []
     not_eligible_struct = []
+    not_eligible_partial = []
     not_eligible_fully = []
     blocked_counts = Counter()
     blocked_examples = []
+    check_not_implementable = Counter()
+    def_subjects = build_def_subject_index(entries)
+    recurrence_classes = build_nc_recurrence_classes(entries)
 
     timestamp = now_iso()
 
@@ -258,23 +327,66 @@ def build_overlay_updates(
                 )
 
         elif current_status == "partially_admitted":
-            blocked_counts["partially_admitted->fully_admitted"] += 1
-            if len(blocked_examples) < 25:
-                blocked_examples.append(claim_id)
-            events.append(
-                {
-                    "event_type": "blocked",
-                    "claim_id": claim_id,
-                    "from_status": "partially_admitted",
-                    "target_status": "fully_admitted",
-                    "reason": "gate_undeclared",
-                    "gate_heading": None,
-                    "note": "No declared promotion gate text for partially_admitted -> fully_admitted in IdentityEnvelopeComposition.",
-                    "authorization_change": "none",
-                    "blocked_uses_change": "none",
-                    "timestamp": timestamp,
-                }
+            if entry["claim_type"] != "NC":
+                key = f"{entry['claim_type']}:partially_admitted->fully_admitted"
+                check_not_implementable[key] += 1
+                if len(blocked_examples) < 25:
+                    blocked_examples.append(claim_id)
+                events.append(
+                    {
+                        "event_type": "blocked",
+                        "claim_id": claim_id,
+                        "from_status": "partially_admitted",
+                        "target_status": "fully_admitted",
+                        "reason": "check_not_implementable",
+                        "gate_heading": PARTIAL_TO_FULL_HEADING,
+                        "note": "Full Admission Gate coverage is not implemented for this claim type; no promotion inferred.",
+                        "claim_type": entry["claim_type"],
+                        "authorization_change": "none",
+                        "blocked_uses_change": "none",
+                        "timestamp": timestamp,
+                    }
+                )
+                continue
+
+            eligible, checks, detail = can_promote_partial_to_full(
+                entry,
+                def_subjects,
+                recurrence_classes,
             )
+            if eligible:
+                overlay = overlay_updates.setdefault(claim_id, {})
+                overlay["support_status"] = "fully_admitted"
+                overlay.setdefault("overlay_reasons", [])
+                overlay["overlay_reasons"] = sorted(
+                    set(overlay["overlay_reasons"])
+                    | {"Full Admission Gate evaluation"}
+                )
+                events.append(
+                    {
+                        "event_type": "status_promotion",
+                        "claim_id": claim_id,
+                        "from_status": "partially_admitted",
+                        "to_status": "fully_admitted",
+                        "gate_heading": PARTIAL_TO_FULL_HEADING,
+                        "gate_requirements": PARTIAL_TO_FULL_REQUIREMENTS,
+                        "gate_checks": checks,
+                        "gate_detail": detail,
+                        "authorization_change": "none",
+                        "blocked_uses_change": "none",
+                        "timestamp": timestamp,
+                    }
+                )
+            else:
+                not_eligible_partial.append(
+                    {
+                        "claim_id": claim_id,
+                        "failed_requirements": [name for name, passed in checks.items() if not passed],
+                        "gate_detail": detail,
+                        "use_mention_flag": entry.get("use_mention_flag", "unknown"),
+                        "context_sensitive": bool(entry.get("context_sensitive", False)),
+                    }
+                )
 
         elif current_status == "fully_admitted":
             eligible, checks = can_promote_fully_to_ledger(entry)
@@ -307,9 +419,11 @@ def build_overlay_updates(
 
     return overlay_updates, events, {
         "not_eligible_structurally_supported": not_eligible_struct,
+        "not_eligible_partially_admitted": not_eligible_partial,
         "not_eligible_fully_admitted": not_eligible_fully,
         "blocked_counts": dict(blocked_counts),
         "blocked_examples": blocked_examples,
+        "check_not_implementable": dict(check_not_implementable),
     }
 
 
@@ -729,6 +843,7 @@ def build_galois_rerun_report(
             "base_inventory_sha256": sha256_file(CLAIM_INVENTORY),
             "status_overlay_sha256": sha256_file(STATUS_OVERLAY),
             "base_suite_sha256": sha256_file(BASE_SUITE),
+            "sizing_report_sha256": sha256_file(SIZING_REPORT),
         },
         "overlay_summary": {
             "overlay_update_count": overlay_data["update_count"],
@@ -789,10 +904,14 @@ def choose_verdict(galois_rerun_report: dict, gate_summary: dict) -> str:
         or overlay["unit_soundness_proxy"]["violation_count"] > 0
         or not overlay["idempotence_confirmation"]["hash_equality"]
     ):
-        return "first divergence destabilized admission maps; more instrument work required"
-    if gate_summary["blocked_counts"].get("partially_admitted->fully_admitted", 0) > 0:
-        return "first divergence stable but gate gap requires ODQ-7 before FCL-003"
-    return "first divergence stable; FCL-003 can open next"
+        return "instability found; report and halt"
+    informative_pairs = (
+        overlay["within_class_comparability"]["relations"]["left_leq_right"]
+        + overlay["within_class_comparability"]["relations"]["right_leq_left"]
+    )
+    if informative_pairs > 0:
+        return "divergence stable, FCL-002 verification advanced; FCL-003 can open"
+    return "divergence stable but non-discriminating; hold FCL-003"
 
 
 def markdown_promotion_report(
@@ -804,6 +923,7 @@ def markdown_promotion_report(
     gate_summary: dict,
     overlay_updates: dict,
     galois_rerun_report: dict,
+    sizing_report: dict,
 ) -> str:
     axis_before = axis_profile_distribution(base_entries)
     axis_after = axis_profile_distribution(overlay_entries)
@@ -822,7 +942,7 @@ def markdown_promotion_report(
 
     return "\n".join(
         [
-            "# First Promotion-Gate Evaluation",
+            "# Full Admission Gate Promotion Evaluation",
             "",
             "## 1. Source Anchor",
             "",
@@ -873,8 +993,11 @@ def markdown_promotion_report(
             "",
             "```text",
             f"structurally_supported -> partially_admitted promotions: {sum(1 for update in overlay_updates.values() if update.get('support_status') == 'partially_admitted')}",
+            f"partially_admitted -> fully_admitted promotions: {sum(1 for update in overlay_updates.values() if update.get('support_status') == 'fully_admitted')}",
             f"structurally_supported -> partially_admitted not eligible: {len(gate_summary['not_eligible_structurally_supported'])}",
+            f"partially_admitted -> fully_admitted not eligible: {len(gate_summary['not_eligible_partially_admitted'])}",
             f"fully_admitted -> ledger_supported not eligible: {len(gate_summary['not_eligible_fully_admitted'])}",
+            f"check_not_implementable counts: {gate_summary['check_not_implementable']}",
             "```",
             "",
             "Not eligible examples:",
@@ -883,6 +1006,7 @@ def markdown_promotion_report(
             json.dumps(
                 {
                     "structurally_supported": gate_summary["not_eligible_structurally_supported"][:15],
+                    "partially_admitted": gate_summary["not_eligible_partially_admitted"][:15],
                     "fully_admitted": gate_summary["not_eligible_fully_admitted"][:10],
                 },
                 indent=2,
@@ -890,15 +1014,14 @@ def markdown_promotion_report(
             ),
             "```",
             "",
-            "## 6. Blocked Gate Census",
+            "## 6. Full Admission Gate Sizing Anchor",
             "",
             "```text",
-            f"gate_undeclared count: {gate_summary['blocked_counts'].get('partially_admitted->fully_admitted', 0)}",
-            "affected source/target rungs:",
-            "  partially_admitted -> fully_admitted",
-            f"blocked examples: {gate_summary['blocked_examples']}",
-            "candidate ODQ-7 text:",
-            ODQ_7_TEXT,
+            f"definitional-basis convergence: {sizing_report['nc_gate_components']['definitional_basis_convergence']['count']} ({sizing_report['nc_gate_components']['definitional_basis_convergence']['share_of_nc']:.2%})",
+            f"recurrence stability: {sizing_report['nc_gate_components']['recurrence_stability']['count']} ({sizing_report['nc_gate_components']['recurrence_stability']['share_of_nc']:.2%})",
+            f"context-sensitive inversion flags: {sizing_report['nc_gate_components']['context_sensitive_inversion_flags']['count']}",
+            f"full gate eligible: {sizing_report['nc_gate_components']['full_gate_eligible']['count']} ({sizing_report['nc_gate_components']['full_gate_eligible']['share_of_nc']:.2%})",
+            f"check_not_implementable examples: {gate_summary['blocked_examples']}",
             "```",
             "",
             "## 7. Galois Rerun Summary",
@@ -908,7 +1031,9 @@ def markdown_promotion_report(
             f"unit-soundness violation delta: {galois_rerun_report['delta']['unit_soundness_violation_delta']}",
             f"idempotence stable: {str(galois_rerun_report['overlay']['idempotence_confirmation']['hash_equality']).lower()}",
             f"within-class non-equal comparable delta: {galois_rerun_report['delta']['within_class_non_equal_comparable_delta']}",
+            f"within-class non-equal comparable total: {galois_rerun_report['overlay']['within_class_comparability']['relations']['left_leq_right'] + galois_rerun_report['overlay']['within_class_comparability']['relations']['right_leq_left']}",
             f"quotient non-equal comparable delta: {galois_rerun_report['delta']['quotient_non_equal_comparable_delta']}",
+            f"quotient non-equal comparable total: {galois_rerun_report['overlay']['recurrence_class_quotient']['relations']['left_leq_right'] + galois_rerun_report['overlay']['recurrence_class_quotient']['relations']['right_leq_left']}",
             f"FCL-affected non-equal comparable pairs: {galois_rerun_report['overlay']['within_class_comparability']['fcl_affected_non_equal_comparable_pairs']}",
             "```",
             "",
@@ -927,6 +1052,7 @@ def main():
 
     derive_module = load_module(DERIVE_MODULE_PATH, "dme_promotion_derive")
     galois_module = load_module(GALOIS_MODULE_PATH, "dme_promotion_galois")
+    sizing_report = load_json(SIZING_REPORT)
 
     base_entries = load_jsonl(CLAIM_INVENTORY)
     recurrence_map = load_json(RECURRENCE_MAP)
@@ -975,6 +1101,7 @@ def main():
             gate_summary,
             overlay_updates,
             galois_rerun_report,
+            sizing_report,
         ),
         encoding="utf-8",
     )
@@ -987,7 +1114,10 @@ def main():
                 "overlay_update_count": overlay_data["update_count"],
                 "event_count": len(events),
                 "fcl_live_claim_count": len(fcl_resolution["resolved_live_map"]),
-                "blocked_gate_count": gate_summary["blocked_counts"].get("partially_admitted->fully_admitted", 0),
+                "fully_admitted_promotion_count": sum(
+                    1 for update in overlay_updates.values() if update.get("support_status") == "fully_admitted"
+                ),
+                "check_not_implementable_count": sum(gate_summary["check_not_implementable"].values()),
                 "verdict": choose_verdict(galois_rerun_report, gate_summary),
             },
             indent=2,

@@ -408,6 +408,67 @@ ledgered provenance envelope
 declared loss / preservation status
 ```
 
+### Full Admission Gate (partially_admitted -> fully_admitted)
+
+fully_admitted is the completion of deterministic admission:
+everything the deterministic regime can establish for a claim,
+established. It mirrors the opacity gradient's fully_supported
+condition (multiple deterministic chart bases converge; exact
+provenance; relevant axes evaluated).
+
+Promotion requires all of:
+
+```text
+1. Multi-basis convergence: the claim is supported by at least
+   two DISTINCT deterministic chart bases (e.g. pattern basis +
+   definitional basis; pattern basis + structural/metadata
+   basis). Repetition within one basis is not convergence.
+
+2. Recurrence stability: the content recurs across at least two
+   independent source locations at the declared snapshot, with
+   chain-stable identity across migrations where applicable.
+   Singleton contents cap at partially_admitted.
+
+3. No cross-basis contradiction: no deterministic basis yields a
+   conflicting reading of the same content (including no
+   context-sensitive inversion within the content's recurrence
+   class).
+
+4. Deterministic completeness: all axes evaluable within the
+   deterministic regime for this claim type are evaluated.
+   Axes requiring runtime, feedback, or perturbation are NOT
+   required at this rung.
+```
+
+Rung factoring law:
+
+```text
+fully_admitted completes deterministic admission.
+ledger_supported adds recorded reconstruction.
+feedback_tested adds perturbation survival.
+No rung's conditions may be folded into another's.
+```
+
+Full admission is epistemic only. It confers no authorization
+(per Support and Authorization).
+
+resolution_basis:
+
+```text
+ODQ-7, raised by Grounding/v2_1_promotions (4,294
+gate_undeclared blocks - the first doctrine question raised
+by an instrument rather than a conversation).
+
+Reconciliation: the gate mirrors the opacity gradient's
+existing fully_supported condition; it generalizes canon
+rather than introducing.
+
+Sizing measurement over v2.1: 23% of NC entries show
+definitional-basis convergence, 50% recurrence stability,
+17% (506 entries) pass both - the gate is discriminating,
+neither vacuous nor trivial.
+```
+
 Admission is not automatic.
 
 Ledger support is not automatic.
@@ -1001,6 +1062,10 @@ within-content order != cross-content order
 comparable != equal
 measured proxy != verified law
 indexed family != global structure
+multi-basis convergence != multi-instance recurrence
+fully_admitted != feedback_tested
+rung completion != rung folding
+deterministic completeness != total completeness
 ```
 
 ---
