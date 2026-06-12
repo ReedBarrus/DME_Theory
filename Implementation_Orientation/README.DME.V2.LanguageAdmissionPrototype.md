@@ -454,3 +454,14 @@ v0.2 fixes:
 v0.2 remains Structure + Ledger only.
 
 It does not introduce runtime activation, semantic inference, hypergraph ledgering, or reprojection.
+
+v0.3 queue (from v0.2 independent verification):
+
+```text
+1. example-section detection: include "Language Example" and
+   "Example" headings in use_mention example detection
+   (worked-example BL captures currently marked asserted)
+2. broaden negation-context prefix list (only 1 entry caught)
+3. crosswalk schema: separate v0.1->v0.2 mapping from
+   new-entry registry (currently bidirectional in one file)
+```

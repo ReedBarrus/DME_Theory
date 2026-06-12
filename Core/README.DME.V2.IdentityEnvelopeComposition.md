@@ -515,6 +515,57 @@ Core law:
 No cross-scale identity claim without an inter-scale translation path.
 ```
 
+### Translation Path Composition
+
+InterScaleTranslationPaths compose only when compatible.
+
+Compatibility requires:
+
+```text
+the codomain band of the first path equals
+the domain band of the second
+
+invariant classes are compatible across the junction
+
+loss profiles are composable without contradiction
+```
+
+Identity paths:
+
+```text
+every scale band carries a declared identity translation path
+from itself to itself: the null transformation, with zero loss.
+```
+
+Composite loss law:
+
+```text
+the loss profile of a composite path must dominate the loss
+profile of each component path on every coordinate axis.
+
+Loss never decreases under composition.
+```
+
+Declaration law:
+
+```text
+a composite path supports identity claims only if it is
+declared, or derivable from declared components under these laws.
+
+Undeclared composites may not support identity claims.
+```
+
+resolution_basis:
+
+```text
+FCL-001 presheaf unpacking, GAP-1 (clauses 1 and 4),
+raised as ODQ-1, resolved 2026-06.
+
+The composite loss law is expected to admit against the
+data processing inequality when FCL-003 (rate-distortion)
+is opened. This expectation is recorded, not relied upon.
+```
+
 ---
 
 ## 9. Invariant Status Classes
@@ -583,6 +634,48 @@ while preserving repo-level doctrine continuity.
 
 System-level optimization may be inadmissible
 if it violates a human sovereignty envelope.
+```
+
+### Identity Plurality
+
+Local compatibility does not imply unique global identity.
+
+Multiple global identity claims may restrict identically to the
+same local satisfactions while differing in purpose role,
+consequence envelope, authority ceiling, or reconstruction path.
+
+Uniqueness must be declared, proven, or governed.
+
+A region where uniqueness is declared is a separated region,
+and the declaration carries the burden of specifying and testing
+the separation condition.
+
+DME envelope composition is presheaf-seeking with governed
+plurality. It does not seek sheaf structure globally.
+Sheaf-like behavior is admissible only within declared
+separated regions.
+
+Blocked-use law:
+
+```text
+Local agreement may support candidate global identity.
+It may not crown global identity uniqueness without a declared
+separation condition.
+```
+
+resolution_basis:
+
+```text
+FCL-001 sheaf unpacking, GAP-3, raised as ODQ-3.
+
+Corpus measurement (Grounding/v0): document-scale identities
+are demonstrably underdetermined by sentence-band law content.
+Example: TheoryFoundation shares 95% of its non-collapse law
+content with other documents while holding a distinct document
+identity; the median active-doctrine document shares 50%.
+The information distinguishing document identities - purpose
+role, dependency position, doctrine function - appears in no
+sentence-level restriction.
 ```
 
 ---
@@ -722,6 +815,11 @@ convergence != truth
 unverified != satisfied
 omitted_axis != preserved_axis
 probabilistic navigation != deterministic projection
+local compatibility != global uniqueness
+identity plurality != ambiguity
+composite path != lossless path
+declared composition != automatic composition
+separated region != default posture
 ```
 
 ---
