@@ -144,6 +144,11 @@ claim_cluster_refs (from claim_inventory.jsonl @ theory-v2.0-pre-grounding):
   CLAIM-NC-0552   local coherence != cross-scale coherence
   CLAIM-NC-0553   inter-scale translation != lossless preservation
 
+ref_resolution: citations anchor to theory-v2.0-pre-grounding;
+current successors resolve via Grounding/v0_2/id_crosswalk.json
+-> Grounding/v2_1/id_crosswalk.json. Validated by strict suite
+2026-06-11. Historical citations are not rewritten.
+
 definition_sources (fetched, not from model memory):
   presheaf: nLab "presheaf" (ncatlab.org/nlab/show/presheaf);
     Wikipedia "Presheaf (category theory)" - contravariant functor
@@ -302,6 +307,11 @@ claim_cluster_refs (claim_inventory.jsonl @ theory-v2.0-pre-grounding, v0.2):
   CLAIM-NC-0523   omitted_axis != preserved_axis
   CLAIM-NC-2764   Opacity is not a flaw.
   CLAIM-NC-2765   Admission is not automatic.
+
+ref_resolution: citations anchor to theory-v2.0-pre-grounding;
+current successors resolve via Grounding/v0_2/id_crosswalk.json
+-> Grounding/v2_1/id_crosswalk.json. Validated by strict suite
+2026-06-11. Historical citations are not rewritten.
 
 definition_sources (fetched, not from model memory):
   Galois connection: Wikipedia "Galois connection"; nLab "Galois

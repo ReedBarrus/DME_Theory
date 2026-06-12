@@ -465,3 +465,11 @@ v0.3 queue (from v0.2 independent verification):
 3. crosswalk schema: separate v0.1->v0.2 mapping from
    new-entry registry (currently bidirectional in one file)
 ```
+
+snapshot chain law (candidate):
+
+```text
+canonical references resolve through an unbroken
+tag->inventory->crosswalk chain; any source or instrument
+mutation requires a crosswalk link - pending protocol doc adoption
+```

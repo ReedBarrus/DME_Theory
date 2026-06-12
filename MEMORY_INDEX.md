@@ -86,7 +86,7 @@ Archive preserves lineage, not active authority.
 
 ### Grounding instruments / theory opacity profile
 
-[Agentic_Reasoning/README.DME.V2.GroundedInquiryProtocol.md](Agentic_Reasoning/README.DME.V2.GroundedInquiryProtocol.md) -> [Core/README.DME.V2.ClaimInventory.md](Core/README.DME.V2.ClaimInventory.md) -> [Core/README.DME.V2.FormalCorrespondenceLedger.md](Core/README.DME.V2.FormalCorrespondenceLedger.md) -> [Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md](Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md) -> [Grounding/v0/](Grounding/v0/) -> [Grounding/v0_2/](Grounding/v0_2/)
+[Agentic_Reasoning/README.DME.V2.GroundedInquiryProtocol.md](Agentic_Reasoning/README.DME.V2.GroundedInquiryProtocol.md) -> [Core/README.DME.V2.ClaimInventory.md](Core/README.DME.V2.ClaimInventory.md) -> [Core/README.DME.V2.FormalCorrespondenceLedger.md](Core/README.DME.V2.FormalCorrespondenceLedger.md) -> [Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md](Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md) -> [Grounding/v0/](Grounding/v0/) -> [Grounding/v0_2/](Grounding/v0_2/) -> [Grounding/v2_1/](Grounding/v2_1/)
 
 ### For agent/tool governance
 

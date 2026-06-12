@@ -1,0 +1,136 @@
+{
+  "source_snapshot": "theory-v2.1-grounded-canon",
+  "extractor_version": "v0.2",
+  "corpus_scope": {
+    "included_dirs": [
+      "Core",
+      "Grammar",
+      "Substrates",
+      "Regime_Ecologies",
+      "Agentic_Reasoning",
+      "Implementation_Orientation"
+    ],
+    "included_root_files": [
+      "README.md",
+      "MEMORY_INDEX.md"
+    ],
+    "excluded_dirs": [
+      "Archive",
+      "Meta_Web_Gov_Hub"
+    ],
+    "n_files": 38
+  },
+  "counts_by_type": {
+    "BL": 208,
+    "DEF": 804,
+    "DEP": 314,
+    "NC": 2988,
+    "OP": 25
+  },
+  "total_entries": 4339,
+  "status_ceiling": "partially_admitted unless context/use_mention lowers support",
+  "prior_inventory": "Grounding/v0_2/claim_inventory.jsonl",
+  "id_crosswalk": "Grounding/v2_1/id_crosswalk.json",
+  "id_counts": {
+    "preserved": 2767,
+    "merged_into": 1520,
+    "superseded_no_successor": 0,
+    "new_in_v2_1": 1572
+  },
+  "dep_relation_counts": {
+    "depends_on": 280,
+    "downstream_of": 2,
+    "related_to": 32
+  },
+  "use_mention_counts": {
+    "asserted": 4274,
+    "example": 4,
+    "instrument_self_assertion": 21,
+    "unknown": 40
+  },
+  "context_sensitive_entries": 1,
+  "new_entry_attribution": {
+    "translation_path_composition": 2,
+    "identity_plurality": 2,
+    "support_and_authorization": 7,
+    "grounded_inquiry_protocol": 20,
+    "authority_debt_anchor": 0,
+    "unattributed_new_entries": 1541,
+    "unattributed_claim_ids": [
+      "CLAIM-BL-0390",
+      "CLAIM-DEF-0815",
+      "CLAIM-DEF-0816",
+      "CLAIM-DEF-0817",
+      "CLAIM-DEF-0818",
+      "CLAIM-DEF-0819",
+      "CLAIM-DEF-0820",
+      "CLAIM-DEF-0821",
+      "CLAIM-DEF-0822",
+      "CLAIM-DEF-0823",
+      "CLAIM-DEF-0824",
+      "CLAIM-DEF-0825",
+      "CLAIM-DEF-0826",
+      "CLAIM-DEF-0827",
+      "CLAIM-DEF-0828",
+      "CLAIM-DEF-0829",
+      "CLAIM-DEF-0830",
+      "CLAIM-DEF-0831",
+      "CLAIM-DEF-0832",
+      "CLAIM-DEF-0833",
+      "CLAIM-DEF-0834",
+      "CLAIM-DEF-0835",
+      "CLAIM-DEF-0836",
+      "CLAIM-DEF-0837",
+      "CLAIM-DEF-0838",
+      "CLAIM-DEF-0839",
+      "CLAIM-DEF-0840",
+      "CLAIM-DEF-0841",
+      "CLAIM-DEF-0842",
+      "CLAIM-DEF-0843",
+      "CLAIM-DEF-0844",
+      "CLAIM-DEF-0845",
+      "CLAIM-DEF-0846",
+      "CLAIM-DEF-0847",
+      "CLAIM-DEF-0848",
+      "CLAIM-DEF-0849",
+      "CLAIM-DEF-0850",
+      "CLAIM-DEF-0851",
+      "CLAIM-DEF-0852",
+      "CLAIM-DEF-0853",
+      "CLAIM-DEF-0854",
+      "CLAIM-DEF-0855",
+      "CLAIM-DEF-0856",
+      "CLAIM-DEF-0857",
+      "CLAIM-DEF-0858",
+      "CLAIM-DEF-0859",
+      "CLAIM-DEF-0860",
+      "CLAIM-DEF-0861",
+      "CLAIM-DEF-0862",
+      "CLAIM-DEF-0863"
+    ]
+  },
+  "fcl_chain_validation": {
+    "status": "passed",
+    "crosswalk_chain": [
+      "Grounding/v0_2/id_crosswalk.json",
+      "Grounding/v2_1/id_crosswalk.json"
+    ],
+    "ref_sections": {
+      "FCL-001": 10,
+      "FCL-002": 13
+    },
+    "dangling_refs": {}
+  },
+  "recurrence_summary": {
+    "cross_entry_terms": 920,
+    "duplicate_nc_laws": 578
+  },
+  "artifact_hashes": {
+    "claim_inventory.jsonl": "b0d3d674b734296e3d4ed71c5ba6ac000291ba06ea5a2b906b0634c7e5c1f030",
+    "recurrence_map.json": "baf22eda77a3ea5808df8e71154f940dec5b993ca9509f52157f41c65ed914d0",
+    "run_manifest.json": "c78027ae5e20ae89cdfc1d846b93f188a475bc7d76829b86ed5337f16140ea5d",
+    "id_crosswalk.json": "0633986ee28886260db8764661f1c930b5783c9f4369fba5a1bf92ed85bf42b9",
+    "ClaimInventory.POPULATED.v2_1.md": "6228f79e046dfff3e3d3d8c2840458c23473d92ea9dd683d9be0ac4646c347a1",
+    "extract_v0_2.py": "547300444e925572c83b3b36ad24c9d8c41b11a351014254caefb2a41a91f50c"
+  }
+}

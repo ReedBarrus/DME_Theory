@@ -11,6 +11,7 @@ source_snapshot: theory-v2.0-pre-grounding
 population_status:
   v0.1 populated - see Grounding/v0/
   v0.2 populated - see Grounding/v0_2/
+  v2.1 populated - see Grounding/v2_1/
 ```
 
 ---
@@ -119,14 +120,16 @@ Grounding/v0/claim_inventory.jsonl
 Grounding/v0/ClaimInventory.POPULATED.v0.md
 Grounding/v0_2/claim_inventory.jsonl
 Grounding/v0_2/ClaimInventory.POPULATED.v0_2.md
+Grounding/v2_1/claim_inventory.jsonl
+Grounding/v2_1/ClaimInventory.POPULATED.v2_1.md
 ```
 
 The JSONL artifact is canonical.
 
 This document remains the index and contract surface for the populated inventory.
 
-Latest recommended inventory for FCL-002 preparation:
+Latest recommended inventory for further grounding work:
 
 ```text
-Grounding/v0_2/claim_inventory.jsonl
+Grounding/v2_1/claim_inventory.jsonl
 ```
