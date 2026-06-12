@@ -1,0 +1,574 @@
+{
+  "manifest": {
+    "source_snapshot": "theory-v2.1-grounded-canon",
+    "measurement_layer_version": "provisional-galois-v0.1",
+    "inputs": {
+      "claim_inventory_sha256": "b0d3d674b734296e3d4ed71c5ba6ac000291ba06ea5a2b906b0634c7e5c1f030",
+      "id_crosswalk_sha256": "0633986ee28886260db8764661f1c930b5783c9f4369fba5a1bf92ed85bf42b9",
+      "run_manifest_sha256": "6acc94657a697afc49f6f44e96f8129ad936ce1728b4351807168c56c6c2df91"
+    }
+  },
+  "baseline": {
+    "strict_suite_source_snapshot": "theory-v2.1-grounded-canon",
+    "inventory_total_entries": 4339,
+    "counts_by_type": {
+      "BL": 208,
+      "DEF": 804,
+      "DEP": 314,
+      "NC": 2988,
+      "OP": 25
+    },
+    "recurrence_term_count": 920,
+    "duplicate_nc_law_count": 578
+  },
+  "abstract_order_totality_proxy": {
+    "total_entries": 4339,
+    "profile_assignment_successes": 4339,
+    "missing_fields_count": 0,
+    "missing_fields": {},
+    "unclassifiable_entries": []
+  },
+  "concrete_order_partiality_proxy": {
+    "within_type": {
+      "total_pairs": 4856353,
+      "equal": 0,
+      "left_leq_right": 0,
+      "right_leq_left": 0,
+      "incomparable": 4856353
+    },
+    "across_type": {
+      "total_pairs": 4554938,
+      "equal": 5,
+      "left_leq_right": 32,
+      "right_leq_left": 0,
+      "incomparable": 4554901
+    },
+    "within_type_by_claim_type": {
+      "BL": {
+        "total_pairs": 21528,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 21528
+      },
+      "DEF": {
+        "total_pairs": 322806,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 322806
+      },
+      "DEP": {
+        "total_pairs": 49141,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 49141
+      },
+      "NC": {
+        "total_pairs": 4462578,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 4462578
+      },
+      "OP": {
+        "total_pairs": 300,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 300
+      }
+    },
+    "across_type_matrix": {
+      "BL-DEF": {
+        "total_pairs": 167232,
+        "equal": 1,
+        "left_leq_right": 7,
+        "right_leq_left": 0,
+        "incomparable": 167224
+      },
+      "BL-DEP": {
+        "total_pairs": 65312,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 65312
+      },
+      "BL-NC": {
+        "total_pairs": 621504,
+        "equal": 4,
+        "left_leq_right": 25,
+        "right_leq_left": 0,
+        "incomparable": 621475
+      },
+      "BL-OP": {
+        "total_pairs": 5200,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 5200
+      },
+      "DEF-DEP": {
+        "total_pairs": 252456,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 252456
+      },
+      "DEF-NC": {
+        "total_pairs": 2402352,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 2402352
+      },
+      "DEF-OP": {
+        "total_pairs": 20100,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 20100
+      },
+      "DEP-NC": {
+        "total_pairs": 938232,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 938232
+      },
+      "DEP-OP": {
+        "total_pairs": 7850,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 7850
+      },
+      "NC-OP": {
+        "total_pairs": 74700,
+        "equal": 0,
+        "left_leq_right": 0,
+        "right_leq_left": 0,
+        "incomparable": 74700
+      }
+    }
+  },
+  "alpha_totality_proxy": {
+    "total_entries": 4339,
+    "successes": 4339,
+    "failures": []
+  },
+  "gamma_totality_proxy": {
+    "total_profiles": 4339,
+    "successes": 4339,
+    "failures": []
+  },
+  "idempotence_noninflation_composite": {
+    "total_profiles": 4339,
+    "violations": [],
+    "support_inflations": [],
+    "opacity_inflations": [],
+    "evaluated_axis_inflations": [],
+    "provenance_inflations": []
+  },
+  "unit_soundness_proxy": {
+    "total_entries": 4339,
+    "support_inflation_against_own_requirements": [],
+    "violation_count": 0
+  },
+  "idempotence_confirmation": {
+    "hash_equality": true,
+    "field_deltas": [],
+    "profile_deltas": [],
+    "order_comparison_deltas": [],
+    "run_a_hashes": {
+      "alpha_profiles_hash": "eb320ef12507bc0ac7b07f3ad6f37fb9619da3c5db0a45a32738f3456e37a228",
+      "concrete_profiles_hash": "69826848cb32e7392afdcd92f696efe45816a5a3c86d324e937487f20b281489",
+      "pair_stats_hash": "49048eb1f38321b48dcdac90c0b30c37c00c06c131d30854f88efb023a5140a0",
+      "composite_results_hash": "97b1efd9fc4a2437f567f2adb42bc5992d4187d255bcee4b0cd7091e9ee60fe6",
+      "unit_results_hash": "0ddd46230b5566e78d12120e55501ce5b686a78e1469433e8ebd9ddaddc8e012"
+    },
+    "run_b_hashes": {
+      "alpha_profiles_hash": "eb320ef12507bc0ac7b07f3ad6f37fb9619da3c5db0a45a32738f3456e37a228",
+      "concrete_profiles_hash": "69826848cb32e7392afdcd92f696efe45816a5a3c86d324e937487f20b281489",
+      "pair_stats_hash": "49048eb1f38321b48dcdac90c0b30c37c00c06c131d30854f88efb023a5140a0",
+      "composite_results_hash": "97b1efd9fc4a2437f567f2adb42bc5992d4187d255bcee4b0cd7091e9ee60fe6",
+      "unit_results_hash": "0ddd46230b5566e78d12120e55501ce5b686a78e1469433e8ebd9ddaddc8e012"
+    }
+  },
+  "deontic_separation_check": {
+    "entries_with_high_support_and_blocked_uses": [],
+    "entries_where_blocked_uses_remain_deontic_constraints_only": [
+      {
+        "claim_id": "CLAIM-BL-0040",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-BL-0102",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "asserted",
+        "context_sensitive": true
+      },
+      {
+        "claim_id": "CLAIM-BL-0161",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-BL-0171",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "example",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-BL-0172",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "example",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-BL-0379",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0244",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0245",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0246",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0247",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0248",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0249",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0250",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0251",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0252",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0522",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "example",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0636",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0637",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0638",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEF-0839",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEP-0022",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEP-0023",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEP-0027",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEP-0028",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEP-0029",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEP-0122",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEP-0123",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEP-0124",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEP-0125",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-DEP-0126",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-1118",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-2735",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "example",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-2741",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-2742",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-3042",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-3043",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-3044",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-3045",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-3046",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-3047",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-3048",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-3049",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-3050",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-3051",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      },
+      {
+        "claim_id": "CLAIM-NC-3052",
+        "support_status": "structurally_supported",
+        "use_mention_flag": "unknown",
+        "context_sensitive": false
+      }
+    ],
+    "blocked_uses_affects_support_status_violations": [],
+    "blocked_entry_count": 45
+  },
+  "odq_status_report": {
+    "ODQ-4": {
+      "classification": "partially_measurable",
+      "evidence": {
+        "order_surfaces_measured": [
+          "support_status chain",
+          "opacity_status chain",
+          "evaluated-axis coverage",
+          "provenance/source-span completeness",
+          "omitted-axis penalty",
+          "axis-evaluation dominance",
+          "provenance inclusion",
+          "source-span specificity",
+          "declared loss/preservation completeness",
+          "live claim resolution through v2.1 inventory"
+        ],
+        "within_type_comparability_statistics": {
+          "total_pairs": 4856353,
+          "equal": 0,
+          "left_leq_right": 0,
+          "right_leq_left": 0,
+          "incomparable": 4856353
+        },
+        "across_type_comparability_statistics": {
+          "total_pairs": 4554938,
+          "equal": 5,
+          "left_leq_right": 32,
+          "right_leq_left": 0,
+          "incomparable": 4554901
+        },
+        "within_type_incomparability_rate": 1.0,
+        "across_type_incomparability_rate": 0.9999918769476116,
+        "pointwise_order_behavior": {
+          "within_type": {
+            "equal": 0,
+            "left_leq_right": 0,
+            "right_leq_left": 0,
+            "incomparable": 4856353
+          },
+          "across_type": {
+            "equal": 5,
+            "left_leq_right": 32,
+            "right_leq_left": 0,
+            "incomparable": 4554901
+          }
+        }
+      },
+      "blocked_surfaces": [
+        "The abstract and concrete domain orders remain hypothetical topology only; they are not admitted doctrine.",
+        "No canon-declared order on admitted topology objects exists yet.",
+        "No canon-declared order on hypothetical descriptions themselves exists beyond status ladders over statuses."
+      ]
+    },
+    "ODQ-5": {
+      "classification": "partially_measurable",
+      "evidence": {
+        "idempotence_noninflation_composite_results": {
+          "violation_count": 0,
+          "support_inflations": [],
+          "opacity_inflations": [],
+          "evaluated_axis_inflations": [],
+          "provenance_inflations": []
+        },
+        "unit_soundness_proxy_results": {
+          "total_entries": 4339,
+          "support_inflation_against_own_requirements": [],
+          "violation_count": 0
+        },
+        "idempotence_confirmation_results": {
+          "hash_equality": true,
+          "field_deltas": [],
+          "profile_deltas": [],
+          "order_comparison_deltas": [],
+          "run_a_hashes": {
+            "alpha_profiles_hash": "eb320ef12507bc0ac7b07f3ad6f37fb9619da3c5db0a45a32738f3456e37a228",
+            "concrete_profiles_hash": "69826848cb32e7392afdcd92f696efe45816a5a3c86d324e937487f20b281489",
+            "pair_stats_hash": "49048eb1f38321b48dcdac90c0b30c37c00c06c131d30854f88efb023a5140a0",
+            "composite_results_hash": "97b1efd9fc4a2437f567f2adb42bc5992d4187d255bcee4b0cd7091e9ee60fe6",
+            "unit_results_hash": "0ddd46230b5566e78d12120e55501ce5b686a78e1469433e8ebd9ddaddc8e012"
+          },
+          "run_b_hashes": {
+            "alpha_profiles_hash": "eb320ef12507bc0ac7b07f3ad6f37fb9619da3c5db0a45a32738f3456e37a228",
+            "concrete_profiles_hash": "69826848cb32e7392afdcd92f696efe45816a5a3c86d324e937487f20b281489",
+            "pair_stats_hash": "49048eb1f38321b48dcdac90c0b30c37c00c06c131d30854f88efb023a5140a0",
+            "composite_results_hash": "97b1efd9fc4a2437f567f2adb42bc5992d4187d255bcee4b0cd7091e9ee60fe6",
+            "unit_results_hash": "0ddd46230b5566e78d12120e55501ce5b686a78e1469433e8ebd9ddaddc8e012"
+          }
+        },
+        "support_inflation_against_own_requirements": []
+      },
+      "blocked_surfaces": [
+        "alpha, gamma, and profile_of remain provisional measurement functions only.",
+        "The counit proper is still undeclared in doctrine; this layer measures a provisional alpha-gamma-alpha composite only.",
+        "The unit proper is still undeclared in doctrine; this layer measures a requirement-subset proxy only."
+      ]
+    }
+  },
+  "summary_verdict": "ODQ-4/5 require more instrument work"
+}
