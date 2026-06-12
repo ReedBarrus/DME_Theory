@@ -1,0 +1,527 @@
+{
+  "suite": {
+    "name": "v0.2 idempotence + round-trip measurement suite",
+    "source_snapshot": "theory-v2.0-pre-grounding",
+    "extractor_version": "v0.2",
+    "committed_baseline": "Grounding/v0_2",
+    "output_files_compared": [
+      "claim_inventory.jsonl",
+      "recurrence_map.json",
+      "run_manifest.json",
+      "id_crosswalk.json",
+      "ClaimInventory.POPULATED.v0_2.md",
+      "extract_v0_2.py"
+    ]
+  },
+  "baseline": {
+    "total_entries": 4287,
+    "counts_by_type": {
+      "BL": 199,
+      "DEF": 802,
+      "DEP": 309,
+      "NC": 2952,
+      "OP": 25
+    },
+    "support_counts": {
+      "partially_admitted": 4252,
+      "structurally_supported": 35
+    },
+    "opacity_counts": {
+      "partially_supported": 4287
+    },
+    "use_mention_counts": {
+      "asserted": 4232,
+      "example": 4,
+      "instrument_self_assertion": 21,
+      "unknown": 30
+    },
+    "blocked_entry_count": 35,
+    "context_sensitive_entry_count": 1
+  },
+  "idempotence": {
+    "classification": "partially_measurable",
+    "strict_current_corpus_rerun": {
+      "classification": "blocked",
+      "passed": false,
+      "error": "FCL-001 validation failed: dangling claim references -> CLAIM-BL-0093, CLAIM-DEF-0141, CLAIM-NC-0551, CLAIM-NC-0552, CLAIM-NC-0553"
+    },
+    "provisional_current_corpus_rerun": {
+      "classification": "measurable",
+      "passed": true
+    },
+    "committed_vs_rerun_a": {
+      "all_output_hashes_equal": false,
+      "file_hashes_equal": {
+        "claim_inventory.jsonl": false,
+        "recurrence_map.json": false,
+        "run_manifest.json": false,
+        "id_crosswalk.json": false,
+        "ClaimInventory.POPULATED.v0_2.md": false,
+        "extract_v0_2.py": true
+      },
+      "entry_projection_hash_equal": false,
+      "manifest_hash_equal": false,
+      "crosswalk_hash_equal": false,
+      "recurrence_hash_equal": false,
+      "claim_id_sets_equal": false,
+      "missing_in_right": [
+        "CLAIM-BL-0003",
+        "CLAIM-BL-0090",
+        "CLAIM-BL-0093",
+        "CLAIM-BL-0192",
+        "CLAIM-DEF-0141",
+        "CLAIM-DEF-0142",
+        "CLAIM-DEF-0143",
+        "CLAIM-DEF-0144",
+        "CLAIM-DEF-0145",
+        "CLAIM-DEF-0146",
+        "CLAIM-DEF-0147",
+        "CLAIM-DEF-0149",
+        "CLAIM-DEF-0150",
+        "CLAIM-DEF-0151",
+        "CLAIM-DEF-0152",
+        "CLAIM-DEF-0291",
+        "CLAIM-DEP-0053",
+        "CLAIM-NC-0002",
+        "CLAIM-NC-0003",
+        "CLAIM-NC-0004",
+        "CLAIM-NC-0005",
+        "CLAIM-NC-0006",
+        "CLAIM-NC-0007",
+        "CLAIM-NC-0008",
+        "CLAIM-NC-0009",
+        "CLAIM-NC-0010",
+        "CLAIM-NC-0011",
+        "CLAIM-NC-0528",
+        "CLAIM-NC-0529",
+        "CLAIM-NC-0530",
+        "CLAIM-NC-0531",
+        "CLAIM-NC-0532",
+        "CLAIM-NC-0533",
+        "CLAIM-NC-0534",
+        "CLAIM-NC-0535",
+        "CLAIM-NC-0536",
+        "CLAIM-NC-0537",
+        "CLAIM-NC-0538",
+        "CLAIM-NC-0539",
+        "CLAIM-NC-0544",
+        "CLAIM-NC-0545",
+        "CLAIM-NC-0546",
+        "CLAIM-NC-0547",
+        "CLAIM-NC-0548",
+        "CLAIM-NC-0549",
+        "CLAIM-NC-0550",
+        "CLAIM-NC-0551",
+        "CLAIM-NC-0552",
+        "CLAIM-NC-0553",
+        "CLAIM-NC-0554",
+        "CLAIM-NC-0555",
+        "CLAIM-NC-0556",
+        "CLAIM-NC-0557",
+        "CLAIM-NC-0558",
+        "CLAIM-NC-0559",
+        "CLAIM-NC-0560",
+        "CLAIM-NC-0561",
+        "CLAIM-NC-0562",
+        "CLAIM-NC-0563",
+        "CLAIM-NC-0564",
+        "CLAIM-NC-0565",
+        "CLAIM-NC-0566",
+        "CLAIM-NC-0567",
+        "CLAIM-NC-0568",
+        "CLAIM-NC-0569",
+        "CLAIM-NC-0571",
+        "CLAIM-NC-0572",
+        "CLAIM-NC-0573",
+        "CLAIM-NC-0574",
+        "CLAIM-NC-0575",
+        "CLAIM-NC-1127",
+        "CLAIM-NC-1128",
+        "CLAIM-NC-1150",
+        "CLAIM-NC-1399",
+        "CLAIM-NC-1400",
+        "CLAIM-NC-1401",
+        "CLAIM-NC-1402",
+        "CLAIM-NC-1403",
+        "CLAIM-NC-1404",
+        "CLAIM-NC-1405",
+        "CLAIM-NC-1406",
+        "CLAIM-NC-1407",
+        "CLAIM-OP-0004"
+      ],
+      "new_in_right": [
+        "CLAIM-BL-0390",
+        "CLAIM-BL-0391",
+        "CLAIM-BL-0392",
+        "CLAIM-BL-0393",
+        "CLAIM-BL-0394",
+        "CLAIM-BL-0395",
+        "CLAIM-BL-0396",
+        "CLAIM-BL-0397",
+        "CLAIM-BL-0398",
+        "CLAIM-BL-0399",
+        "CLAIM-BL-0400",
+        "CLAIM-BL-0401",
+        "CLAIM-BL-0402",
+        "CLAIM-DEF-0814",
+        "CLAIM-DEF-0815",
+        "CLAIM-DEF-0816",
+        "CLAIM-DEF-0817",
+        "CLAIM-DEF-0818",
+        "CLAIM-DEF-0819",
+        "CLAIM-DEF-0820",
+        "CLAIM-DEF-0821",
+        "CLAIM-DEF-0822",
+        "CLAIM-DEF-0823",
+        "CLAIM-DEF-0824",
+        "CLAIM-DEF-0825",
+        "CLAIM-DEF-0826",
+        "CLAIM-DEF-0827",
+        "CLAIM-DEP-0310",
+        "CLAIM-DEP-0311",
+        "CLAIM-DEP-0312",
+        "CLAIM-DEP-0313",
+        "CLAIM-DEP-0314",
+        "CLAIM-DEP-0315",
+        "CLAIM-NC-2963",
+        "CLAIM-NC-2964",
+        "CLAIM-NC-2965",
+        "CLAIM-NC-2966",
+        "CLAIM-NC-2967",
+        "CLAIM-NC-2968",
+        "CLAIM-NC-2969",
+        "CLAIM-NC-2970",
+        "CLAIM-NC-2971",
+        "CLAIM-NC-2972",
+        "CLAIM-NC-2973",
+        "CLAIM-NC-2974",
+        "CLAIM-NC-2975",
+        "CLAIM-NC-2976",
+        "CLAIM-NC-2977",
+        "CLAIM-NC-2978",
+        "CLAIM-NC-2979",
+        "CLAIM-NC-2980",
+        "CLAIM-NC-2981",
+        "CLAIM-NC-2982",
+        "CLAIM-NC-2983",
+        "CLAIM-NC-2984",
+        "CLAIM-NC-2985",
+        "CLAIM-NC-2986",
+        "CLAIM-NC-2987",
+        "CLAIM-NC-2988",
+        "CLAIM-NC-2989",
+        "CLAIM-NC-2990",
+        "CLAIM-NC-2991",
+        "CLAIM-NC-2992",
+        "CLAIM-NC-2993",
+        "CLAIM-NC-2994",
+        "CLAIM-NC-2995",
+        "CLAIM-NC-2996",
+        "CLAIM-NC-2997",
+        "CLAIM-NC-2998",
+        "CLAIM-NC-2999",
+        "CLAIM-NC-3000",
+        "CLAIM-NC-3001",
+        "CLAIM-NC-3002",
+        "CLAIM-NC-3003",
+        "CLAIM-NC-3004",
+        "CLAIM-NC-3005",
+        "CLAIM-NC-3006",
+        "CLAIM-NC-3007",
+        "CLAIM-NC-3008",
+        "CLAIM-NC-3009",
+        "CLAIM-NC-3010",
+        "CLAIM-NC-3011",
+        "CLAIM-NC-3012",
+        "CLAIM-NC-3013",
+        "CLAIM-NC-3014",
+        "CLAIM-NC-3015",
+        "CLAIM-NC-3016",
+        "CLAIM-NC-3017",
+        "CLAIM-NC-3018",
+        "CLAIM-NC-3019",
+        "CLAIM-NC-3020",
+        "CLAIM-NC-3021",
+        "CLAIM-NC-3022",
+        "CLAIM-NC-3023",
+        "CLAIM-NC-3024",
+        "CLAIM-NC-3025",
+        "CLAIM-NC-3026",
+        "CLAIM-NC-3027",
+        "CLAIM-NC-3028",
+        "CLAIM-NC-3029",
+        "CLAIM-NC-3030",
+        "CLAIM-NC-3031",
+        "CLAIM-NC-3032",
+        "CLAIM-NC-3033",
+        "CLAIM-NC-3034",
+        "CLAIM-NC-3035",
+        "CLAIM-NC-3036",
+        "CLAIM-NC-3037",
+        "CLAIM-NC-3038",
+        "CLAIM-NC-3039",
+        "CLAIM-NC-3040",
+        "CLAIM-NC-3041",
+        "CLAIM-NC-3042",
+        "CLAIM-NC-3043",
+        "CLAIM-NC-3044",
+        "CLAIM-NC-3045",
+        "CLAIM-NC-3046",
+        "CLAIM-NC-3047",
+        "CLAIM-NC-3048",
+        "CLAIM-NC-3049",
+        "CLAIM-NC-3050",
+        "CLAIM-NC-3051",
+        "CLAIM-NC-3052",
+        "CLAIM-NC-3053",
+        "CLAIM-NC-3054",
+        "CLAIM-NC-3055",
+        "CLAIM-NC-3056",
+        "CLAIM-NC-3057",
+        "CLAIM-NC-3058",
+        "CLAIM-NC-3059",
+        "CLAIM-NC-3060",
+        "CLAIM-NC-3061",
+        "CLAIM-NC-3062",
+        "CLAIM-NC-3063",
+        "CLAIM-OP-0026"
+      ],
+      "support_inflations": [
+        "CLAIM-BL-0379",
+        "CLAIM-DEF-0522",
+        "CLAIM-DEF-0636",
+        "CLAIM-DEF-0637",
+        "CLAIM-DEF-0638",
+        "CLAIM-NC-2735",
+        "CLAIM-NC-2741",
+        "CLAIM-NC-2742",
+        "CLAIM-NC-2743",
+        "CLAIM-NC-2744"
+      ],
+      "support_demotions": [
+        "CLAIM-BL-0382",
+        "CLAIM-DEF-0523",
+        "CLAIM-DEF-0524",
+        "CLAIM-DEF-0649",
+        "CLAIM-DEF-0650",
+        "CLAIM-DEF-0651",
+        "CLAIM-NC-2757",
+        "CLAIM-NC-2763",
+        "CLAIM-NC-2764",
+        "CLAIM-NC-2765",
+        "CLAIM-NC-2766",
+        "CLAIM-NC-2767",
+        "CLAIM-NC-2768",
+        "CLAIM-NC-2769",
+        "CLAIM-NC-2770",
+        "CLAIM-NC-2771",
+        "CLAIM-NC-2772",
+        "CLAIM-NC-2773",
+        "CLAIM-NC-2774",
+        "CLAIM-NC-2775"
+      ],
+      "field_delta_count": 697,
+      "field_delta_examples": [
+        {
+          "claim_id": "CLAIM-BL-0379",
+          "fields": [
+            "blocked_uses",
+            "extraction_method",
+            "line_range",
+            "source_file",
+            "support_status",
+            "use_mention_flag",
+            "verbatim_span"
+          ]
+        },
+        {
+          "claim_id": "CLAIM-BL-0380",
+          "fields": [
+            "extraction_method",
+            "line_range",
+            "source_file",
+            "verbatim_span"
+          ]
+        },
+        {
+          "claim_id": "CLAIM-BL-0381",
+          "fields": [
+            "line_range",
+            "source_file",
+            "verbatim_span"
+          ]
+        },
+        {
+          "claim_id": "CLAIM-BL-0382",
+          "fields": [
+            "blocked_uses",
+            "extraction_method",
+            "line_range",
+            "source_file",
+            "support_status",
+            "use_mention_flag",
+            "verbatim_span"
+          ]
+        },
+        {
+          "claim_id": "CLAIM-BL-0383",
+          "fields": [
+            "extraction_method",
+            "line_range",
+            "source_file",
+            "verbatim_span"
+          ]
+        },
+        {
+          "claim_id": "CLAIM-BL-0384",
+          "fields": [
+            "line_range",
+            "source_file",
+            "verbatim_span"
+          ]
+        },
+        {
+          "claim_id": "CLAIM-BL-0385",
+          "fields": [
+            "line_range",
+            "source_file",
+            "verbatim_span"
+          ]
+        },
+        {
+          "claim_id": "CLAIM-BL-0386",
+          "fields": [
+            "extraction_method",
+            "line_range",
+            "source_file",
+            "verbatim_span"
+          ]
+        },
+        {
+          "claim_id": "CLAIM-BL-0387",
+          "fields": [
+            "extraction_method",
+            "line_range",
+            "source_file",
+            "verbatim_span"
+          ]
+        },
+        {
+          "claim_id": "CLAIM-BL-0388",
+          "fields": [
+            "extraction_method",
+            "line_range",
+            "source_file",
+            "verbatim_span"
+          ]
+        }
+      ],
+      "blocked_entry_ids_equal": false,
+      "context_sensitive_ids_equal": true,
+      "counts_by_type_equal": false,
+      "support_counts_equal": false,
+      "use_mention_counts_equal": false
+    },
+    "rerun_a_vs_rerun_b": {
+      "all_output_hashes_equal": true,
+      "file_hashes_equal": {
+        "claim_inventory.jsonl": true,
+        "recurrence_map.json": true,
+        "run_manifest.json": true,
+        "id_crosswalk.json": true,
+        "ClaimInventory.POPULATED.v0_2.md": true,
+        "extract_v0_2.py": true
+      },
+      "entry_projection_hash_equal": true,
+      "manifest_hash_equal": true,
+      "crosswalk_hash_equal": true,
+      "recurrence_hash_equal": true,
+      "claim_id_sets_equal": true,
+      "missing_in_right": [],
+      "new_in_right": [],
+      "support_inflations": [],
+      "support_demotions": [],
+      "field_delta_count": 0,
+      "field_delta_examples": [],
+      "blocked_entry_ids_equal": true,
+      "context_sensitive_ids_equal": true,
+      "counts_by_type_equal": true,
+      "support_counts_equal": true,
+      "use_mention_counts_equal": true
+    },
+    "passed": false
+  },
+  "round_trip_proxies": {
+    "status_fixed_point": {
+      "classification": "measurable",
+      "passed": true,
+      "evidence": {
+        "rerun_a_vs_rerun_b_field_delta_count": 0,
+        "baseline_drift_field_delta_count": 697
+      }
+    },
+    "counit_like_non_inflation": {
+      "classification": "partially_measurable",
+      "passed": true,
+      "evidence": {
+        "rerun_a_vs_rerun_b_support_inflations": [],
+        "baseline_drift_support_inflations_uninterpreted": [
+          "CLAIM-BL-0379",
+          "CLAIM-DEF-0522",
+          "CLAIM-DEF-0636",
+          "CLAIM-DEF-0637",
+          "CLAIM-DEF-0638",
+          "CLAIM-NC-2735",
+          "CLAIM-NC-2741",
+          "CLAIM-NC-2742",
+          "CLAIM-NC-2743",
+          "CLAIM-NC-2744"
+        ],
+        "demoted_entry_count": 35,
+        "context_sensitive_entry_count": 1
+      }
+    },
+    "unit_like_no_loss_of_admitted_structure": {
+      "classification": "blocked",
+      "passed": null,
+      "reason": "No doctrine-declared gamma map or concrete order on admitted topology exists yet, so no-loss concretization cannot be formalized as a measurement."
+    }
+  },
+  "odq_measurability": {
+    "ODQ-4": {
+      "classification": "partially_measurable",
+      "measurable_surfaces": [
+        "The abstract-side carrier is observable in the inventory: support_status, opacity_status, blocked_uses, and evaluated/omitted axes are all serialized fields.",
+        "Current v0.2 support-status distribution is measurable: {'partially_admitted': 4252, 'structurally_supported': 35}.",
+        "Blocked-use divergence is measurable: 35 entries carry blocked uses while remaining epistemically supported."
+      ],
+      "blocked_surfaces": [
+        "The doctrine still does not declare an order on admitted topology objects themselves.",
+        "The doctrine still does not declare an order on hypothetical descriptions themselves beyond status ladders on statuses.",
+        "Without declared concrete and abstract orders, monotonicity cannot be promoted from proxy observation to formal test.",
+        "The current strict rerun is additionally blocked by dangling FCL-001 references, so canon-safe measurement cannot proceed until grounding navigation is refreshed."
+      ],
+      "rationale": "ODQ-4 is partially measurable because inventory fields expose candidate status carriers, but the orders those carriers should instantiate are not yet canonically declared."
+    },
+    "ODQ-5": {
+      "classification": "partially_measurable",
+      "measurable_surfaces": [
+        "Same-version idempotence is directly measurable as a fixed-point test over committed v0.2 outputs.",
+        "Status non-inflation is measurable as a counit-like proxy by comparing support_status across reruns.",
+        "Demotion preservation is measurable for context-sensitive and blocked-use entries because those annotations are serialized and comparable by claim_id."
+      ],
+      "blocked_surfaces": [
+        "Alpha and gamma are not declared as total monotone maps in doctrine.",
+        "Unit (no-loss concretization round-trip) cannot be formally tested without a declared order on admitted topology.",
+        "Counit can only be tested as a proxy fixed-point / non-inflation surface, not as an admitted adjunction law.",
+        "The strict canon-safe rerun is currently blocked by dangling FCL-001 references, so only provisional measurement can run end-to-end."
+      ],
+      "rationale": "ODQ-5 is partially measurable because idempotence and deflationary proxy behavior are testable now, while full unit/counit admission remains blocked by undeclared maps and orders.",
+      "proxy_results": {
+        "rerun_a_vs_rerun_b_support_inflations": 0,
+        "baseline_drift_field_delta_count": 697,
+        "rerun_a_vs_rerun_b_field_delta_count": 0
+      }
+    }
+  }
+}
