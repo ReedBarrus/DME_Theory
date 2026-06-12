@@ -61,6 +61,7 @@ Archive preserves lineage, not active authority.
 | Concrete walkthrough | [Agentic_Reasoning/README.DME.V2.SystemWalkthrough.md](Agentic_Reasoning/README.DME.V2.SystemWalkthrough.md) | [Core/README.DME.V2.Glossary.md](Core/README.DME.V2.Glossary.md) |
 | Definitions / term alignment | [Core/README.DME.V2.Glossary.md](Core/README.DME.V2.Glossary.md) | [Agentic_Reasoning/README.DME.V2.ActiveMemoryRepoPolicy.md](Agentic_Reasoning/README.DME.V2.ActiveMemoryRepoPolicy.md) |
 | Semantic constraint / reasoning protocol | [Agentic_Reasoning/README.AgenticReasoning.SemanticConstraintProtocol.md](Agentic_Reasoning/README.AgenticReasoning.SemanticConstraintProtocol.md) | [Agentic_Reasoning/README.DME.V2.ConceptualWorkflowContract.md](Agentic_Reasoning/README.DME.V2.ConceptualWorkflowContract.md) |
+| Grounded inquiry / theory self-examination | [Agentic_Reasoning/README.DME.V2.GroundedInquiryProtocol.md](Agentic_Reasoning/README.DME.V2.GroundedInquiryProtocol.md) | [Core/README.DME.V2.FormalCorrespondenceLedger.md](Core/README.DME.V2.FormalCorrespondenceLedger.md) |
 | Archive lineage / superseded material | [Archive/README.DME.V2.ArchiveMigrationMap.md](Archive/README.DME.V2.ArchiveMigrationMap.md) | Browse [Archive/](Archive/) only for comparison, recovery, or migration context |
 
 ---
@@ -85,7 +86,7 @@ Archive preserves lineage, not active authority.
 
 ### Grounding instruments / theory opacity profile
 
-[Core/README.DME.V2.ClaimInventory.md](Core/README.DME.V2.ClaimInventory.md) -> [Core/README.DME.V2.FormalCorrespondenceLedger.md](Core/README.DME.V2.FormalCorrespondenceLedger.md) -> [Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md](Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md) -> [Grounding/v0/](Grounding/v0/) -> [Grounding/v0_2/](Grounding/v0_2/)
+[Agentic_Reasoning/README.DME.V2.GroundedInquiryProtocol.md](Agentic_Reasoning/README.DME.V2.GroundedInquiryProtocol.md) -> [Core/README.DME.V2.ClaimInventory.md](Core/README.DME.V2.ClaimInventory.md) -> [Core/README.DME.V2.FormalCorrespondenceLedger.md](Core/README.DME.V2.FormalCorrespondenceLedger.md) -> [Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md](Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md) -> [Grounding/v0/](Grounding/v0/) -> [Grounding/v0_2/](Grounding/v0_2/)
 
 ### For agent/tool governance
 

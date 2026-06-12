@@ -194,6 +194,43 @@ schema churn
 
 ---
 
+### Grounded Inquiry Protocol
+
+```text
+file: README.DME.V2.GroundedInquiryProtocol.md
+status: process doctrine / agentic-scale distinction processing /
+        feedback-tested within declared scope
+```
+
+Purpose:
+
+```text
+Formalizes the loop by which DME Theory grounds itself through
+source anchoring, deterministic extraction, audit, migration,
+formal correspondence unpacking, ODQ raising, conditional canon
+resolution, and recursive iteration.
+```
+
+Canonical anchor:
+
+```text
+The theory is the source.
+The instruments are the admission surface.
+The ledger conserves identity through revision.
+```
+
+Use this protocol when working on:
+
+```text
+formal correspondence population
+claim inventory extraction and migration
+ODQ generation from mapping gaps
+grounded doctrine mutation with resolution_basis
+theory self-examination at repository scale
+```
+
+---
+
 ## 4. Recommended Future Protocols
 
 The following are candidate future documents.

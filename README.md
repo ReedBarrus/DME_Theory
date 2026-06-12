@@ -151,6 +151,7 @@ Formal schemas, APIs, runtime packages, dashboards, and agent tooling should be 
 - [MEMORY_INDEX.md](MEMORY_INDEX.md): agent-facing repository entry point and navigation contract
 - [Agentic_Reasoning/README.DME.V2.ActiveMemoryRepoPolicy.md](Agentic_Reasoning/README.DME.V2.ActiveMemoryRepoPolicy.md): canonical source policy and conflict order
 - [Agentic_Reasoning/README.DME.V2.ConceptualWorkflowContract.md](Agentic_Reasoning/README.DME.V2.ConceptualWorkflowContract.md): mutation discipline and compression workflow
+- [Agentic_Reasoning/README.DME.V2.GroundedInquiryProtocol.md](Agentic_Reasoning/README.DME.V2.GroundedInquiryProtocol.md): grounded inquiry / theory self-examination loop
 - [Core/README.DME.V2.Glossary.md](Core/README.DME.V2.Glossary.md): canonical definitions and non-collapse vocabulary
 
 ### Core
