@@ -527,6 +527,103 @@ takes support as input, not identity; AuthorityDebt
 This law generalizes existing canon; it introduces nothing.
 ```
 
+### Evidence Orders and Admission Maps
+
+Identity coordinates and order coordinates are distinct roles.
+
+```text
+Identity coordinates individuate evidence instances:
+source file, span, snapshot, lineage.
+They answer WHICH evidence.
+
+Order coordinates compare epistemic strength:
+evaluated axes, opacity, support status,
+evidence accumulation.
+They answer HOW MUCH support.
+
+No identity coordinate may participate in an
+epistemic order. An individuating coordinate inside
+a product order yields universal incomparability
+by construction.
+```
+
+Concrete order (declared per distinction content):
+
+```text
+For a given distinction content, evidence states are
+ordered by evidence-instance inclusion, axis-evaluation
+dominance, and provenance accumulation, as a pointwise
+partial order.
+
+Cross-content comparability is not sought.
+Distinct contents are incomparable by design,
+mirroring Identity Plurality: plurality across contents
+is a feature, not a defect.
+```
+
+Abstract order (declared):
+
+```text
+Admission profiles - support status, opacity status,
+evaluated and omitted axes - ordered pointwise.
+Scalar aggregation of profile components is forbidden.
+```
+
+Admission maps (declared):
+
+```text
+alpha: evidence state -> admission profile
+(the strongest profile the evidence warrants).
+
+gamma: admission profile -> required evidence envelope
+(the minimum evidence that warrants the profile).
+
+Both are declared per distinction content.
+The admission structure is a family indexed by
+distinction content, not a single global map.
+```
+
+Round-trip laws (declared; verification obligations below):
+
+```text
+Unit soundness: an entry's observed evidence must satisfy
+the envelope required by its own profile. A profile
+requiring evidence its bearer lacks is minted status -
+the violation state of the admission boundary.
+
+Non-inflation: re-deriving a profile through its own
+required envelope may not strengthen it.
+
+Idempotence: re-evaluation without new evidence
+is a fixed point.
+```
+
+resolution_basis:
+
+```text
+ODQ-4: component ablation over Grounding/v2_1 - the
+span/provenance component alone reduces within-type
+comparability from 1.0 to 0.000000 (identity-gate
+annihilation of the product order, analytically forced
+and measured); recurrence-class quotient restores 1.0000
+comparability over 6,640 within-class pairs (705 classes).
+See Grounding/v2_1_measurements/ablation_report.md.
+
+ODQ-5: measured proxies over 4,339 entries - zero unit-
+soundness violations, zero non-inflation violations,
+exact measurement idempotence across runs. CAVEAT,
+declared: the current inventory is homogeneous in status
+and axes; these laws are declared on measured proxies in
+a low-variance regime and carry re-verification
+obligations as admission states diverge.
+
+Formalism alignment: per-content evidence structures
+ordered by inclusion match the abstract-interpretation
+concrete domain shape (powerset of evidence under
+inclusion, indexed per property). Recorded as alignment,
+not theorem transfer.
+```
+
 ### Non-Collapse Laws
 
 ```text
@@ -898,6 +995,12 @@ identity plurality != ambiguity
 composite path != lossless path
 declared composition != automatic composition
 separated region != default posture
+identity coordinate != order coordinate
+evidence instance != support level
+within-content order != cross-content order
+comparable != equal
+measured proxy != verified law
+indexed family != global structure
 ```
 
 ---

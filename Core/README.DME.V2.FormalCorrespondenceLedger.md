@@ -287,10 +287,13 @@ admission_basis:
   clause-by-clause definition unpacking, not theorem transfer
 admission_status:
   abstract-interpretation soundness discipline: partially_admitted
-  Galois connection (adjunction proper): analogical
+  Galois connection (per-content family): partially_admitted
+    as an admission-structure family candidate - structure declared
+    and proxy-measured; adjunction unverified
 theorem_transfer_status:
   closed - adjunction not admitted; soundness discipline
-  partially admitted on posture and operation, not on formal structure
+  partially admitted on posture, operation, and declared
+  admission-structure family, not on verified formal structure
 
 claim_cluster_refs (claim_inventory.jsonl @ theory-v2.0-pre-grounding, v0.2):
   CLAIM-BL-0088   Hypothetical topology may guide exploration.
@@ -334,27 +337,34 @@ clause 1 - two posets
 abstract side: candidates with declared opacity. The support
 ladder and opacity gradient are DECLARED total orders on
 STATUSES (CLAIM-DEF-0138 cluster). The order on hypothetical
-descriptions themselves is UNDECLARED.
+descriptions is now declared pointwise over admission-profile
+components, per content family.
 concrete side: admitted topology (CLAIM-DEF-0134). Order
-UNDECLARED - see GAP-4 / CE-3.
-status: PARTIAL.
+now declared per distinction content as a pointwise partial
+order over evidence-instance inclusion, axis-evaluation
+dominance, and provenance accumulation.
+status: MAPS - both orders now declared (per-content concrete,
+pointwise abstract). Pending verification under status divergence.
 
 clause 2 - abstraction map alpha
 
 DME counterpart: projection of admitted structure into
-candidate/summary/hypothesis space. Exists informally; not
-declared as total or monotone. status: PARTIAL.
+candidate/summary/hypothesis space. Doctrine now declares
+alpha per content as the strongest profile the evidence warrants.
+status: DECLARED per content.
 
 clause 3 - concretization map gamma
 
 DME counterpart: promotion-gate evaluation - "what admitted
-evidence would make this candidate true." Operationally
-present in admission gates; not declared as a map.
-status: PARTIAL.
+evidence would make this candidate true." Doctrine now declares
+gamma per content as the minimum evidence envelope that warrants
+the profile.
+status: DECLARED per content.
 
 clause 4 - monotonicity of both maps
 
-status: UNDECLARED.
+status: DECLARED, NOT VERIFIED - discriminating verification
+requires a divergent-status inventory.
 
 clause 5 - adjunction: alpha(c) <= a iff c <= gamma(a)
 
@@ -362,18 +372,18 @@ DME counterpart: NONE. What doctrine declares is the
 CONSEQUENCE pair (Cousot's twin soundness conditions) as
 posture: the abstract layer may lose declared precision but
 may not mint admitted authority (CLAIM-BL-0088; status
-ceiling; v0.2 demotion behavior). The generating adjunction
-is absent. status: ABSENT - soundness corollary present.
+ceiling; v0.2 demotion behavior). Doctrine now declares
+admission maps and round-trip obligations, but the generating
+adjunction is still unverified. status: DECLARED, NOT VERIFIED.
 
 derived laws (unit / counit / idempotence)
 
-unit (c <= gamma(alpha(c))): undeclared; testable on prototype.
-counit (alpha(gamma(a)) <= a): undeclared; "promotion
-  round-trips are deflationary." One-sided empirical instance:
-  v0.2 context-sensitive demotion (status lowered when
-  Distinction-axis evaluation degraded to conditional).
-idempotence: undeclared; testable - re-evaluation with no new
-  evidence must not change status.
+unit (c <= gamma(alpha(c))): declared as unit soundness
+  obligation; proxy-measured, not yet formally verified.
+counit (alpha(gamma(a)) <= a): declared as non-inflation
+  obligation; proxy-measured, not yet formally verified.
+idempotence: declared; proxy-measured as exact re-evaluation
+  fixed point on the current inventory, with low-variance caveat.
 
 ### Counterexample Attempts
 
@@ -383,7 +393,7 @@ CE-3 (monotonicity under naive order, CONSTRUCTIBLE):
   Ladder ranks B above A. If the concrete order were evidence
   quantity, monotonicity fails. CONCLUSION: the concrete order,
   when declared, must be axis-evaluation dominance, not
-  evidence mass. Feeds ODQ-4.
+  evidence mass. Resolved by ODQ-4 as per-content evidence order.
 
 CE-4 (two-lattice conflation, EMPIRICALLY INSTANTIATED):
   v0.2 contains entries with high epistemic support and blocked
@@ -394,19 +404,19 @@ CE-4 (two-lattice conflation, EMPIRICALLY INSTANTIATED):
   the epistemic order only. Collapsing blocked_uses into support
   status would break monotonicity. Feeds ODQ-6.
 
-### Open Doctrine Questions Raised (NOT auto-patched)
+### Doctrine Questions / Resolution Status
 
-ODQ-4: Domain orders.
-  Declare the order on admitted topology and on hypothetical
-  descriptions. Candidate: axis-evaluation dominance plus
-  provenance inclusion. (Gates clauses 1 and 4.)
+ODQ-4: RESOLVED 2026-06 - identity/order coordinate
+  separation and per-content evidence orders canonized;
+  basis: ablation measurement (identity-gate annihilation)
+  + quotient restoration. The Galois candidate is now a
+  per-content admission-structure family candidate.
 
-ODQ-5: Round-trip laws.
-  Declare alpha and gamma as total monotone maps with:
-  concretization round-trips may not lose admitted structure
-  (unit); promotion round-trips may not inflate status (counit);
-  re-evaluation without new evidence is a fixed point
-  (idempotence). (Gates adjunction admission.)
+ODQ-5: RESOLVED 2026-06 AS DECLARED ROUND-TRIP OBLIGATIONS -
+  unit soundness, non-inflation, and idempotence canonized
+  on measured proxies (0 violations, n=4,339, exact
+  idempotence); verification pending under future status
+  divergence, with declared homogeneity caveat.
 
 ODQ-6: RESOLVED 2026-06 - Support and Authorization separation
   added to IdentityEnvelopeComposition; reciprocal AuthorityDebt
@@ -418,6 +428,12 @@ ODQ-6: RESOLVED 2026-06 - Support and Authorization separation
 
 Consequence for the Galois candidate: any future adjunction
 admission applies to the epistemic order only, by canon.
+
+homogeneity caveat:
+  the current inventory is low-variance in support, opacity,
+  and evaluated-axis signatures. ODQ-5 resolves declared
+  round-trip obligations on measured proxies, not a completed
+  adjunction verification surface.
 
 ### Refinement Gifts From the Formalism
 
@@ -434,18 +450,23 @@ admission applies to the epistemic order only, by canon.
 ```text
 do not claim the candidate ladder is a Galois connection
 do not transfer Galois or abstract-interpretation theorems
-do not cite soundness as formally verified (posture and
-  operation only)
+do not claim verified adjunction
+do not claim a global Galois structure
+do not assume cross-content comparability by default
+do not cite soundness as formally verified (posture,
+  operation, and measured proxies only)
 do not collapse support status and blocked_uses into one order
 ```
 
 ### next_test
 
 ```text
-1. ODQ-4 / ODQ-5 doctrine decisions
-2. Round-trip tests on the markdown prototype (unit, counit)
-3. Idempotence test: same-version re-extraction must be a
-   status fixed point (doubles as extractor determinism check)
+1. Re-run unit/non-inflation/idempotence after first
+   status divergence (promotions or feedback events)
+2. Adjunction spot-check within the largest recurrence
+   classes (23-instance projection != source class is
+   the natural testbed)
+3. FCL-003 opening (priority already raised)
 ```
 
 ---
