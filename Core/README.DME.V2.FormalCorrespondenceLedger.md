@@ -638,7 +638,7 @@ ODQ-9: Source measure (exploratory).
   declarable empirical source distribution over claim contents?
   Gates the rate side of any future R(D) treatment.
 
-### Live Test Surface (declared, not executed)
+### Live Test Surface
 
 The doctrine compression: 2,988 NC instances -> 1,647 unique
 contents at the v2.1 snapshot; 45% statement reduction
@@ -648,9 +648,16 @@ exercised). This is one measured operating point on the
 corpus's rate-distortion surface: R at D = 0 on the content
 axis, loss declared on the location/section axes.
 
-Execution requires its own governed operation: declared
-envelope, new snapshot anchor, chain migration (third
-anchor event). Not performed here.
+Executed operating point A (2026-06): 0% statement reduction;
+authority structure compressed from 1,919 peer instances to
+578 canonical entries + projections over duplicated contents,
+with singleton contents registered but uncompressed.
+
+Projected vs realized delta:
+  the declared envelope priced section-role preservation as a
+  hard invariant. That invariant was not priced by the sizing
+  estimate. Operating point B (byte reduction) remains open
+  under future per-document envelopes.
 
 ### blocked_uses
 
@@ -668,14 +675,15 @@ no performing doctrine compression without its own governed
 
 ```text
 1. ODQ-8 decision (gates quantitative admission)
-2. Execute the doctrine compression as a governed operation:
-   envelope declaration -> compression -> new tag ->
-   chain migration -> strict suite -> measure the realized
-   operating point against the declared one
+2. Operating point A executed (2026-06):
+   authority compression with zero epistemic distortion;
+   projected 45% statement reduction, realized 0% statement
+   reduction because the declared envelope preserved section-role
+   legibility in place
 3. ODQ-9 exploration: recurrence-frequency as source measure
-4. Post-compression: re-run FCL-001 composition checks on the
-   compressed corpus (real composite paths with real declared
-   loss finally exist)
+4. Operating point B remains open: byte reduction under future
+   per-document envelopes, followed by re-running FCL-001
+   composition checks on the realized compressed corpus
 ```
 
 ---

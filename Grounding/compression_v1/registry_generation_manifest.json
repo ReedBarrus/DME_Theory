@@ -1,0 +1,13 @@
+{
+  "input_inventory_sha256": "b0d3d674b734296e3d4ed71c5ba6ac000291ba06ea5a2b906b0634c7e5c1f030",
+  "input_overlay_sha256": "49bb9f2b6a4cc21c656033f284ba56d185f8de5fdea5a9ab5b1f2f752bcaf485",
+  "generator_script_sha256": "248e0b7d991a296b510351522b43cdeb7f40db024532047bb64f6204a23d58e5",
+  "generated_registry_sha256": "002b3d8723cb497fca0a03baf30c72edfe855a499a6bafcbba7bd3010fe6abde",
+  "entry_count_total": 1647,
+  "singleton_count": 1069,
+  "duplicated_content_count": 578,
+  "peer_instance_count_before": 1919,
+  "canonical_entry_count_after": 578,
+  "source_snapshot": "theory-v2.1-grounded-canon",
+  "output_snapshot": "theory-v2.2-registry-canon"
+}
