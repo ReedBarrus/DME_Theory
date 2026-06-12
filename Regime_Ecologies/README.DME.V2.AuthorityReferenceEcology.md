@@ -1501,6 +1501,12 @@ unresolved future load caused by authority states that exceed support, proof,
 feedback, provenance, stake mapping, or revocation readiness.
 ```
 
+AuthorityDebt is the violation state of the support/authorization
+separation law (see IdentityEnvelopeComposition, Support and
+Authorization): authority outrunning the epistemic order that
+should bound it. The inverse posture - support exceeding
+authorization - is not debt.
+
 AuthorityDebt may arise from:
 
 ```text

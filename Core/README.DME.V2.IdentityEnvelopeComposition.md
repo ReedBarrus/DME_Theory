@@ -454,6 +454,79 @@ This document does not define that operator logic.
 
 It only declares the doctrine boundary that implementation and OperatorGrammar should preserve.
 
+### Support and Authorization
+
+Epistemic support and use-authorization are distinct orders.
+
+Support status measures epistemic grounding:
+
+```text
+what evidence, evaluated axes, provenance, and feedback
+stand behind a claim.
+```
+
+Authorization governs permissible deployment:
+
+```text
+what a claim, reference, or locus may affect,
+under scoped, revocable authority.
+```
+
+Interaction law:
+
+```text
+Support may be necessary for authorization.
+Support is never sufficient for authorization.
+
+No claim may authorize action merely by being well-supported.
+Authorization requires an authority-gated permit
+regardless of support level.
+
+Authorization may reference support.
+Authorization may not be inferred from support.
+```
+
+Representation law:
+
+```text
+No blocked use may be modeled as lower support status.
+No support status may be lowered to express a deployment
+restriction, nor raised to express a permission.
+The two orders are recorded separately and never folded.
+```
+
+Violation states:
+
+```text
+Authorization exceeding support is AuthorityDebt
+(see AuthorityReferenceEcology).
+
+Support exceeding authorization is not debt.
+It is the normal posture of well-grounded,
+narrowly-permitted structure.
+```
+
+resolution_basis:
+
+```text
+FCL-002 CE-4: empirical divergence of support and
+authorization in Grounding/v0_2 (entries carrying high
+epistemic support with blocked uses).
+
+Corpus recurrence measurement: 81 unique pairwise
+epistemic/deontic separation laws in active doctrine -
+the most recurrent law pattern in the corpus
+(e.g. trust != authority, 20 occurrences, CLAIM-NC-0069;
+proof != authority, 19 occurrences, CLAIM-NC-0007;
+feedback != self-authorization, CLAIM-NC-0146).
+
+AuthorityReferenceEcology reconciliation (per FCL-002
+next_test 4): AuthorityCeiling (CLAIM-DEF-0276) already
+takes support as input, not identity; AuthorityDebt
+(CLAIM-DEF-0290) already names the violation state.
+This law generalizes existing canon; it introduces nothing.
+```
+
 ### Non-Collapse Laws
 
 ```text
@@ -469,6 +542,11 @@ convergence != truth
 unverified != satisfied
 omitted_axis != preserved_axis
 probabilistic navigation != deterministic projection
+support != authorization
+well-supported != permitted
+blocked != doubted
+restriction != refutation
+epistemic order != deontic order
 ```
 
 ---

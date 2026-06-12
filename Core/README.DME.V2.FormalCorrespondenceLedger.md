@@ -398,14 +398,16 @@ ODQ-5: Round-trip laws.
   re-evaluation without new evidence is a fixed point
   (idempotence). (Gates adjunction admission.)
 
-ODQ-6: Epistemic / deontic separation.
-  Epistemic-support order and use-authorization order are
-  distinct lattices. Support status lives on the first;
-  blocked_uses on the second. Doctrine must forbid collapsing
-  them. (Required regardless of Galois ambition; CE-4 shows the
-  divergence is already real in the inventory.)
-Do not model blocked_uses as a lower support_status.
-Blocked uses are authorization constraints over otherwise-supported entries.
+ODQ-6: RESOLVED 2026-06 - Support and Authorization separation
+  added to IdentityEnvelopeComposition; reciprocal AuthorityDebt
+  anchor added to AuthorityReferenceEcology. Reconciliation
+  cross-check (next_test 4) completed: existing canon already
+  asserted the separation pairwise (81 unique laws) and named
+  the violation state (AuthorityDebt). Resolution generalizes;
+  it does not introduce.
+
+Consequence for the Galois candidate: any future adjunction
+admission applies to the epistemic order only, by canon.
 
 ### Refinement Gifts From the Formalism
 
@@ -430,13 +432,10 @@ do not collapse support status and blocked_uses into one order
 ### next_test
 
 ```text
-1. ODQ-4 / ODQ-5 / ODQ-6 doctrine decisions
+1. ODQ-4 / ODQ-5 doctrine decisions
 2. Round-trip tests on the markdown prototype (unit, counit)
 3. Idempotence test: same-version re-extraction must be a
    status fixed point (doubles as extractor determinism check)
-4. Cross-reference: ODQ-6's two-lattice separation should be
-   checked against AuthorityReferenceEcology's existing
-   authority/permission distinctions before any doctrine patch
 ```
 
 ---
