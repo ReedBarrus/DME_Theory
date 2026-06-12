@@ -1,0 +1,507 @@
+{
+  "source_snapshot": "theory-v2.1-grounded-canon",
+  "promotion_layer_version": "first-promotion-gate-v0.1",
+  "base_inventory_path": "Grounding/v2_1/claim_inventory.jsonl",
+  "base_inventory_sha256": "b0d3d674b734296e3d4ed71c5ba6ac000291ba06ea5a2b906b0634c7e5c1f030",
+  "generated_at": "2026-06-12T02:07:46-07:00",
+  "update_count": 45,
+  "fcl_live_claim_count": 14,
+  "updates": {
+    "CLAIM-BL-0071": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-BL-0073": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-BL-0088": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-BL-0093": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-DEF-0131": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001",
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-DEF-0132": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-DEF-0133": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-DEF-0138": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-DEF-0141": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-DEF-0244": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEF-0245": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEF-0251": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEF-0252": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEF-0522": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEF-0636": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEF-0637": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0022": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0023": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0027": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0028": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0029": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0122": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0123": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0124": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0125": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-DEP-0126": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-0522": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-NC-0523": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-NC-0528": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-001",
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-NC-2735": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-2741": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-2742": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-2764": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-NC-2765": {
+      "evaluated_axes": [
+        "Distinction",
+        "Ledger",
+        "Proof"
+      ],
+      "omitted_axes": [
+        "Constraint",
+        "Identity",
+        "Projection",
+        "Feedback",
+        "Consequence",
+        "Authority",
+        "Budget"
+      ],
+      "overlay_basis_refs": [
+        "FCL-002"
+      ],
+      "overlay_reasons": [
+        "Proof-axis recording from FCL perturbation survival"
+      ]
+    },
+    "CLAIM-NC-3042": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3043": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3044": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3045": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3046": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3047": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3048": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3049": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3050": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3051": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    },
+    "CLAIM-NC-3052": {
+      "overlay_reasons": [
+        "Declared promotion gate evaluation"
+      ],
+      "support_status": "partially_admitted"
+    }
+  }
+}
