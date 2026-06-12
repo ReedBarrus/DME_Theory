@@ -301,7 +301,179 @@ distinguishable != reconstructable
 
 ---
 
-## 7. Inter-Scale Translation Paths
+## 7. Inference / Admission Boundary
+
+Deterministic navigation and probabilistic inference operate over different epistemic surfaces.
+
+```text
+Deterministic navigation =
+navigation over admitted topology.
+
+Probabilistic inference =
+navigation over hypothetical topology.
+```
+
+Both may guide DME processing.
+
+They may not collapse into the same claim status.
+
+Core law:
+
+```text
+Hypothetical topology may guide exploration.
+
+Only admitted topology may support identity claims.
+```
+
+This boundary matters because identity claims require declared reconstruction paths, evaluated coordinate axes, and envelope satisfaction.
+
+A probabilistic inference may suggest a possible distinction.
+
+It may not become an admitted DistinctionRegion, ledger-supported invariant, reference candidate, repair basis, revocation basis, rupture basis, or authority-bearing claim without admission.
+
+### Opacity Gradient
+
+Distinctions and candidates exist along an opacity gradient.
+
+```text
+fully_supported =
+multiple deterministic chart bases converge,
+exact provenance exists,
+and relevant coordinate axes are evaluated.
+
+partially_supported =
+some deterministic support exists,
+but one or more relevant axes are omitted, unavailable, or unresolved.
+
+candidate =
+structural context suggests a distinction,
+but admission is incomplete.
+
+conjectural =
+probabilistic inference suggests a distinction,
+but deterministic support is absent or insufficient.
+
+opaque =
+the distinction is hypothesized,
+but the topology is not currently navigable or reconstructable.
+```
+
+Opacity is not a flaw.
+
+Opacity is an epistemic status that must be declared and tracked.
+
+### Axis Evaluation Status
+
+A coordinate axis may be:
+
+```text
+deterministically_evaluated
+probabilistically_estimated
+preserved
+failed
+omitted
+unverifiable
+not_applicable
+```
+
+Omitted axes are not preserved axes.
+
+Unverified axes are not satisfied axes.
+
+Core law:
+
+```text
+unverified != satisfied
+omitted_axis != preserved_axis
+probabilistically_estimated != deterministically_evaluated
+```
+
+### Admission Promotion Gates
+
+Promotion from structurally supported candidate to partially admitted distinction requires:
+
+```text
+at least one deterministic axis fully evaluated
+source span identified with exact provenance
+distinction type classified
+RecurrenceMap entry created
+```
+
+Promotion from fully admitted distinction to ledger-supported invariant requires:
+
+```text
+recorded reconstruction path
+source-to-current representation trace
+ledgered provenance envelope
+declared loss / preservation status
+```
+
+Admission is not automatic.
+
+Ledger support is not automatic.
+
+### Corroboration
+
+A probabilistic candidate may be corroborated when deterministic charting confirms source support for the same or overlapping distinction topology.
+
+```text
+probabilistic candidate
++ deterministic admission
+-> corroborated distinction candidate
+```
+
+Corroboration may increase priority for proof-loading, review, or feedback testing.
+
+Corroboration does not prove the claim.
+
+```text
+corroborated != proven
+two-regime support != feedback-tested
+convergence != truth
+```
+
+### Blocked Uses
+
+Objects with unresolved opacity may declare blocked uses.
+
+Examples:
+
+```text
+canon promotion
+authority-bearing decision
+automated repair
+revocation
+rupture declaration
+reference promotion
+cross-scale repair
+```
+
+Before authority-bearing operators proceed, downstream operator logic should check whether the relevant object carries unresolved opacity or blocked uses.
+
+This document does not define that operator logic.
+
+It only declares the doctrine boundary that implementation and OperatorGrammar should preserve.
+
+### Non-Collapse Laws
+
+```text
+probabilistic support != deterministic admission
+high confidence != provenance
+candidate != invariant
+conjecture != distinction
+hypothetical topology != admitted topology
+opacity declared != opacity resolved
+corroborated != proven
+two-regime support != feedback-tested
+convergence != truth
+unverified != satisfied
+omitted_axis != preserved_axis
+probabilistic navigation != deterministic projection
+```
+
+---
+
+## 8. Inter-Scale Translation Paths
 
 ```text
 InterScaleTranslationPath =
@@ -345,7 +517,7 @@ No cross-scale identity claim without an inter-scale translation path.
 
 ---
 
-## 8. Invariant Status Classes
+## 9. Invariant Status Classes
 
 ```text
 discovered invariant =
@@ -380,7 +552,7 @@ canon inheritance != feedback survival
 
 ---
 
-## 9. Cross-Scale Interference
+## 10. Cross-Scale Interference
 
 ```text
 CrossScaleInterference =
@@ -415,7 +587,7 @@ if it violates a human sovereignty envelope.
 
 ---
 
-## 10. Relation to Substrates
+## 11. Relation to Substrates
 
 ```text
 Structure =
@@ -438,7 +610,7 @@ This document preserves the four-substrate architecture unchanged.
 
 ---
 
-## 11. Relation to Operators
+## 12. Relation to Operators
 
 Operators perform transformations.
 
@@ -466,7 +638,7 @@ Do not add DetectRupture / DeclareRupture here yet.
 
 ---
 
-## 12. Language / Markdown Example
+## 13. Language / Markdown Example
 
 Markdown is the canonical first example.
 
@@ -516,7 +688,7 @@ high-stake scale violated by lower-scale optimization
 
 ---
 
-## 13. Non-Collapse Laws
+## 14. Non-Collapse Laws
 
 ```text
 identity != sameness
@@ -538,11 +710,23 @@ axis survival != envelope satisfaction
 partial axis survival != identity conservation
 addressable != admissible
 distinguishable != reconstructable
+probabilistic support != deterministic admission
+high confidence != provenance
+candidate != invariant
+conjecture != distinction
+hypothetical topology != admitted topology
+opacity declared != opacity resolved
+corroborated != proven
+two-regime support != feedback-tested
+convergence != truth
+unverified != satisfied
+omitted_axis != preserved_axis
+probabilistic navigation != deterministic projection
 ```
 
 ---
 
-## 14. Deferred Work
+## 15. Deferred Work
 
 This document does not yet define RuptureSignature, RuptureReceipt,
 DetectRupture, or DeclareRupture.
@@ -550,3 +734,9 @@ DetectRupture, or DeclareRupture.
 Those belong in later patches to FeedbackIntegrationEcology and OperatorGrammar.
 
 This document provides the envelope composition foundation those later rupture objects will compare against.
+
+Implementation may later define OpacityProfile, DistinctionCandidate.status,
+CoordinateRegion.opacity_profile, ProjectionObject.support_mode,
+and CoherenceDelta.axis_evaluation.
+
+Those are implementation objects derived from the inference/admission boundary.

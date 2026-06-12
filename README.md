@@ -161,6 +161,10 @@ Foundational theory and architecture documents.
 - [Core/README.DME.V2.IdentityEnvelopeComposition.md](Core/README.DME.V2.IdentityEnvelopeComposition.md)
 - [Core/README.DME.V2.TheoryFoundation.md](Core/README.DME.V2.TheoryFoundation.md)
 - [Core/README.DME.V2.CoreArchitecture.md](Core/README.DME.V2.CoreArchitecture.md)
+- [Core/README.DME.V2.ClaimInventory.md](Core/README.DME.V2.ClaimInventory.md)
+  Scaffold for provenance-backed claim/distinction inventory extracted from tagged DME Theory snapshots.
+- [Core/README.DME.V2.FormalCorrespondenceLedger.md](Core/README.DME.V2.FormalCorrespondenceLedger.md)
+  Scaffold for external formal grounding and theory opacity profiling.
 
 ### Grammar
 
@@ -200,6 +204,8 @@ Bridge documents for future build strategy.
 
 - [Implementation_Orientation/DME.V2.GovernedAgenticNervousSystem.md](Implementation_Orientation/DME.V2.GovernedAgenticNervousSystem.md)
 - [Implementation_Orientation/DME.V2.ModularMechanizationLadder.md](Implementation_Orientation/DME.V2.ModularMechanizationLadder.md)
+- [Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md](Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md)
+  v0 deterministic extraction specification for reading DME Theory markdown into a flat claim ledger.
 - [Implementation_Orientation/Dynamics/README.DME.V2.StructuralAdmissionCoordinateMechanics.md](Implementation_Orientation/Dynamics/README.DME.V2.StructuralAdmissionCoordinateMechanics.md)
 - [Implementation_Orientation/Prototypes/README.DME.V2.LinguisticConfigurationHarness.md](Implementation_Orientation/Prototypes/README.DME.V2.LinguisticConfigurationHarness.md)
 

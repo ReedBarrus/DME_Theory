@@ -83,6 +83,10 @@ Archive preserves lineage, not active authority.
 
 [Core/README.DME.V2.CoreArchitecture.md](Core/README.DME.V2.CoreArchitecture.md) -> [Grammar/README.DME.V2.ReadWriteTopology.md](Grammar/README.DME.V2.ReadWriteTopology.md) -> [Substrates/README.DME.V2.ProjectionIndexRasterization.md](Substrates/README.DME.V2.ProjectionIndexRasterization.md) -> [Substrates/README.DME.V2.LedgerSubstrate.md](Substrates/README.DME.V2.LedgerSubstrate.md) -> [Implementation_Orientation/DME.V2.GovernedAgenticNervousSystem.md](Implementation_Orientation/DME.V2.GovernedAgenticNervousSystem.md) -> [Agentic_Reasoning/README.DME.V2.SystemWalkthrough.md](Agentic_Reasoning/README.DME.V2.SystemWalkthrough.md)
 
+### Grounding instruments / theory opacity profile
+
+[Core/README.DME.V2.ClaimInventory.md](Core/README.DME.V2.ClaimInventory.md) -> [Core/README.DME.V2.FormalCorrespondenceLedger.md](Core/README.DME.V2.FormalCorrespondenceLedger.md) -> [Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md](Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md)
+
 ### For agent/tool governance
 
 [Regime_Ecologies/README.DME.V2.AgencyEcology.md](Regime_Ecologies/README.DME.V2.AgencyEcology.md) -> [Regime_Ecologies/README.DME.V2.DecisionConsequenceEcology.md](Regime_Ecologies/README.DME.V2.DecisionConsequenceEcology.md) -> [Grammar/README.DME.V2.OperatorGrammar.md](Grammar/README.DME.V2.OperatorGrammar.md) -> [Substrates/README.DME.V2.LedgerSubstrate.md](Substrates/README.DME.V2.LedgerSubstrate.md) -> [Substrates/README.DME.V2.ProjectionIndexRasterization.md](Substrates/README.DME.V2.ProjectionIndexRasterization.md) -> [Implementation_Orientation/DME.V2.GovernedAgenticNervousSystem.md](Implementation_Orientation/DME.V2.GovernedAgenticNervousSystem.md)
