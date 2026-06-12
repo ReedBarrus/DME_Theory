@@ -1,14 +1,14 @@
 # DME V2 - Claim Inventory
 
 ```text
-status: grounding instrument / scaffold / population pending
+status: grounding instrument / scaffold / populated artifact index
 folder: Core
 related:
   - Implementation_Orientation/README.DME.V2.LanguageAdmissionPrototype.md
   - Core/README.DME.V2.FormalCorrespondenceLedger.md
 schema posture: deferred
-source_snapshot: pending tag theory-v2.0-pre-grounding
-population_status: scaffold only - no entries yet
+source_snapshot: theory-v2.0-pre-grounding
+population_status: populated - see Grounding/v0/
 ```
 
 ---
@@ -108,8 +108,15 @@ claim inventory != formal correspondence ledger
 
 ---
 
-## 6. Population Pending
+## 6. Population Status
 
-No entries are populated before the `theory-v2.0-pre-grounding` tag.
+Entries for `theory-v2.0-pre-grounding` are populated in:
 
-This document is scaffold only until extraction runs.
+```text
+Grounding/v0/claim_inventory.jsonl
+Grounding/v0/ClaimInventory.POPULATED.v0.md
+```
+
+The JSONL artifact is canonical.
+
+This document remains the index and contract surface for the populated inventory.

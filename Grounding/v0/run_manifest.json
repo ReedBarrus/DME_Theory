@@ -1,0 +1,33 @@
+{
+ "source_snapshot": "theory-v2.0-pre-grounding",
+ "extractor_version": "v0.1",
+ "corpus_scope": {
+  "included_dirs": [
+   "Core",
+   "Grammar",
+   "Substrates",
+   "Regime_Ecologies",
+   "Agentic_Reasoning",
+   "Implementation_Orientation"
+  ],
+  "included_root_files": [
+   "README.md",
+   "MEMORY_INDEX.md"
+  ],
+  "excluded_dirs": [
+   "Archive",
+   "Meta_Web_Gov_Hub"
+  ],
+  "n_files": 37
+ },
+ "counts_by_type": {
+  "BL": 378,
+  "NC": 2723,
+  "DEP": 309,
+  "DEF": 443,
+  "OP": 25
+ },
+ "total_entries": 3878,
+ "op_chains_rejected_nonvocab": 262,
+ "status_ceiling": "partially_admitted (per spec section 7)"
+}

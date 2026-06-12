@@ -433,4 +433,16 @@ candidate ladder mechanics
 reprojection to language
 CoherenceDelta evaluation
 structural signature taxonomy after RecurrencePass
+
+v0.2 patch queue (from audit_report_v0, feedback-derived):
+  1. core-law fences captured as single BL entries, not per-line
+  2. BL-modal sentence-shape filter
+  3. negation-context guard (record context_prefix; annotate,
+     don't drop)
+  4. use_mention_flag for instrument docs and example sections
+  5. DEF-label body attachment
+  6. DEP relation typing (related_to vs depends_on)
+
+audit finding: BL classes blocked for doctrine-compression use
+until v0.2; NC/DEF/OP/DEP audited clean.
 ```
