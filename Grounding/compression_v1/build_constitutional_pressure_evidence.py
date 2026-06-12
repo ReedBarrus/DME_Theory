@@ -25,6 +25,9 @@ MANIFEST_PATH = REPO / "Grounding" / "v2_2_1" / "run_manifest.json"
 V22_CROSSWALK_PATH = REPO / "Grounding" / "v2_2" / "id_crosswalk.json"
 V221_CROSSWALK_PATH = REPO / "Grounding" / "v2_2_1" / "id_crosswalk.json"
 OVERLAY_PATH = REPO / "Grounding" / "v2_1_promotions" / "status_overlay_v2.json"
+PROMOTION_LEDGER_PATH = REPO / "Grounding" / "v2_1_promotions" / "promotion_ledger_v2.jsonl"
+DEONTIC_SUITE_PATH = REPO / "Grounding" / "v2_1_measurements" / "suite_report.md"
+STRICT_SUITE_JSON_PATH = REPO / "Grounding" / "v2_2_1_tests" / "suite_report.json"
 NOTE_PATH = REPO / "Grounding" / "compression_v1" / "constitutional_standing_pressure_note.md"
 REGISTRY_PATH = REPO / "Core" / "README.DME.V2.NonCollapseRegistry.md"
 
@@ -261,6 +264,138 @@ def stake_notes(primary_family: str) -> str:
     return notes[primary_family]
 
 
+def has_any(text: str, needles: list[str]) -> bool:
+    return any(needle in text for needle in needles)
+
+
+def live_path(path: Path) -> str:
+    return str(path.relative_to(REPO)).replace("\\", "/")
+
+
+def promotion_events_for_refs(live_refs: list[str], promotion_events: list[dict]) -> list[dict]:
+    live_set = set(live_refs)
+    return [event for event in promotion_events if event.get("claim_id") in live_set]
+
+
+def summarize_enforcement_record(record: dict) -> str:
+    status = record["enforcement_status"]
+    if status in {"unenforced", "asserted_only"}:
+        return status
+    catches = len(record.get("catch_refs", []))
+    return f"{status}; exercises={record.get('exercise_count', 0)}; catches={catches}"
+
+
+def derive_enforcement_record(
+    canonical_text: str,
+    resolved_live_refs: list[str],
+    promotion_events: list[dict],
+    strict_suite: dict,
+) -> dict:
+    lowered = canonical_text.lower()
+    default = {
+        "enforced_by": [],
+        "exercise_count": 0,
+        "catch_refs": [],
+        "enforcement_status": "asserted_only",
+        "ceiling_effect": "No current ceiling rise from enforcement record alone; evidence remains assertion-level until a live gate, suite, or operation binds it.",
+    }
+
+    if lowered == "registry != constitution":
+        return {
+            "enforced_by": [
+                live_path(NOTE_PATH),
+                live_path(OUTPUT_MD),
+            ],
+            "exercise_count": 2,
+            "catch_refs": [
+                f"{live_path(NOTE_PATH)} -> authority_posture: observed pressure only; no standing declared",
+                f"{live_path(OUTPUT_MD)} -> authority_posture: evidence only; no standing declared; scalarization_status: forbidden / not performed",
+            ],
+            "enforcement_status": "operation_enforced",
+            "ceiling_effect": "Raises deliberation ceiling for registry-derived review priority while explicitly blocking registry compression from self-authorizing constitutional standing.",
+        }
+
+    if lowered == "recurrence != constitutional standing":
+        return {
+            "enforced_by": [
+                live_path(NOTE_PATH),
+                live_path(OUTPUT_MD),
+            ],
+            "exercise_count": 2,
+            "catch_refs": [
+                f"{live_path(NOTE_PATH)} -> recurrence-as-authority blocked in authority deliberation note",
+                f"{live_path(OUTPUT_MD)} -> recurrence axis reported as deliberation pressure only, not authority",
+            ],
+            "enforcement_status": "operation_enforced",
+            "ceiling_effect": "Raises deliberation ceiling only: recurrence can increase review pressure and priority, but cannot convert itself into standing or grant.",
+        }
+
+    if has_any(
+        lowered,
+        [
+            "basis agreement != authority",
+            "basis change != proof",
+            "basis change != truth",
+            "cross-basis correlation != proof",
+            "cross-basis conflict != invalidation",
+            "basis conflict != invalidation by itself",
+        ],
+    ):
+        derivation_sanity = strict_suite.get("derivation_sanity", {})
+        review_flags = derivation_sanity.get("review_flags", [])
+        reclassified_basis = strict_suite.get("committed_manifest", {}).get("id_counts", {}).get("reclassified_basis", 0)
+        return {
+            "enforced_by": [
+                live_path(MANIFEST_PATH),
+                live_path(V221_CROSSWALK_PATH),
+                live_path(STRICT_SUITE_JSON_PATH),
+            ],
+            "exercise_count": 2,
+            "catch_refs": [
+                f"{live_path(MANIFEST_PATH)} -> new_content_attribution_by_basis.registry_canonical flagged for review at share 1.0",
+                f"{live_path(STRICT_SUITE_JSON_PATH)} -> derivation_sanity.status = {derivation_sanity.get('status', 'unknown')}",
+                f"{live_path(V221_CROSSWALK_PATH)} -> reclassified_basis entries = {reclassified_basis}",
+            ],
+            "enforcement_status": "instrument_enforced",
+            "ceiling_effect": "Raises live-chain reconstructability ceiling for basis-sensitive laws by showing the derivation now detects, reclassifies, and revalidates basis drift before treating it as active evidence.",
+        }
+
+    if lowered in {
+        "support != authorization",
+        "proof != authority",
+        "proof may support authority, but proof != authority.",
+    }:
+        related_events = [
+            event for event in promotion_events_for_refs(resolved_live_refs, promotion_events)
+            if event.get("authorization_change") == "none"
+            and event.get("blocked_uses_change") == "none"
+        ]
+        exercise_count = len(related_events)
+        catch_refs = []
+        if DEONTIC_SUITE_PATH.exists():
+            catch_refs.append(
+                f"{live_path(DEONTIC_SUITE_PATH)} -> blocked_uses_affects_support_status_violations = []"
+            )
+        if exercise_count:
+            sample = sorted({event["claim_id"] for event in related_events})[:3]
+            catch_refs.append(
+                f"{live_path(PROMOTION_LEDGER_PATH)} -> authorization_change:none across promotion events for {', '.join(sample)}"
+            )
+        if exercise_count or catch_refs:
+            return {
+                "enforced_by": [
+                    live_path(DEONTIC_SUITE_PATH),
+                    live_path(PROMOTION_LEDGER_PATH),
+                ],
+                "exercise_count": exercise_count + (1 if DEONTIC_SUITE_PATH.exists() else 0),
+                "catch_refs": catch_refs,
+                "enforcement_status": "instrument_enforced",
+                "ceiling_effect": "Raises durability ceiling for support/authorization separation by showing live promotion and suite traces where epistemic promotion occurred without any authorization grant.",
+            }
+
+    return default
+
+
 def resolve_live_id(original_ref: str, doctrine_entries: dict, crosswalks: list[dict]) -> str | None:
     current = original_ref
     if current in doctrine_entries:
@@ -285,6 +420,8 @@ def load_sources():
     entries = load_jsonl(INVENTORY_PATH)
     manifest = load_json(MANIFEST_PATH)
     overlay_updates = load_json(OVERLAY_PATH).get("updates", {})
+    promotion_events = load_jsonl(PROMOTION_LEDGER_PATH)
+    strict_suite = load_json(STRICT_SUITE_JSON_PATH)
     crosswalks = [
         load_json(V22_CROSSWALK_PATH),
         load_json(V221_CROSSWALK_PATH),
@@ -307,7 +444,7 @@ def load_sources():
             entry.get("registry_entry_id", ""),
         )
     )
-    return doctrine_entries, registry_entries, overlay_updates, crosswalks, manifest
+    return doctrine_entries, registry_entries, overlay_updates, promotion_events, strict_suite, crosswalks, manifest
 
 
 def build_entry_vector(
@@ -316,6 +453,8 @@ def build_entry_vector(
     total: int,
     doctrine_entries: dict,
     overlay_updates: dict,
+    promotion_events: list[dict],
+    strict_suite: dict,
     crosswalks: list[dict],
 ):
     canonical_text = normalize_text(
@@ -326,6 +465,7 @@ def build_entry_vector(
     primary_family, matched_families = classify_families(canonical_text)
 
     resolved_pairs = []
+    resolved_live_refs = []
     support_counter = Counter()
     source_files = []
     for original_ref in entry.get("instance_refs", []):
@@ -334,6 +474,7 @@ def build_entry_vector(
             continue
         live_entry = doctrine_entries[live_id]
         resolved_pairs.append({"original_ref": original_ref, "live_ref": live_id})
+        resolved_live_refs.append(live_id)
         source_files.append(live_entry["source_file"])
         support_counter[support_status_for_ref(original_ref, live_entry, overlay_updates)] += 1
 
@@ -343,6 +484,12 @@ def build_entry_vector(
         {"family": family, "count": count}
         for family, count in sorted(family_counter.items(), key=lambda item: (-item[1], item[0]))
     ]
+    enforcement_record = derive_enforcement_record(
+        canonical_text=canonical_text,
+        resolved_live_refs=resolved_live_refs,
+        promotion_events=promotion_events,
+        strict_suite=strict_suite,
+    )
 
     return {
         "ncr": entry["registry_entry_id"],
@@ -366,6 +513,8 @@ def build_entry_vector(
         "perturbation_survival_status": "unmeasured",
         "proof_trace_refs": [],
         "proof_note": "proof support != authority",
+        "enforcement_record": enforcement_record,
+        "enforcement_record_summary": summarize_enforcement_record(enforcement_record),
         "consensus_status": "not measured / no governance vote recorded",
         "consensus_future_input_slot": CONSENSUS_FUTURE_INPUT,
         "consensus_note": "consensus != truth; consensus may inform authority only through declared procedure",
@@ -380,12 +529,13 @@ def build_entry_vector(
         "canonical_home": entry.get("canonical_home", ""),
         "instance_refs": entry.get("instance_refs", []),
         "resolved_instance_refs": resolved_pairs,
+        "ceiling_effect": enforcement_record["ceiling_effect"],
         "authority_posture": "evidence only; no standing declared",
     }
 
 
 def build_dataset():
-    doctrine_entries, registry_entries, overlay_updates, crosswalks, manifest = load_sources()
+    doctrine_entries, registry_entries, overlay_updates, promotion_events, strict_suite, crosswalks, manifest = load_sources()
     total = len(registry_entries)
     vectors = [
         build_entry_vector(
@@ -394,6 +544,8 @@ def build_dataset():
             total=total,
             doctrine_entries=doctrine_entries,
             overlay_updates=overlay_updates,
+            promotion_events=promotion_events,
+            strict_suite=strict_suite,
             crosswalks=crosswalks,
         )
         for index, entry in enumerate(registry_entries, start=1)
@@ -420,6 +572,9 @@ def build_dataset():
             "evidence accumulates;",
             "authority is declared;",
             "AuthorityDebt tracks the gap.",
+            "Evidence accumulates ceiling.",
+            "Authority is granted under ceiling.",
+            "AuthorityDebt tracks grants exceeding ceiling.",
         ],
         "summary": {
             "total_ncr_entries_considered": len(vectors),
@@ -457,9 +612,13 @@ def build_dataset():
                 "source-file spread",
                 "support-status distribution",
                 "live provenance resolution",
+                "gate-trace joins",
             ],
             "scalar_authority_score_produced": False,
             "odq_10_raised": False,
+            "ceiling_separated_from_grant": True,
+            "stake_is_burden_not_permission": True,
+            "stale_evidence_not_current_ceiling": True,
             "note_source": str(NOTE_PATH.relative_to(REPO)).replace("\\", "/"),
             "registry_source": str(REGISTRY_PATH.relative_to(REPO)).replace("\\", "/"),
         },
@@ -468,12 +627,12 @@ def build_dataset():
 
 def render_table(entries: list[dict]) -> list[str]:
     lines = [
-        "| NCR | canonical_text | family | instances | source_file_count | fully_admitted | proof_status | consensus_status | resonance_status | stake_scope_hint | authority_posture |",
-        "| --- | --- | --- | ---: | ---: | --- | --- | --- | --- | --- | --- |",
+        "| NCR | canonical_text | family | instances | source_file_count | fully_admitted | proof_status | enforcement_record | consensus_status | resonance_status | stake_scope_hint | ceiling_effect | authority_posture |",
+        "| --- | --- | --- | ---: | ---: | --- | --- | --- | --- | --- | --- | --- | --- |",
     ]
     for entry in entries:
         lines.append(
-            "| {ncr} | {canonical_text} | {family} | {instances} | {source_count} | {fully_admitted} | {proof_status} | {consensus_status} | {resonance_status} | {stake_scope_hint} | {authority_posture} |".format(
+            "| {ncr} | {canonical_text} | {family} | {instances} | {source_count} | {fully_admitted} | {proof_status} | {enforcement_record} | {consensus_status} | {resonance_status} | {stake_scope_hint} | {ceiling_effect} | {authority_posture} |".format(
                 ncr=entry["ncr"],
                 canonical_text=entry["canonical_text"].replace("|", "\\|"),
                 family=entry["primary_family"].replace("|", "\\|"),
@@ -481,9 +640,11 @@ def render_table(entries: list[dict]) -> list[str]:
                 source_count=entry["unique_source_file_count"],
                 fully_admitted=entry["fully_admitted"],
                 proof_status=entry["perturbation_survival_status"],
+                enforcement_record=entry["enforcement_record_summary"].replace("|", "\\|"),
                 consensus_status=entry["consensus_status"].replace("|", "\\|"),
                 resonance_status=entry["resonance_status"].replace("|", "\\|"),
                 stake_scope_hint=entry["consequence_scope_hint"],
+                ceiling_effect=entry["ceiling_effect"].replace("|", "\\|"),
                 authority_posture=entry["authority_posture"],
             )
         )
@@ -515,7 +676,8 @@ def render_detailed_vectors(entries: list[dict]) -> list[str]:
         lines.append(
             f"- {entry['ncr']} `{entry['canonical_text']}`: rank {entry['recurrence_rank']} ({entry['rank_band']}), "
             f"support {{{support_dist}}}, families {', '.join(entry['matched_families'])}, "
-            f"source_families [{source_families}], stake `{entry['consequence_scope_hint']}`."
+            f"source_families [{source_families}], enforcement `{entry['enforcement_record_summary']}`, "
+            f"stake `{entry['consequence_scope_hint']}`."
         )
     return lines
 
@@ -544,6 +706,9 @@ def render_markdown(dataset: dict) -> str:
         "evidence accumulates;",
         "authority is declared;",
         "AuthorityDebt tracks the gap.",
+        "Evidence accumulates ceiling.",
+        "Authority is granted under ceiling.",
+        "AuthorityDebt tracks grants exceeding ceiling.",
         "```",
         "",
         "## Executive Summary",
@@ -573,6 +738,48 @@ def render_markdown(dataset: dict) -> str:
     lines.extend(
         [
             "",
+            "## Authority Ceiling Interpretation",
+            "",
+            "```text",
+            "Authority is not accumulated directly.",
+            "Evidence may raise an authority ceiling.",
+            "A grant remains a governed declaration under that ceiling.",
+            "",
+            "Ceilings are re-derived from the live chain.",
+            "They are not grandfathered from founding evidence.",
+            "A ceiling unsupported by live reconstructable evidence decays.",
+            "```",
+            "",
+            "## Axis Roles",
+            "",
+            "```text",
+            "recurrence:",
+            "  raises deliberation ceiling; this law deserves review priority.",
+            "  recurrence != authority.",
+            "",
+            "proof:",
+            "  raises durability ceiling; this law survived declared perturbation.",
+            "  proof != authority.",
+            "",
+            "consensus:",
+            "  raises distributed-accountability ceiling only when governance loci are explicit.",
+            "  consensus != truth.",
+            "",
+            "resonance:",
+            "  raises exercised-use evidence only when visible in actual decision records, usage, citations, or operation routing.",
+            "  resonance != proof.",
+            "",
+            "stake:",
+            "  raises burden, not ceiling.",
+            "  Higher stake increases the evidence/collateral required per unit of granted scope.",
+            "  stake != permission.",
+            "",
+            "enforcement_record:",
+            "  strongest current evidence class.",
+            "  Shows that a law has already operated as a gate, caught a violation, or constrained a governed transformation.",
+            "  enforcement_record != authority grant.",
+            "```",
+            "",
             "## Per-Entry Vector Notes",
             "",
         ]
@@ -595,12 +802,35 @@ def render_markdown(dataset: dict) -> str:
             "instrument aggregation != governance decision",
             "```",
             "",
+            "## Ceiling / Grant Non-Collapse",
+            "",
+            "```text",
+            "ceiling != grant",
+            "grant != proof",
+            "grant != truth",
+            "grant != permanence",
+            "enforcement != constitutional standing",
+            "old enforcement record != current authority unless re-derived from live chain",
+            "stake != permission",
+            "```",
+            "",
             "## Authority Deliberation Framing",
             "",
             "```text",
             "Evidence may increase pressure for authority deliberation.",
             "Evidence may not self-authorize constitutional standing.",
             "Any future standing must be declared by governed authority, scoped, reviewable, revocable, and tracked for AuthorityDebt where standing exceeds evidence.",
+            "```",
+            "",
+            "Interpretive finding:",
+            "",
+            "```text",
+            "Authority in DME behaves like scoped credit.",
+            "Grants are collateralized by consequence records of prior grants.",
+            "The ledger is the credit history.",
+            "AuthorityDebt is under-collateralized scope.",
+            "Stake increases the collateral requirement.",
+            "This metaphor is explanatory only and does not declare doctrine.",
             "```",
             "",
             "## Candidate Future Question, Not Raised",
@@ -610,6 +840,25 @@ def render_markdown(dataset: dict) -> str:
             "By what governed procedure may constitutional standing be declared for registry entries using recurrence, admission status, proof survival, consensus, resonance, and stake as evidence inputs without allowing any input to self-authorize authority?",
             "```",
             "",
+            "Possible future authority-standing procedure, not raised here:",
+            "",
+            "```text",
+            "rung 1: instrument-binding",
+            "  A law may bind a suite check or derivation rule.",
+            "  Promotion basis: actual enforcement/catch record.",
+            "",
+            "rung 2: operation-binding",
+            "  A law may bind governed operation envelopes.",
+            "  Promotion basis: repeated instrument-binding success plus clean consequence review.",
+            "",
+            "rung 3: canon-binding",
+            "  A law may constrain doctrine mutation itself.",
+            "  Promotion basis: repeated operation-binding success, governance review, revocation path, and AuthorityDebt accounting.",
+            "",
+            "Promotion spends the enforcement record of the rung below.",
+            "Demotion occurs on debt, rupture, non-reconstructability, or stale evidence.",
+            "```",
+            "",
             "## Next Step",
             "",
             "Recommend human/maintainer review before raising any Authority-axis ODQ.",
@@ -617,9 +866,15 @@ def render_markdown(dataset: dict) -> str:
             "## Verification",
             "",
             "- Deterministic generator output: confirmed by fixed-input, fixed-order generation with no timestamps or randomness.",
+            "- No authority grant is declared.",
+            "- No constitutional standing is declared.",
+            "- No scalar authority score is created.",
+            "- Enforcement records are populated only from actual traceable live artifacts; otherwise entries remain `asserted_only`.",
+            "- Stake is represented as burden, not permission.",
+            "- Ceiling is separated from grant.",
+            "- Stale or non-rederivable evidence is not treated as current ceiling; ceilings are re-derived from the live chain.",
             "- Doctrine files changed: not performed by this generator; confirm through repository diff before commit.",
-            "- Registry read mode: `registry_canonical` evidence only; doctrine-occurrence entries used only for spread, support, and live provenance resolution.",
-            "- Scalar authority score: not produced.",
+            "- Registry read mode: `registry_canonical` evidence only; doctrine-occurrence entries used only for spread, support, live provenance resolution, and gate-trace joins.",
             "- ODQ-10: not raised.",
         ]
     )
