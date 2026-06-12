@@ -79,6 +79,8 @@ def build_registry_rows(entries: list[dict], overlay_updates: dict):
     for entry in entries:
         if entry["claim_type"] != "NC":
             continue
+        if entry.get("basis", "doctrine_occurrence") != "doctrine_occurrence":
+            continue
         classes[canonical_key(entry.get("verbatim_span", ""))].append(entry)
 
     rows = []

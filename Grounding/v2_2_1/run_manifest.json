@@ -1,0 +1,138 @@
+{
+  "source_snapshot": "theory-v2.2-registry-canon",
+  "extractor_version": "v0.3",
+  "corpus_scope": {
+    "included_dirs": [
+      "Core",
+      "Grammar",
+      "Substrates",
+      "Regime_Ecologies",
+      "Agentic_Reasoning",
+      "Implementation_Orientation"
+    ],
+    "included_root_files": [
+      "README.md",
+      "MEMORY_INDEX.md"
+    ],
+    "excluded_dirs": [
+      "Archive",
+      "Meta_Web_Gov_Hub"
+    ],
+    "n_files": 39
+  },
+  "counts_by_type": {
+    "BL": 211,
+    "DEF": 804,
+    "DEP": 314,
+    "NC": 4654,
+    "OP": 25
+  },
+  "total_entries": 6008,
+  "status_ceiling": "partially_admitted unless context/use_mention lowers support",
+  "prior_inventory": "Grounding/v2_2/claim_inventory.jsonl",
+  "id_crosswalk": "Grounding/v2_2_1/id_crosswalk.json",
+  "new_entry_registry": "Grounding/v2_2_1/new_entry_registry.json",
+  "id_counts": {
+    "preserved": 4361,
+    "merged": 0,
+    "superseded": 0,
+    "reclassified_basis": 1647,
+    "new_in_v2_2_1": 0
+  },
+  "basis_strata": {
+    "doctrine_occurrence": {
+      "counts_by_type": {
+        "BL": 211,
+        "DEF": 804,
+        "DEP": 314,
+        "NC": 3007,
+        "OP": 25
+      },
+      "total_entries": 4361,
+      "nc_unique_contents": 1666
+    },
+    "registry_canonical": {
+      "counts_by_type": {
+        "NC": 1647
+      },
+      "total_entries": 1647,
+      "nc_unique_contents": 1647
+    }
+  },
+  "doctrine_occurrence_summary": {
+    "counts_by_type": {
+      "BL": 211,
+      "DEF": 804,
+      "DEP": 314,
+      "NC": 3007,
+      "OP": 25
+    },
+    "total_entries": 4361,
+    "nc_unique_contents": 1666,
+    "duplicate_nc_laws": 578,
+    "cross_entry_terms": 920
+  },
+  "registry_canonical_summary": {
+    "counts_by_type": {
+      "NC": 1647
+    },
+    "total_entries": 1647,
+    "nc_unique_contents": 1647
+  },
+  "dep_relation_counts": {
+    "depends_on": 280,
+    "downstream_of": 2,
+    "related_to": 32
+  },
+  "use_mention_counts": {
+    "asserted": 5938,
+    "example": 4,
+    "instrument_self_assertion": 21,
+    "unknown": 45
+  },
+  "context_sensitive_entries": 1,
+  "new_content_attribution_by_basis": {
+    "registry_canonical": {
+      "total_new_unique_contents": 1647,
+      "files": [
+        {
+          "source_file": "Core/README.DME.V2.NonCollapseRegistry.md",
+          "new_unique_contents": 1647,
+          "share": 1.0,
+          "flag_review": true,
+          "expected_dominance": true,
+          "warning_candidate": false
+        }
+      ]
+    }
+  },
+  "fcl_chain_validation": {
+    "status": "passed",
+    "crosswalk_chain": [
+      "Grounding/v0_2/id_crosswalk.json",
+      "Grounding/v2_1/id_crosswalk.json",
+      "Grounding/v2_2/id_crosswalk.json",
+      "Grounding/v2_2_1/id_crosswalk.json"
+    ],
+    "ref_sections": {
+      "FCL-001": 10,
+      "FCL-002": 13,
+      "FCL-003": 7
+    },
+    "dangling_refs": {}
+  },
+  "recurrence_summary": {
+    "cross_entry_terms": 920,
+    "duplicate_nc_laws": 578,
+    "basis": "doctrine_occurrence_only"
+  },
+  "artifact_hashes": {
+    "claim_inventory.jsonl": "d353c7a5d6f9319dd261d06800efa12194d511567d2b89eb1016be072735e1c9",
+    "recurrence_map.json": "cc283b4a2c17a73f958aada7ae60db370c5e57a0d15de708fd87b4ba39de6446",
+    "run_manifest.json": "373833d4b52e01e245dbbe99b5b873f1217a2f16531fbf75b3bd9829e3ddebc2",
+    "id_crosswalk.json": "ce27a2b7469dbebb31c9ed2b1007c93c5136f7be23aa6be8b94b1c150b0cdaca",
+    "new_entry_registry.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "ClaimInventory.POPULATED.v2_2_1.md": "7c76f6d11d417134319c8ee08a82935c309bd9d6400a77987cd1c6f368156d4b",
+    "extract_v0_3.py": "37c6890e699be2bb5284f00f9ba47b6e35b629729f02dcf432c575e83e43f891"
+  }
+}

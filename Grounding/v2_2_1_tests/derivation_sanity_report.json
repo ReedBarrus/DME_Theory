@@ -1,0 +1,27 @@
+{
+  "threshold": 0.1,
+  "review_flags": [
+    {
+      "basis": "registry_canonical",
+      "source_file": "Core/README.DME.V2.NonCollapseRegistry.md",
+      "new_unique_contents": 1647,
+      "share": 1.0,
+      "flag_review": true,
+      "expected_dominance": true,
+      "warning_candidate": false
+    }
+  ],
+  "registry_expected_flags": [
+    {
+      "basis": "registry_canonical",
+      "source_file": "Core/README.DME.V2.NonCollapseRegistry.md",
+      "new_unique_contents": 1647,
+      "share": 1.0,
+      "flag_review": true,
+      "expected_dominance": true,
+      "warning_candidate": false
+    }
+  ],
+  "doctrine_warning_candidates": [],
+  "status": "flagged"
+}
