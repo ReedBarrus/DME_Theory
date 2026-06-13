@@ -1,0 +1,73 @@
+{
+  "schema_name": "NormativeClaimCandidate",
+  "schema_version": "v0.4-candidate",
+  "status": "instrument_candidate_non_canon",
+  "fields": {
+    "actor": {
+      "type": "string_or_null",
+      "description": "Agent, role, system, object, process, or implied operator to whom the norm applies."
+    },
+    "polarity": {
+      "type": "enum",
+      "values": [
+        "SHOULD",
+        "SHOULD_NOT",
+        "MUST",
+        "MUST_NOT",
+        "MAY",
+        "MAY_NOT",
+        "UNKNOWN"
+      ],
+      "description": "Directive valence. Polarity is required for bridging prohibitions to non-collapse structure."
+    },
+    "action": {
+      "type": "string",
+      "description": "The directed operation, treatment, preservation, separation, or practice."
+    },
+    "object": {
+      "type": "string_or_null",
+      "description": "Primary object acted on or governed."
+    },
+    "comparison_or_target": {
+      "type": "string_or_null",
+      "description": "Target, contrast class, forbidden collapse partner, or comparison basis."
+    },
+    "scope": {
+      "type": "string_or_null",
+      "description": "Envelope in which the norm applies."
+    },
+    "rationale": {
+      "type": "string_or_null",
+      "description": "Reason, consequence basis, provenance basis, or justification. May be elided."
+    },
+    "source_form": {
+      "type": "enum",
+      "values": [
+        "imperative",
+        "prohibition",
+        "principle",
+        "non_collapse",
+        "boundary_law",
+        "unknown"
+      ],
+      "description": "Surface form that produced the candidate."
+    },
+    "confidence": {
+      "type": "enum",
+      "values": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "description": "Extraction confidence, not admission status."
+    },
+    "omitted_fields": {
+      "type": "array",
+      "description": "Fields not present in the source surface."
+    },
+    "blocked_uses": {
+      "type": "array",
+      "description": "Uses blocked by admission posture."
+    }
+  }
+}
