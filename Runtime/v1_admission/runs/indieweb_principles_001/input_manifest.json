@@ -1,0 +1,19 @@
+{
+  "run_id": "indieweb_principles_001",
+  "input_label": "indieweb_principles",
+  "input_origin": "https://indieweb.org/principles",
+  "input_snapshot_url": "https://indieweb.org/wiki/index.php?title=principles&oldid=111202",
+  "retrieval_mode": "permanent_oldid",
+  "input_hash_sha256": "e3be35e8...",
+  "input_hash_status": "observed_prefix_only",
+  "input_hash_note": "Full snapshot SHA-256 was not available from local command-line retrieval. Local curl fetched a 401 stub page with SHA-256 878333c6d280f90c421f348428d35e88bc938099aa75356c4eb617b39f94db92, which was not treated as the source hash.",
+  "input_license_or_source_note": "IndieWeb wiki page indicates CC0 public domain dedication unless otherwise noted.",
+  "stake_level": "low",
+  "selection_reason": "public, non-DME, low-stake, principle-shaped, values-rich, human-reviewable",
+  "runtime_scope": "v1 admission spike / instrument-binding only",
+  "extractor": "v1_admission_wrapper",
+  "extractor_note": "Thin runtime wrapper; not full v0.3 pipeline wired to foreign input.",
+  "doctrine_mutation_allowed": false,
+  "authority_grant_allowed": false,
+  "expected_admission_ceiling": "candidate_or_partially_admitted"
+}
