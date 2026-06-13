@@ -1,0 +1,16 @@
+{
+  "run_id": "twelve_factor_001",
+  "input_label": "twelve_factor_app",
+  "input_origin": "https://12factor.net/",
+  "retrieval_mode": "canonical_live_or_recorded_snapshot",
+  "input_hash_sha256": "69230eae64071cc9ffcdfff6154c00dfb85c0c96d0710c63d189e20879a9dab9",
+  "input_hash_status": "full_hash",
+  "stake_level": "low",
+  "selection_reason": "public, non-DME, low-stake, technical, directive, rationale-bearing, human-reviewable",
+  "runtime_scope": "v1 admission spike / instrument-binding only",
+  "extractor": "v1_admission_wrapper",
+  "extractor_note": "Thin runtime wrapper; not full v0.3 pipeline wired to foreign input unless otherwise recorded.",
+  "doctrine_mutation_allowed": false,
+  "authority_grant_allowed": false,
+  "expected_admission_ceiling": "candidate_or_partially_admitted"
+}
