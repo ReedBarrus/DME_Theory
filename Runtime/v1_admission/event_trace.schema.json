@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Runtime Admission Event Trace",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "timestamp_policy": {
+      "type": "string",
+      "description": "No wall-clock required unless runtime uses one."
+    },
+    "source_input_id": {
+      "type": "string"
+    },
+    "source_hash": {
+      "type": "string"
+    },
+    "operation": {
+      "type": "string"
+    },
+    "operator": {
+      "type": "string"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "input_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "output_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gates_applied": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gates_passed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gates_failed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocked_uses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "admission_status": {
+      "type": "string"
+    },
+    "authority_posture": {
+      "type": "string"
+    },
+    "review_required": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "event_id",
+    "timestamp_policy",
+    "source_input_id",
+    "source_hash",
+    "operation",
+    "operator",
+    "instrument",
+    "input_refs",
+    "output_refs",
+    "gates_applied",
+    "gates_passed",
+    "gates_failed",
+    "blocked_uses",
+    "admission_status",
+    "authority_posture",
+    "review_required",
+    "notes"
+  ]
+}

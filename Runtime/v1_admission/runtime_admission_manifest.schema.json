@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Runtime Admission Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "input_label": {
+      "type": "string"
+    },
+    "input_origin": {
+      "type": "string"
+    },
+    "input_hash": {
+      "type": "string"
+    },
+    "input_license_or_source_note": {
+      "type": "string"
+    },
+    "snapshot_ref": {
+      "type": "string"
+    },
+    "extractor_version": {
+      "type": "string"
+    },
+    "instrument_binding_profile": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "output_folder": {
+      "type": "string"
+    },
+    "review_status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id",
+    "input_label",
+    "input_origin",
+    "input_hash",
+    "input_license_or_source_note",
+    "snapshot_ref",
+    "extractor_version",
+    "instrument_binding_profile",
+    "output_folder",
+    "review_status"
+  ]
+}
