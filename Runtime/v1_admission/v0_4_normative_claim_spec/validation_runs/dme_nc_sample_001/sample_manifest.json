@@ -1,0 +1,21 @@
+{
+  "run_id": "dme_nc_sample_001",
+  "spec_path": "Runtime/v1_admission/v0_4_normative_claim_spec/",
+  "source_population": "Grounding/v2_2_1/claim_inventory.jsonl",
+  "population_filter": {
+    "claim_type": "NC",
+    "basis": "doctrine_occurrence",
+    "exclude_basis": [
+      "registry_canonical"
+    ],
+    "unique_by": "normalized_claim_content"
+  },
+  "sample_size": 50,
+  "seed": 20260613,
+  "doctrine_mutation_allowed": false,
+  "authority_grant_allowed": false,
+  "full_projection_allowed": false,
+  "purpose": "test H3 bridge hypothesis under predeclared falsification criteria",
+  "preliminary_judge_status": "primed_non_independent",
+  "independent_regrade_required": true
+}
